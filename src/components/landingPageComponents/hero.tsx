@@ -3,7 +3,7 @@ import HeroContent from "./heroComponents/content"
 export default function Hero(){
     return (
         <>
-         <main className="flex justify-evenly items-center pt-5 h-custom-height-landing-main mobile1:flex-col">
+         <main className="flex justify-evenly items-center pt-5  h-custom-height-landing-main mobile1:flex-col">
          <HeroContent/>
          <PictureHeroContent/>
          </main>

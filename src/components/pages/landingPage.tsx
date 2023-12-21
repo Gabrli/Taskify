@@ -6,11 +6,13 @@ export default function LandingPage(){
     return (
         <>
         
+        <div className="h-screen w-screen flex flex-col gap-36">
         <Header/>
         
         <Hero/>
         
         <Footer/>
+        </div>
         
         </>
     )

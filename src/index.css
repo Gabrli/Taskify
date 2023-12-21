@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+*{
+  box-sizing: border-box;
+}
+
 :root {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
@@ -13,6 +17,9 @@
     -webkit-text-size-adjust: 100%;
     
     background: linear-gradient(to left, rgb(35, 2, 54), #23032b, rgb(26, 6, 26));
+   width: 100vw;
+   overflow-x: hidden;
+
   }
 
 .positive-box{
