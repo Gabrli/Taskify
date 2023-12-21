@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    
+    background: linear-gradient(to left, rgb(35, 2, 54), #23032b, rgb(26, 6, 26));
+  }
+
+.positive-box{
+  background: linear-gradient(to right, rgb(61, 3, 61), rgb(39, 7, 59), rgb(35, 10, 54));
+  /*background: #1b0322;*/
+}
