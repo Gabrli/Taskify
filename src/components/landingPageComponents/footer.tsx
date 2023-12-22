@@ -1,19 +1,16 @@
-import contactImage from '../../assets/img/contactImg.svg'
-import { CiMail } from "react-icons/ci";
-import { FaPhone, FaGithub } from "react-icons/fa";
-export default function Footer(){
-    return (
-        <footer className="flex justify-evenly items-center h-custom-height-landing-plus positive-box w-full pt-9    mobile1:flex-col mobile1:h-custom-height-mobile-footer ">
-            <div >
-                <img className='w-contactImg mobile1:w-mobileFooterImg' alt="contact picture" src={contactImage}/>
-            </div>
-            <ul className='flex flex-col gap-3 border-x-2 pl-14 pr-14 mobile1:pb-2 mobile1:pt-10 mobile1:border-x-0'>
-                <li className='text-white text-lg'><a className='flex items-center gap-2 font-semibold ' href='#'><CiMail /> Email</a></li>
-                <li className='text-white text-lg'><a className='flex items-center gap-2 font-semibold' href='#'><FaPhone /> Phone</a></li>
-                <li className='text-white text-lg'><a className='flex items-center gap-2 font-semibold' href='#'><FaGithub /> Project repo</a></li>
-                <li className='text-white text-xl'><a className='flex items-center gap-2 font-bold mobile1:pb-2' href='#'><span className='text-pink-500'>Coded by:</span> Gabriel Wiśniewski</a></li>
-            </ul>
+import FooterImg from "./landingFooterComponents/footerImg";
+import FooterContactList from "./landingFooterComponents/footerContactList";
 
-        </footer>
-    )
+export default function Footer(props: { theme: string }) {
+  const { theme } = props;
+  return (
+    <footer
+      className={`flex justify-evenly items-center h-custom-height-landing-plus footer_box ${
+        theme === "dark" ? "dark" : "light"
+      } w-full pt-9    mobile1:flex-col mobile1:h-custom-height-mobile-footer `}
+    >
+      <FooterImg />
+      <FooterContactList theme={props.theme} />
+    </footer>
+  );
 }

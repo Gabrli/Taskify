@@ -3,9 +3,15 @@
 @tailwind utilities;
 *{
   box-sizing: border-box;
+  --bg-color1:  rgb(35, 2, 54);
+  --bg-color2: #23032b;
+  --bg-color3: rgb(26, 6, 26);
 }
 
+
+
 :root {
+  
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 400;
@@ -16,13 +22,36 @@
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
     
-    background: linear-gradient(to left, rgb(35, 2, 54), #23032b, rgb(26, 6, 26));
+    
+  
    width: 100vw;
    overflow-x: hidden;
 
   }
+.dark{
+  --bg-color1:  rgb(35, 2, 54);
+  --bg-color2: #23032b;
+  --bg-color3: rgb(26, 6, 26);
 
-.positive-box{
-  background: linear-gradient(to right, rgb(61, 3, 61), rgb(39, 7, 59), rgb(35, 10, 54));
+  --bg-footer1: rgb(61, 3, 61);
+  --bg-footer2:rgb(39, 7, 59);
+  --bg-footer3:rgb(35, 10, 54);
+}
+.light{
+  --bg-color1:  rgb(247, 235, 255);
+  --bg-color2: #fcefff;
+  --bg-color3: rgb(253, 221, 253);
+
+  --bg-footer1: rgb(252, 207, 252);
+  --bg-footer2:rgb(235, 204, 255);
+  --bg-footer3:rgb(252, 156, 255);
+}
+.landing_page{
+  background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
+}
+ 
+
+.footer_box{
+  background: linear-gradient(to right, var(--bg-footer1), var(--bg-footer2), var(--bg-footer3));
   /*background: #1b0322;*/
 }
