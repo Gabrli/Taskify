@@ -4,11 +4,20 @@ import RegisterMail from "./inputs/registerMail"
 import RegisterPassword from "./inputs/registerPassword"
 import ButtonRegister from "./inputs/buttonRegister"
 import RegisterFooter from "./registerFooter"
+import axios from "axios"
 export default function RegisterForm(){
     const [username, setUserName] = useState("")
     const [password, setPassword] = useState("")
     const [mail, setMail] = useState("")
-    const sendDataToServer = async () => {}
+    const sendDataToServer = async () => {
+        axios.post('/auth/register', {
+            username: username,
+            mail: mail,
+            password: password
+        }).then((res) => {
+            console.log(res)
+        })
+    }
     return (
         <form className="w-form flex flex-col justify-center items-center bg-black rounded-lg">
             <header className="p-2 pb-6">
