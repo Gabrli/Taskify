@@ -1,30 +1,41 @@
-# React + TypeScript + Vite
+<h1>Taskfiy - Inteligent task planner </h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+# LIVE: 
+- https://taskify-seven-phi.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
+### :man_technologist:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+|                                           AUTORS                                           |               FRONTEND                |                BACKEND                |
+| :----------------------------------------------------------------------------------------: | :-----------------------------------: | :-----------------------------------: |
+|                 **GabrielJuniorDev** ([Gabrli](https://github.com/Gabrli))                 | ![100%](https://progress-bar.dev/100) |   ![0%](https://progress-bar.dev/0)   |
+| **gental-py** ([gental-pyi](https://github.com/gental-py/)) |   ![0%](https://progress-bar.dev/0)   | ![100%](https://progress-bar.dev/100) |
+---
+##  :hammer_and_wrench: Tech stack
 
-- Configure the top-level `parserOptions` property like this:
+<h1>Frontend</h1>
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+ - <img src="https://github.com/devicons/devicon/blob/master/icons/react/react-original-wordmark.svg" title="React" alt="React" width="20" height="20"/>&nbsp; React + Vite
+ - <img src="https://github.com/devicons/devicon/blob/master/icons/typescript/typescript-original.svg" title="TypeScript" alt="TypeScript" width="20" height="20"/>&nbsp; TypeScript
+ - <img src="https://github.com/devicons/devicon/blob/master/icons/tailwindcss/tailwindcss-plain.svg"  title="CSS3" alt="CSS" width="20" height="20"/>&nbsp; Tailwindcss
+ - <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg"  title="HTML" alt="HTML5" width="20" height="20"/>&nbsp; HTML5
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+
+
+<h1>Backend</h1>
+
+
+---
+### Other tools
+<div>
+  <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain-wordmark.svg"  title="GIT" alt="GIT" width="20" height="20"/>&nbsp; Git - version control system
+  
+</div>
+
+
+  
+
