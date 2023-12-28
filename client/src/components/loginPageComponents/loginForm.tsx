@@ -1,6 +1,7 @@
 import ButtonLogin from "./Inputs/buttonLogin";
 import LoginFooter from "./loginFooter";
 import axios from "axios";
+import { authToken } from "../../auth/token";
 import { useState } from "react";
 import LoginPassword from "./Inputs/loginPassword";
 import LoginName from "./Inputs/loginName";
@@ -8,6 +9,7 @@ import LoginName from "./Inputs/loginName";
 export default function LoginForm() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
+
   const sendDataToServer = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
@@ -18,7 +20,11 @@ export default function LoginForm() {
         password: password,
       })
       .then((res) => {
-        console.log(res);
+        if (res.data.token) {
+          authToken.token = true;
+        } else {
+          authToken.token = false;
+        }
       });
 
     console.log("send");

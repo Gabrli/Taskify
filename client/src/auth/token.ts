@@ -1,3 +1,3 @@
-const isAuth = true;
+const authToken = {token: false}
 
-export { isAuth };
+export { authToken};

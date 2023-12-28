@@ -1,9 +1,7 @@
-import { isAuth } from "./token"
+import { authToken } from "./token";
 
-import { Outlet, Navigate } from "react-router-dom"
+import { Outlet, Navigate } from "react-router-dom";
 
-export default function PrivateRoute(){
-    return (
-       isAuth ? <Outlet/> : <Navigate to="/login"/>
-    )
+export default function PrivateRoute() {
+  return authToken.token ? <Outlet /> : <Navigate to="/login" />;
 }
