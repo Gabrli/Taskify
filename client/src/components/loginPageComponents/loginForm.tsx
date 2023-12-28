@@ -15,7 +15,7 @@ export default function LoginForm() {
   ) => {
     e.preventDefault();
     await axios
-      .post("https://taskfiy-server.vercel.app/auth/login", {
+      .post(`${import.meta.env.API_URL}/auth/login`, {
         username: username,
         password: password,
       })

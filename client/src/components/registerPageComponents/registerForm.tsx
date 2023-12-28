@@ -12,8 +12,9 @@ export default function RegisterForm() {
   const [mail, setMail] = useState("");
 
   const sendDataToServer = async () => {
+    
     axios
-      .post("/auth/register", {
+      .post(`${import.meta.env.API_URL}/auth/register`, {
         username: username,
         mail: mail,
         password: password,
