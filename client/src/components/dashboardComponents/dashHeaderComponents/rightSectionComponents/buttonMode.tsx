@@ -7,9 +7,9 @@ export default function ButtonMode(props: { setTheme: React.Dispatch<React.SetSt
     const theme = useContext(themeContext)
    
     return (
-        <button className={`text-xl  ${
+        <button className={`transition duration-700 font-semibold ease-in-out text-xl  ${
             theme === "dark" ? "text-white" : "text-yellow-500"
-          } pl-2 mobile1:text-lg mobile1:pl-0`}
+          } pl-2 mobile1:text-lg mobile1:pl-0 hover:text-yellow-500`}
           onClick={() => setTheme(`${theme === "dark" ? "light" : "dark"}`)}><MdOutlineWbSunny/></button>
     )
 }
