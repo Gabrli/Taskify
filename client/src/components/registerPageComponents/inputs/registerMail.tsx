@@ -17,7 +17,7 @@ export default function RegisterMail(props: {
         type="text"
         name="register_mail_input"
         id="register_mail_input"
-        placeholder="Enter the name"
+        placeholder="Enter the email"
       />
     </div>
   );

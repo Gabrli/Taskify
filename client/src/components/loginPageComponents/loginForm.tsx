@@ -3,6 +3,7 @@ import LoginFooter from "./loginFooter";
 import axios from "axios";
 import { authToken } from "../../auth/token";
 import { useState } from "react";
+
 import LoginPassword from "./Inputs/loginPassword";
 import LoginName from "./Inputs/loginName";
 
@@ -14,8 +15,9 @@ export default function LoginForm() {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
+    
     await axios
-      .post(`${import.meta.env.API_URL}/auth/login`, {
+      .post('', {
         username: username,
         password: password,
       })

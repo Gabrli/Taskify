@@ -11,15 +11,17 @@ export default function RegisterForm() {
   const [password, setPassword] = useState("");
   const [mail, setMail] = useState("");
 
-  const sendDataToServer = async () => {
+  const sendDataToServer = async ( e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault()
     
     axios
-      .post(`${import.meta.env.API_URL}/auth/register`, {
+      .post('/accounts/register', {
         username: username,
-        mail: mail,
+        email: mail,
         password: password,
       })
       .then((res) => {
+        console.log(res)
         if (res.data.token) {
           authToken.token = true;
         } else {

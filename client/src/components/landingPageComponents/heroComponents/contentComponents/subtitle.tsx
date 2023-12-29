@@ -1,5 +1,7 @@
-export default function SubTitle(props: {theme:string}) {
-  const { theme } = props
+import { useContext } from "react";
+import { themeContext } from "../../../pages/landingPage";
+export default function SubTitle() {
+  const theme = useContext(themeContext)
   return (
     <div className="mobile1:w-mobileTextContent pb-4 mobile1:h-custom-height-mobile-hero-text-content mobile1:text-center  mobile1:pb-0 " >
       <p className={`pt-4 pl-1 w-full text-base text-stone-300 ${theme === "dark"? "" : "text-stone-600"} `}>
