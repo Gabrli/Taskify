@@ -1,6 +1,6 @@
 import { CiMail } from "react-icons/ci";
 
-export default function RegisterMail(props: {
+export default function EmailInput(props: {
   mail: string;
   setMail: React.Dispatch<React.SetStateAction<string>>;
 }) {
