@@ -8,7 +8,7 @@ export default function DashboardHeader(props: {setTheme:React.Dispatch<React.Se
     const [isMobile, setIsMobile] = useState(false)
 
     const getCurrentClientWidth = (width:number) => {
-        width <= 645 ? setIsMobile(true) : setIsMobile(false)
+        width <= 877 ? setIsMobile(true) : setIsMobile(false)
     }
 
     window.addEventListener('resize', () => getCurrentClientWidth(window.innerWidth))
