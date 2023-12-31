@@ -55,6 +55,9 @@
 .register_page{
   background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
 }
+.dashboard_page{
+  background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
+}
  
 
 .footer_box{

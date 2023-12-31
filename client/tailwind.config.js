@@ -13,6 +13,9 @@ export default {
         "custom-height-landing-plus": "250px",
         "custom-height-mobile-hero-text-content": "180px",
         "custom-height-mobile-footer": "750px",
+        "custom-height-modal" : '525px',
+        "custom-height-modal-textarea" : '130px',
+        "custom-height-modal-inputs" : '35px'
       },
       width: {
         logo: "30px",
@@ -25,6 +28,9 @@ export default {
         navBorder: "1px",
         mobileFooterImg: "150px",
         form: "320px",
+        modalInputs: "250px",
+        modal: "320px"
+        
       },
       screens: {
         mobile1: { max: "877px" },

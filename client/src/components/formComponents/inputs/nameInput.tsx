@@ -1,5 +1,5 @@
 import { FaRegUser  } from "react-icons/fa"
-export default function RegisterName(props: {username:string, setUserName:React.Dispatch<React.SetStateAction<string>>}){
+export default function NameInput(props: {username:string, setUserName:React.Dispatch<React.SetStateAction<string>>}){
     const { username, setUserName } = props
     return (
         <div className="p-1 flex border rounded border-slate-600 items-center gap-4 justify-evanly mb-1">

@@ -1,5 +1,7 @@
-export default function CopyRight(props: { theme: string }) {
-  const { theme } = props;
+import { useContext } from "react";
+import { themeContext } from "../../pages/landingPage";
+export default function CopyRight() {
+  const theme = useContext(themeContext)
   return (
     <li className="text-white text-xl">
       <a

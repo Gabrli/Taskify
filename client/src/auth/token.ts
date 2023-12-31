@@ -1,3 +1,3 @@
-const authToken = {token: false}
+const authToken = {token: true}
 
 export { authToken};

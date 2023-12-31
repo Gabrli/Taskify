@@ -1,7 +1,5 @@
-
-
 import { RiLockPasswordFill } from "react-icons/ri";
-export default function RegisterPassword(props: {password:string, setPassword:React.Dispatch<React.SetStateAction<string>>}){
+export default function PasswordInput(props: {password:string, setPassword:React.Dispatch<React.SetStateAction<string>>}){
     const { password, setPassword} = props
     return(
         <div className="p-1 bg-none flex justify-evanly items-center gap-4 border rounded border-slate-600 ">

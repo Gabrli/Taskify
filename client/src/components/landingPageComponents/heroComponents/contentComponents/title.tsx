@@ -1,6 +1,9 @@
+import { useContext } from "react"
+import { themeContext } from "../../../pages/landingPage"
+export default function Title(){
 
-export default function Title(props:{theme:string}){
-    const { theme } = props
+    const theme = useContext(themeContext)
+    
     return(
         <div  >
             <h1 className={`text-4xl font-semibold  ${theme === "dark"? "text-white" : "text-black"}  mobile1:text-center`}>Taskify</h1>
