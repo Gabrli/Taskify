@@ -193,7 +193,7 @@ class Database:
         """ Check and create blank DB file if not exists. """
         if not self.filepath.exists():
             self.filepath.touch()
-            self.save_json_content({})
+            self.filepath.save_json_content({})
             logs.database_logger.log(self.name, f"Created DB file: {self.filepath}")
             return
 
