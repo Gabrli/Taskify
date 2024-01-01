@@ -42,8 +42,6 @@ class User:
         if not is_username_available(username):
             return False
         
-        password = bcrypt.hashpw(password.encode(), bcrypt.gensalt()).decode()
-
         user = User(
             username=username,
             password=password,
@@ -97,7 +95,6 @@ class User:
 
     def change_password(self, new_password: str) -> bool:
         """ Change password in database. """
-        new_password = bcrypt.hashpw(new_password.encode(), bcrypt.gensalt()).decode()
         database.users_db.update(self.db_key, {"password": new_password})
         logs.users_logger.log(self.db_key, f"Password changed for: {self.username}")
         return True
