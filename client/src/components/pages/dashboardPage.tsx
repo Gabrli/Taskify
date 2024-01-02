@@ -1,32 +1,38 @@
-import { createContext, useState } from "react"
-import DashboardHeader from "../dashboardComponents/dashboardHeader"
-import DashboardModal from "../dashboardComponents/dashboardModal"
+import { createContext, useState } from "react";
+import DashboardHeader from "../dashboardComponents/dashboardHeader";
 
-const currentModalContext = createContext("")
-const isActiveContext = createContext(false)
-const themeContext = createContext("")
+import DashTaskList from "../dashboardComponents/dashTaskList";
 
-export default function DashboardPage(){
-    const [theme, setTheme] = useState("dark")
-    const [isActive, setIsActive] = useState(false)
-    const [currentModal, setCurrentModal] = useState("")
-    
-    return(
-        <div className={`dashboard_page ${
-            theme === "dark" ? "dark" : "light"} h-screen`}>
-           <themeContext.Provider value={theme}>
-            <currentModalContext.Provider value={currentModal}>
-             <isActiveContext.Provider value={isActive}>
+const themeContext = createContext("");
 
-             <DashboardHeader setTheme={setTheme} setCurrentModal={setCurrentModal} setIsActive={setIsActive}/>
-             <DashboardModal  />
+export default function DashboardPage() {
+  const [theme, setTheme] = useState("dark");
+  const [isActive, setIsActive] = useState(false);
+  const [currentModal, setCurrentModal] = useState("");
+  
 
-             </isActiveContext.Provider>
-            </currentModalContext.Provider>
-           </themeContext.Provider>
-        </div>
+  return (
+    <div
+      className={`dashboard_page  ${
+        theme === "dark" ? "dark" : "light"
+      } h-screen `}
+    >
+      <themeContext.Provider value={theme}>
+        <DashboardHeader
+          setTheme={setTheme}
+          setCurrentModal={setCurrentModal}
+          setIsActive={setIsActive}
+        />
+        <DashTaskList
+          isActive={isActive}
+          setIsActive={setIsActive}
+          setCurrentModal={setCurrentModal}
+          currentModal={currentModal}
         
-    )
+        />
+      </themeContext.Provider>
+    </div>
+  );
 }
 
-export { themeContext, currentModalContext, isActiveContext }
+export { themeContext };

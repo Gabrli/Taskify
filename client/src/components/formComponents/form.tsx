@@ -8,6 +8,11 @@ import axios from "axios";
 import { authToken } from "../../auth/token";
 import useCurrentLocation from "../../hooks/useCurrentLocation";
 import useCorrectContent from "../../hooks/useCorrectContent";
+import { useNavigate } from "react-router";
+import bcrypt from 'bcryptjs'
+
+let userId:string;
+
 export default function Form() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -16,21 +21,30 @@ export default function Form() {
   const currentLocation = useCurrentLocation();
   const correctContent = useCorrectContent(currentLocation);
 
+  const navigate = useNavigate()
+
   const sendDataToServer = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
 
+    const haschedPassword = bcrypt.hashSync(password, 10)
+    
     if (currentLocation === "/login") {
       console.log("login to account");
       await axios
-        .post("/accounts/login", {
+        .post("http://127.0.0.1:8000/accounts/login", {
           username: username,
           password: password,
         })
         .then((res) => {
-          if (res.data.token) {
+          console.log(res.data.uid)
+          if (res.data.uid) {
+
             authToken.token = true;
+            userId = res.data.uid
+            navigate('/dashboard')
+            
           } else {
             authToken.token = false;
           }
@@ -38,15 +52,17 @@ export default function Form() {
     } else {
       console.log("send new user");
       await axios
-        .post("/accounts/register", {
+        .post("http://127.0.0.1:8000/accounts/register", {
           username: username,
           email: mail,
-          password: password,
+          password: haschedPassword,
         })
         .then((res) => {
           //console.log(res)
-          if (res.data.token) {
+          if (res.data.uid) {
             authToken.token = true;
+            userId = res.data.uid
+            navigate('/dashboard')
           } else {
             authToken.token = false;
           }
@@ -79,3 +95,5 @@ export default function Form() {
     </form>
   );
 }
+
+export { userId }

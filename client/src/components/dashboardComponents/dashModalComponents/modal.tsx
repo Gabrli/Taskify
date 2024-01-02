@@ -1,23 +1,53 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import DateEndInput from "./modalInputs/dateEndInput";
 import DateStartInput from "./modalInputs/dateStartInput";
 import TaskDescryptionInput from "./modalInputs/taskDescryptionInput";
 import TaskNameInput from "./modalInputs/taskNameInput";
 import ModalFooter from "./modalFooter";
-import { currentModalContext } from "../../pages/dashboardPage";
+import { task } from "../../../types/taskInterface";
 
-export default function Modal() {
-  const typeModal = useContext(currentModalContext);
+export default function Modal(props: {
+  setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
+  currentModal: string;
+  addNewTask: (
+    taskName: string,
+    taskDescryption: string,
+    dateStart: string,
+    dateEnd: string
+  ) => void;
+  editTask: (
+    taskName: string,
+    taskDescryption: string,
+    dateStart: string,
+    dateEnd: string,
+    taskId: string
+  ) => void;
+  task: task;
+}) {
+  const { setIsActive, currentModal, addNewTask, editTask, task } = props;
+
   const [taskName, setTaskName] = useState("");
   const [taskDescryption, setTaskDescryption] = useState("");
   const [dateStart, setDateStart] = useState("");
   const [dateEnd, setDateEnd] = useState("");
 
+  const taskId = task.task_id;
+
+  const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+    
+    currentModal === "create_modal"
+      ? addNewTask(taskName, taskDescryption, dateStart, dateEnd)
+      : editTask(taskName, taskDescryption, dateStart, dateEnd, taskId);
+  };
+
   return (
-    <form className="h-custom-height-modal bg-fuchsia-800 bg-opacity-20 w-modal rounded">
+    <form className="h-custom-height-modal bg-fuchsia-800 bg-opacity-45 w-modal rounded">
       <header className="pt-6 text-center">
         <h3 className="text-white text-2xl font-semibold">
-          {typeModal === "create_modal" ? "Create new task !" : "Update task"}
+          {currentModal === "create_modal"
+            ? "Create new task !"
+            : "Update task"}
         </h3>
       </header>
       <section className="flex flex-col items-center p-6 gap-3 ">
@@ -59,7 +89,7 @@ export default function Modal() {
           </div>
         </div>
       </section>
-      <ModalFooter />
+      <ModalFooter eventHandler={eventHandler} setIsActive={setIsActive} />
     </form>
   );
 }
