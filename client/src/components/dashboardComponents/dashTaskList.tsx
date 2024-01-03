@@ -15,12 +15,9 @@ export default function DashTaskList(props: {
 
   const [taskList, setTaskList] = useState<task[]>([]);
 
-  //console.log(userId);
-  console.log(isActive)
   useEffect(() => {
-    getTasksFromBackend()
-    
-  }, [])
+    getTasksFromBackend();
+  }, []);
 
   const getTasksFromBackend = async () => {
     await axios
@@ -28,7 +25,6 @@ export default function DashTaskList(props: {
         uid: userId,
       })
       .then((res) => {
-        console.log(res);
         setTaskList(res.data.tasks);
       });
   };
@@ -47,8 +43,7 @@ export default function DashTaskList(props: {
         date_start: dateStart,
         date_end: dateEnd,
       })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
         getTasksFromBackend();
       });
   };
@@ -69,61 +64,88 @@ export default function DashTaskList(props: {
         date_start: dateStart,
         date_end: dateEnd,
       })
-      .then((res) => {
-        console.log(res);
+      .then(() => {
         getTasksFromBackend();
       });
   };
 
-  
+  const removeTask = async (taskId: string) => {
+    await axios
+      .post("http://127.0.0.1:8000/tasks/remove", {
+        uid: userId,
+        task_id: taskId,
+      })
+      .then(() => {
+        getTasksFromBackend();
+      });
+  };
 
   return (
     <div className="   flex justify-center items-center">
       <ul className="grid grid-cols-custom-grid pt-24  justify-center items-center w-full">
-        {taskList.map((task) => {
-          return isActive ?  <DashboardModal task={task} isActive={isActive} currentModal={currentModal} setIsActive={setIsActive} addNewTask={addNewTask} editTask={editTask} /> : 
-          <DashTask
-          key={task.task_id}
-            element={task}
+        {isActive ? (
+          <DashboardModal
             setIsActive={setIsActive}
-            setCurrentModal={setCurrentModal}
+            currentModal={currentModal}
+            addNewTask={addNewTask}
+            editTask={editTask}
+            task={{
+              task_id: "00",
+              name: "",
+              description: "",
+              date_start: "",
+              date_end: "",
+            }}
           />
-            
-             
-
-            
-          
-        })}
-        </ul>
-
-        {taskList.length >= 1 ? (
-          ""
         ) : (
-          <div className="flex flex-col items-center justify-center gap-2 absolute top-1/2 ">
-            <p
-              className={`text-stone-500 ${
-                isActive ? "hidden" : ""
-              } font-semibold`}
-            >
-              You don't have any task !
-            </p>
-            <button
-              onClick={(e) => {
-                e.preventDefault();
-                setIsActive(true);
-                setCurrentModal("create_modal");
-              }}
-              className={`font-semibold ${
-                isActive ? "hidden" : ""
-              }  text-white rounded bg-fuchsia-900 pl-2 pr-2 pt-1 pb-1`}
-            >
-              Create new
-            </button>
-          </div>
+          ""
         )}
-        
-      </div>
-      
-    
+        {taskList.map((task) => {
+          return isActive ? (
+            <DashboardModal
+              setIsActive={setIsActive}
+              currentModal={currentModal}
+              addNewTask={addNewTask}
+              editTask={editTask}
+              task={task}
+            />
+          ) : (
+            <DashTask
+              key={task.task_id}
+              element={task}
+              setIsActive={setIsActive}
+              setCurrentModal={setCurrentModal}
+              removeTask={removeTask}
+            />
+          );
+        })}
+      </ul>
+
+      {taskList.length >= 1 ? (
+        ""
+      ) : (
+        <div className="flex flex-col items-center justify-center gap-2 absolute top-1/2 ">
+          <p
+            className={`text-stone-500 ${
+              isActive ? "hidden" : ""
+            } font-semibold`}
+          >
+            You don't have any task !
+          </p>
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              setIsActive(true);
+              setCurrentModal("create_modal");
+            }}
+            className={`font-semibold ${
+              isActive ? "hidden" : ""
+            }  text-white rounded bg-fuchsia-900 pl-2 pr-2 pt-1 pb-1`}
+          >
+            Create new
+          </button>
+        </div>
+      )}
+    </div>
   );
 }

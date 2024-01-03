@@ -9,9 +9,9 @@ import { authToken } from "../../auth/token";
 import useCurrentLocation from "../../hooks/useCurrentLocation";
 import useCorrectContent from "../../hooks/useCorrectContent";
 import { useNavigate } from "react-router";
-import bcrypt from 'bcryptjs'
+import bcrypt from "bcryptjs";
 
-let userId:string;
+let userId: string;
 
 export default function Form() {
   const [username, setUserName] = useState("");
@@ -21,36 +21,31 @@ export default function Form() {
   const currentLocation = useCurrentLocation();
   const correctContent = useCorrectContent(currentLocation);
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const sendDataToServer = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     e.preventDefault();
 
-    const haschedPassword = bcrypt.hashSync(password, 10)
-    
+    const haschedPassword = bcrypt.hashSync(password, 10);
+
     if (currentLocation === "/login") {
-      console.log("login to account");
       await axios
         .post("http://127.0.0.1:8000/accounts/login", {
           username: username,
           password: password,
         })
         .then((res) => {
-          console.log(res.data.uid)
           if (res.data.uid) {
-
             authToken.token = true;
-            userId = res.data.uid
-            navigate('/dashboard')
-            
+            userId = res.data.uid;
+            navigate("/dashboard");
           } else {
             authToken.token = false;
           }
         });
     } else {
-      console.log("send new user");
       await axios
         .post("http://127.0.0.1:8000/accounts/register", {
           username: username,
@@ -58,11 +53,10 @@ export default function Form() {
           password: haschedPassword,
         })
         .then((res) => {
-          //console.log(res)
           if (res.data.uid) {
             authToken.token = true;
-            userId = res.data.uid
-            navigate('/dashboard')
+            userId = res.data.uid;
+            navigate("/dashboard");
           } else {
             authToken.token = false;
           }
@@ -96,4 +90,4 @@ export default function Form() {
   );
 }
 
-export { userId }
+export { userId };

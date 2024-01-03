@@ -9,7 +9,6 @@ export default function DashboardPage() {
   const [theme, setTheme] = useState("dark");
   const [isActive, setIsActive] = useState(false);
   const [currentModal, setCurrentModal] = useState("");
-  
 
   return (
     <div
@@ -28,7 +27,6 @@ export default function DashboardPage() {
           setIsActive={setIsActive}
           setCurrentModal={setCurrentModal}
           currentModal={currentModal}
-        
         />
       </themeContext.Provider>
     </div>

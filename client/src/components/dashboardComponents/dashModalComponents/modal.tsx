@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import DateEndInput from "./modalInputs/dateEndInput";
 import DateStartInput from "./modalInputs/dateStartInput";
 import TaskDescryptionInput from "./modalInputs/taskDescryptionInput";
@@ -25,17 +25,25 @@ export default function Modal(props: {
   task: task;
 }) {
   const { setIsActive, currentModal, addNewTask, editTask, task } = props;
+  const { task_id, name, description, date_start, date_end } = task;
 
   const [taskName, setTaskName] = useState("");
   const [taskDescryption, setTaskDescryption] = useState("");
   const [dateStart, setDateStart] = useState("");
   const [dateEnd, setDateEnd] = useState("");
 
-  const taskId = task.task_id;
+  const taskId = task_id;
+
+  useEffect(() => {
+    setTaskName(name);
+    setTaskDescryption(description);
+    setDateStart(date_start);
+    setDateEnd(date_end);
+  }, []);
 
   const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
-    
+
     currentModal === "create_modal"
       ? addNewTask(taskName, taskDescryption, dateStart, dateEnd)
       : editTask(taskName, taskDescryption, dateStart, dateEnd, taskId);

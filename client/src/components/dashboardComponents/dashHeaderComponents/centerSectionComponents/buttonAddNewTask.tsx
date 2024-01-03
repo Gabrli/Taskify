@@ -7,8 +7,9 @@ export default function ButtonAddNewTask(props: {
 }) {
   const { isMobile, setCurrentModal, setIsActive } = props;
 
-  const eventHandler = ( e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    e.preventDefault()
+  const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
+
     setIsActive(true);
     setCurrentModal("create_modal");
   };

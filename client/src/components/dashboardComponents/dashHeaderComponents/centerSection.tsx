@@ -7,7 +7,7 @@ export default function CenterSection(props: {isMobile:boolean, setCurrentModal:
     return (
         <section className="flex justify-center items-center gap-5 rounded bg-custom-bg-nav-color p-2 border border-gray-500 mobile1:gap-6">
             <ButtonComunity isMobile={isMobile}/>
-            <ButtonAddNewTask isMobile={isMobile} setCurrentModal={setCurrentModal} setIsActive={setIsActive}/>
+            <ButtonAddNewTask isMobile={isMobile} setCurrentModal={setCurrentModal} setIsActive={setIsActive} />
             <ButtonNotyfication isMobile={isMobile}/>
         </section>
     )

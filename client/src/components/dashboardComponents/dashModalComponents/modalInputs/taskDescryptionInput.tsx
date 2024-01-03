@@ -1,11 +1,8 @@
-
 export default function TaskDescryptionInput(props: {
   state: string;
   setState: React.Dispatch<React.SetStateAction<string>>;
 }) {
   const { state, setState } = props;
-
-  
 
   return (
     <textarea
