@@ -1,7 +1,9 @@
 import { task } from "../../types/taskInterface";
 import ButtonEdit from "./dashTaskComponents/buttonEdit";
 import ButtonRemove from "./dashTaskComponents/buttonRemove";
-
+import TaskHeader from "./dashTaskComponents/taskHeader";
+import TaskDescription from "./dashTaskComponents/taskDescription";
+import TaskDates from "./dashTaskComponents/taskDates";
 export default function DashTask(props: {
   element: task;
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
@@ -17,19 +19,9 @@ export default function DashTask(props: {
         task_id === "00" ? "hidden" : ""
       } ml-auto mr-auto bg-fuchsia-800 mt-3 bg-opacity-30 p-2 rounded`}
     >
-      <header>
-        <p className="p-2 text-white font-semibold text-3xl">{name}</p>
-      </header>
-      <section>
-        <p className="p-2 text-white text-opacity-40 font-semibold">
-          {description}
-        </p>
-      </section>
-      <section>
-        <p className="p-2 text-stone-400 text-opacity-40">
-          {date_start} - {date_end}
-        </p>
-      </section>
+      <TaskHeader name={name} />
+      <TaskDescription description={description} />
+      <TaskDates date_start={date_start} date_end={date_end} />
       <section className="flex justify-center items-center gap-2 p-2">
         <ButtonRemove removeTask={removeTask} taskId={task_id} />
         <ButtonEdit
