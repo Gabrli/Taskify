@@ -8,5 +8,10 @@
     "username": "test2",
     "password": "$2a$10$j5SNwPHzf0fUi59dARACRetYCK6UinuIX6GMfPDnrXi1ggZki4X3S",
     "email": "test@op2.com"
+  },
+  "d033e22ae348aeb5660fc2140aec35850c4da997": {
+    "username": "admin",
+    "password": "$2a$10$JeRaWa4EbyhAqCU1HfHvsecsID8LDOsXrrkPuMF6HH61r5Ueu3t6W",
+    "email": "admin@op.pl"
   }
 }
