@@ -4,27 +4,24 @@ import PasswordInput from "./inputs/passwordInput";
 import EmailInput from "./inputs/emailInput";
 import ButtonForm from "./inputs/buttonForm";
 import FormFooter from "./formFooter";
-
-import { authToken } from "../../auth/token";
+import { useNavigate } from "react-router";
 import useCurrentLocation from "../../hooks/useCurrentLocation";
 import useCorrectContent from "../../hooks/useCorrectContent";
-import { useNavigate } from "react-router";
+
 import bcrypt from "bcryptjs";
 import {
   LOGIN_FORM_QUERY,
   REGISTER_FORM_QUERY,
 } from "../../helpers/formQueries";
-let userId: string;
+import { checkingIDFromDb } from "../../auth/checkingIDFromDB";
 
 export default function Form() {
   const [username, setUserName] = useState("");
   const [password, setPassword] = useState("");
   const [mail, setMail] = useState("");
-
+  const navigate = useNavigate()
   const currentLocation = useCurrentLocation();
   const correctContent = useCorrectContent(currentLocation);
-
-  const navigate = useNavigate();
 
   const sendDataToServer = async (
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
@@ -35,23 +32,11 @@ export default function Form() {
 
     if (currentLocation === "/login") {
       LOGIN_FORM_QUERY(username, password).then((res) => {
-        if (res.data.uid) {
-          authToken.token = true;
-          userId = res.data.uid;
-          navigate("/dashboard");
-        } else {
-          authToken.token = false;
-        }
+        checkingIDFromDb(res.data.uid, navigate);
       });
     } else {
       REGISTER_FORM_QUERY(username, mail, haschedPassword).then((res) => {
-        if (res.data.uid) {
-          authToken.token = true;
-          userId = res.data.uid;
-          navigate("/dashboard");
-        } else {
-          authToken.token = false;
-        }
+        checkingIDFromDb(res.data.uid, navigate);
       });
     }
   };
@@ -81,5 +66,3 @@ export default function Form() {
     </form>
   );
 }
-
-export { userId };

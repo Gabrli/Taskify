@@ -72,3 +72,6 @@
 [05/01/2024 11:31:05] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'description', 'date_start', 'name', 'author', 'date_end'} file=./db/tasks.json>
 [05/01/2024 11:46:48] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'email', 'password', 'username'} file=./db/users.json>
 [05/01/2024 11:46:48] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'description', 'date_start', 'author', 'name', 'date_end'} file=./db/tasks.json>
+[05/01/2024 12:05:34] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'password', 'email', 'username'} file=./db/users.json>
+[05/01/2024 12:05:34] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'author', 'name', 'date_start', 'description', 'date_end'} file=./db/tasks.json>
+[05/01/2024 12:10:48] (tasks) [database.py.get#308]  (tasks) KeyNotFound: b1a5b7b407ee4b05b9bd74a25bded43e
