@@ -1,0 +1,5 @@
+
+//interface notyfiaction {
+    //id:number,
+
+//}

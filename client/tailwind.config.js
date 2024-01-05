@@ -9,7 +9,7 @@ export default {
         "custom-btn-color": "rgb(61, 3, 61)",
       },
       height: {
-        "custom-height-landing-main": "290px",
+        "custom-height-landing-main": "370px",
         "custom-height-landing-plus": "250px",
         "custom-height-mobile-hero-text-content": "180px",
         "custom-height-mobile-footer": "750px",

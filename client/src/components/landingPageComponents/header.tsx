@@ -5,10 +5,10 @@ export default function Header(props: { setTheme:React.Dispatch<React.SetStateAc
   const { setTheme } = props
     
   return (
-    <header className='flex justify-between items-center pb-4'>
-      <div className="p-10 flex justify-center items-center gap-5">
+    <header className='flex justify-between pt-3  items-center '>
+      <div className="flex pl-5  justify-center items-center gap-3">
         <img className='w-logo' src={logo}/>
-        <p className='text-purple-700 font-semibold'>Taskify</p>
+        <p className='text-purple-700 font-semibold '>Taskify</p>
       </div>
 
       <LandingNav  setTheme={setTheme} />

@@ -1,6 +1,6 @@
 export default function ButtonLogin() {
   return (
-    <li className="text-xl font-semibold text-white pr-2 mobile1:text-lg mobile1:pr-0 ">
+    <li className="text-lg p-1 font-semibold pr-3 text-white  mobile1:text-lg  ">
       <a href="/login">Login</a>
     </li>
   );

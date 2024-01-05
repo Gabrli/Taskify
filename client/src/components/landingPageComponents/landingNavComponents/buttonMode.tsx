@@ -11,7 +11,7 @@ export default function ButtonMode(props: {
     <li
     className={`text-xl  ${
       theme === "dark" ? "text-white" : "text-yellow-500"
-    } pl-2 mobile1:text-lg mobile1:pl-0`}
+    } p-1 pl-2 mobile1:text-lg `}
     onClick={() => setTheme(`${theme === "dark" ? "light" : "dark"}`)}
   >
     <MdOutlineWbSunny />

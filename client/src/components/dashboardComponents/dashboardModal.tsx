@@ -1,6 +1,6 @@
 import Modal from "./dashModalComponents/modal";
 import { task } from "../../types/taskInterface";
-import { useEffect } from "react";
+
 
 export default function DashboardModal(props: {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
@@ -22,9 +22,7 @@ export default function DashboardModal(props: {
 }) {
   const { setIsActive, currentModal, addNewTask, editTask, task } = props;
 
-  useEffect(() => {
-    console.log("load modal");
-  }, []);
+
 
   return (
     <div

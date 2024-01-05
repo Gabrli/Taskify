@@ -1,13 +1,17 @@
 import { task } from "../../types/taskInterface";
 import DashTask from "./dashTask";
 import { useEffect, useState } from "react";
-import { userId } from "../formComponents/form";
-import axios from "axios";
+
 import DashboardModal from "./dashboardModal";
+import {
+  TASK_QUERY,
+  ADD_TASK_QUERY,
+  EDIT_TASK_QUERY,
+  REMOVE_TASK_QUERY,
+} from "../../helpers/tasksQueries";
 export default function DashTaskList(props: {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
-
   isActive: boolean;
   currentModal: string;
 }) {
@@ -20,13 +24,9 @@ export default function DashTaskList(props: {
   }, []);
 
   const getTasksFromBackend = async () => {
-    await axios
-      .post(`http://127.0.0.1:8000/tasks/getAll`, {
-        uid: userId,
-      })
-      .then((res) => {
-        setTaskList(res.data.tasks);
-      });
+    TASK_QUERY().then((res) => {
+      setTaskList(res.data.tasks);
+    });
   };
 
   const addNewTask = async (
@@ -35,17 +35,8 @@ export default function DashTaskList(props: {
     dateStart: string,
     dateEnd: string
   ) => {
-    await axios
-      .post("http://127.0.0.1:8000/tasks/create", {
-        uid: userId,
-        name: taskName,
-        description: taskDescryption,
-        date_start: dateStart,
-        date_end: dateEnd,
-      })
-      .then(() => {
-        getTasksFromBackend();
-      });
+    ADD_TASK_QUERY(taskName, taskDescryption, dateStart, dateEnd);
+    getTasksFromBackend();
   };
 
   const editTask = async (
@@ -55,29 +46,13 @@ export default function DashTaskList(props: {
     dateEnd: string,
     taskId: string
   ) => {
-    await axios
-      .post("http://127.0.0.1:8000/tasks/edit", {
-        uid: userId,
-        task_id: taskId,
-        name: taskName,
-        description: taskDescryption,
-        date_start: dateStart,
-        date_end: dateEnd,
-      })
-      .then(() => {
-        getTasksFromBackend();
-      });
+    EDIT_TASK_QUERY(taskName, taskDescryption, dateStart, dateEnd, taskId);
+    getTasksFromBackend();
   };
 
   const removeTask = async (taskId: string) => {
-    await axios
-      .post("http://127.0.0.1:8000/tasks/remove", {
-        uid: userId,
-        task_id: taskId,
-      })
-      .then(() => {
-        getTasksFromBackend();
-      });
+    REMOVE_TASK_QUERY(taskId);
+    getTasksFromBackend();
   };
 
   return (

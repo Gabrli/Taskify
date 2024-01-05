@@ -6,6 +6,7 @@
   --bg-color1:  rgb(35, 2, 54);
   --bg-color2: #23032b;
   --bg-color3: rgb(26, 6, 26);
+  
 }
 
 
@@ -36,6 +37,7 @@
   --bg-footer1: rgb(61, 3, 61);
   --bg-footer2:rgb(39, 7, 59);
   --bg-footer3:rgb(35, 10, 54);
+
 }
 .light{
   --bg-color1:  rgb(247, 235, 255);
@@ -45,9 +47,11 @@
   --bg-footer1: rgb(252, 207, 252);
   --bg-footer2:rgb(235, 204, 255);
   --bg-footer3:rgb(252, 156, 255);
+  
 }
 .landing_page{
   background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
+  
 }
 .login_page {
   background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
@@ -58,9 +62,42 @@
 .dashboard_page{
   background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
 }
+
+.notyfication_page{
+  background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
+}
  
 
 .footer_box{
   background: linear-gradient(to right, var(--bg-footer1), var(--bg-footer2), var(--bg-footer3));
+  
   /*background: #1b0322;*/
 }
+.btn_started{
+           
+  
+  background-image: linear-gradient(to right, #DD5E89 0%, #F7BB97  51%, #DD5E89  100%);
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    
+    border-radius: 10px;
+    display: block;
+  
+
+  
+ 
+}
+.btn_started:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+         
+         
+
+
