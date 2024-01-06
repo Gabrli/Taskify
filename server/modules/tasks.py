@@ -105,11 +105,14 @@ class Task:
 
     def as_dict(self) -> dict:
         """ Cast this object to dictionary. """
+        date_start = timestamp.convert_datetime_to_string(timestamp.read_timestamp(self.date_start))
+        date_end = timestamp.convert_datetime_to_string(timestamp.read_timestamp(self.date_end))
+        
         return {
             "name": self.name,
             "description": self.description,
-            "date_start": self.date_start,
-            "date_end": self.date_end,
+            "date_start": date_start,
+            "date_end": date_end,
             "task_id": self.db_key
         }
 
