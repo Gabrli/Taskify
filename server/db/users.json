@@ -1,17 +1,1 @@
-{
-  "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3": {
-    "username": "test",
-    "password": "$2b$12$nqowgYB4QjpuXFd8G1Baw.Pt3sfpo/C7heUlW8MiYfJkPZOF8V30W",
-    "email": "test@op.com"
-  },
-  "109f4b3c50d7b0df729d299bc6f8e9ef9066971f": {
-    "username": "test2",
-    "password": "$2a$10$j5SNwPHzf0fUi59dARACRetYCK6UinuIX6GMfPDnrXi1ggZki4X3S",
-    "email": "test@op2.com"
-  },
-  "d033e22ae348aeb5660fc2140aec35850c4da997": {
-    "username": "admin",
-    "password": "$2a$10$JeRaWa4EbyhAqCU1HfHvsecsID8LDOsXrrkPuMF6HH61r5Ueu3t6W",
-    "email": "admin@op.pl"
-  }
-}
+{}

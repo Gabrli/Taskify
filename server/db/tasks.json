@@ -1,16 +1,1 @@
-{
-  "99b1751dfd0e4e38ac04db1547a426fa": {
-    "author": "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3",
-    "name": "Test ",
-    "description": "Zdanie na koncie \"Test\"",
-    "date_start": 1707346800,
-    "date_end": 1707519600
-  },
-  "7b7b194bfa2d4346bfd01f3f30d60140": {
-    "author": "d033e22ae348aeb5660fc2140aec35850c4da997",
-    "name": "Test",
-    "description": "Test na koncie \"admina\"",
-    "date_start": 1707260400,
-    "date_end": 1707346800
-  }
-}
+{}
