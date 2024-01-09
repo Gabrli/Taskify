@@ -17,7 +17,8 @@ export const ADD_TASK_QUERY = async (
   taskName: string,
   taskDescryption: string,
   dateStart: string,
-  dateEnd: string
+  dateEnd: string,
+ 
 ) => {
   return await axios.post("http://127.0.0.1:8000/tasks/create", {
     uid: userId,

@@ -8,7 +8,7 @@ export default function DashTask(props: {
   element: task;
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
-  removeTask: (taskId: string) => Promise<void>;
+  removeTask: (taskId: string) => void
 }) {
   const { task_id, name, description, date_start, date_end } = props.element;
   const { setIsActive, setCurrentModal, removeTask } = props;

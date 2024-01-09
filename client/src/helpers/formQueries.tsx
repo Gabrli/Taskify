@@ -5,6 +5,8 @@ export const LOGIN_FORM_QUERY = async (username:string, password:string) => {
     .post("http://127.0.0.1:8000/accounts/login", {
       username: username,
       password: password,
+    }).catch((err) => {
+     return err
     })
 }
 

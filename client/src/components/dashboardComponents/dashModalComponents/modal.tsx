@@ -25,7 +25,7 @@ export default function Modal(props: {
   task: task,
   setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, currentModal, addNewTask, editTask, task,   } = props;
+  const { setIsActive, currentModal, addNewTask, editTask, task, setIsWrong   } = props;
   const { task_id, name, description, date_start, date_end } = task;
 
   const [taskName, setTaskName] = useState("");
@@ -36,10 +36,14 @@ export default function Modal(props: {
   const taskId = task_id;
 
   useEffect(() => {
-    setTaskName(name);
-    setTaskDescryption(description);
-    setDateStart(date_start);
-    setDateEnd(date_end);
+    if(currentModal === "create_modal"){
+      return
+    } else {
+      setTaskName(name);
+      setTaskDescryption(description);
+      setDateStart(date_start);
+      setDateEnd(date_end);
+    }
   }, []);
 
   
@@ -68,7 +72,7 @@ export default function Modal(props: {
         >
           Task name:
         </label>
-        <TaskNameInput   state={taskName} setState={setTaskName} />
+        <TaskNameInput setIsWrong={setIsWrong}  state={taskName} setState={setTaskName} />
         <label
           htmlFor="task_textarea_input"
           className="text-white mr-auto pl-3 font-semibold"
@@ -78,6 +82,7 @@ export default function Modal(props: {
         <TaskDescryptionInput
           state={taskDescryption}
           setState={setTaskDescryption}
+          setIsWrong={setIsWrong}
         />
         <div className="flex justify-evanly items-center gap-4">
           <div className="flex flex-col gap-2">
@@ -87,7 +92,7 @@ export default function Modal(props: {
             >
               Date start:
             </label>
-            <DateStartInput state={dateStart} setState={setDateStart} />
+            <DateStartInput state={dateStart} setState={setDateStart} setIsWrong={setIsWrong} />
           </div>
           <div className="flex flex-col gap-2">
             <label
@@ -96,7 +101,7 @@ export default function Modal(props: {
             >
               Date end:
             </label>
-            <DateEndInput state={dateEnd} setState={setDateEnd} />
+            <DateEndInput state={dateEnd} setState={setDateEnd} setIsWrong={setIsWrong} />
           </div>
         </div>
       </section>

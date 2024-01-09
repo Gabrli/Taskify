@@ -1,5 +1,5 @@
 import { IoTrashBin } from "react-icons/io5";
-export default function ButtonRemove(props: { removeTask: (taskId:string) => Promise<void>, taskId: string}){
+export default function ButtonRemove(props: { removeTask: (taskId: string) => void, taskId: string}){
     const { removeTask, taskId } = props
     
     return (
