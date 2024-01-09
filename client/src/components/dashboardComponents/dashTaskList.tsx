@@ -6,28 +6,34 @@ import DashboardModal from "./dashboardModal";
 import { useDashTaskListLogic } from "../../hooks/usedashTaskListLogic";
 
 
+
 const isWrongContext = createContext(false);
 export default function DashTaskList(props: {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
   setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
   isActive: boolean;
   currentModal: string;
+  setCounter: React.Dispatch<React.SetStateAction<number>>
 }) {
-  const { setIsActive, isActive, setCurrentModal, currentModal } = props;
+  const { setIsActive, isActive, setCurrentModal, currentModal, setCounter } = props;
   const {
     isWrong,
     taskList,
     removeTask,
     editTask,
     addNewTask,
-    setIsWrong
-  } = useDashTaskListLogic()
+    setIsWrong,
+    
+  } = useDashTaskListLogic(setCounter)
+  
+
+  
    
 
   return (
     <div className="   flex justify-center items-center">
       <isWrongContext.Provider value={isWrong}>
-        <ul className="grid grid-cols-custom-grid pt-24  justify-center items-center w-full">
+        <ul className="flex gap-6 pt-24  justify-center items-center w-full">
           {isActive ? (
             <DashboardModal
               setIsActive={setIsActive}
@@ -71,11 +77,11 @@ export default function DashTaskList(props: {
         {taskList.length >= 1 ? (
           ""
         ) : (
-          <div className="flex flex-col items-center justify-center gap-2 absolute top-1/2 ">
+          <div className="flex flex-col items-center justify-center gap-5 absolute top-1/2 ">
             <p
               className={`text-stone-500 ${
                 isActive ? "hidden" : ""
-              } font-semibold`}
+              } font-semibold text-2xl`}
             >
               You don't have any task !
             </p>
@@ -85,9 +91,9 @@ export default function DashTaskList(props: {
                 setIsActive(true);
                 setCurrentModal("create_modal");
               }}
-              className={`font-semibold ${
+              className={`btn_new font-semibold transition duration-700 ease-in-out hover:bg-fuchsia-800 ${
                 isActive ? "hidden" : ""
-              }  text-white rounded bg-fuchsia-900 pl-2 pr-2 pt-1 pb-1`}
+              }  text-white rounded bg-fuchsia-900 pl-4 pr-4 pt-2 pb-2`}
             >
               Create new
             </button>

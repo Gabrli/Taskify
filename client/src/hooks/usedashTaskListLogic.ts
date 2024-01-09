@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import {  useContext, useEffect, useState } from "react";
 import signalEffect from "../assets/audio/livechat-129007.mp3";
 import {
   TASK_QUERY,
@@ -7,16 +7,25 @@ import {
   REMOVE_TASK_QUERY,
 } from "../helpers/tasksQueries";
 import { task } from "../types/taskInterface";
+import { counterNotyficationsContext } from "../components/pages/dashboardPage";
 
 
 
-export const useDashTaskListLogic = () => {
+export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAction<number>>) => {
   const [taskList, setTaskList] = useState<task[]>([]);
   const [isWrong, setIsWrong] = useState(false);
+  const counter = useContext(counterNotyficationsContext)
 
   useEffect(() => {
     getTasksFromBackend();
+    
+  
   }, []);
+
+  useEffect(() => {
+    setCounter(taskList.length)
+    
+  }, [taskList])
 
   const signalPlay = () => {
     const signal = new Audio(signalEffect);
@@ -26,6 +35,8 @@ export const useDashTaskListLogic = () => {
   const getTasksFromBackend = async () => {
     await TASK_QUERY().then((res) => {
       setTaskList(res.data.tasks);
+      
+      
     });
   };
 
@@ -42,6 +53,7 @@ export const useDashTaskListLogic = () => {
         } else {
           getTasksFromBackend();
           signalPlay();
+          setCounter(counter + 1)
         }
       }
     );
@@ -63,11 +75,14 @@ export const useDashTaskListLogic = () => {
     );
     getTasksFromBackend();
     signalPlay();
+    
   };
 
   const removeTask = async (taskId: string) => {
     await REMOVE_TASK_QUERY(taskId);
     getTasksFromBackend();
+    
+   
   };
 
   
@@ -79,6 +94,8 @@ export const useDashTaskListLogic = () => {
     removeTask,
     addNewTask,
     editTask,
-    setIsWrong
+    setIsWrong,
+    signalPlay
   };
 };
+

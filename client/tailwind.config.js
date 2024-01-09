@@ -7,7 +7,12 @@ export default {
         "custom-bg-color": "#d5f8ff",
         "custom-bg-nav-color": "#1b0322",
         "custom-btn-color": "rgb(61, 3, 61)",
+        "cutom-not-1": "#20262E",
+        "custom-not-2": "#913175",
+        "custom-not-3": "#CD5888",
+        "custom-not-4": "#E9E8E8",
       },
+
       height: {
         "custom-height-landing-main": "370px",
         "custom-height-landing-plus": "250px",
@@ -16,8 +21,8 @@ export default {
         "custom-height-modal": "525px",
         "custom-height-modal-textarea": "130px",
         "custom-height-modal-inputs": "35px",
-        "custom-height-notyfication-list": '400px'
-        
+        "custom-height-notyfication-list": "400px",
+        "custom-height-counter": "20px",
       },
       width: {
         logo: "30px",
@@ -32,7 +37,8 @@ export default {
         form: "320px",
         modalInputs: "250px",
         modal: "320px",
-        notyfication: "350px"
+        notyfication: "350px",
+        counter: "20px",
       },
       screens: {
         mobile1: { max: "877px" },

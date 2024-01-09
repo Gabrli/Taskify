@@ -9,6 +9,6 @@ export default function ButtonEdit(props: {setIsActive: React.Dispatch<React.Set
            setIsActive(true)
            setCurrentModal("edit_modal")
             
-        }} className="transition duration-700 ease-in-out bg-orange-400 text-white flex items-center gap-1 pl-2 pr-2 pt-1 pb-1 rounded hover:bg-orange-300"><FaEdit/>Edit</button>
+        }} className="transition duration-700 font-semibold ease-in-out bg-orange-400 text-white flex items-center gap-1 pl-2 pr-2 pt-1 pb-1 rounded hover:bg-orange-300"><FaEdit/>Edit</button>
     )
 }

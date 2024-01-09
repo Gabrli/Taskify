@@ -17,7 +17,7 @@ export default function DashTask(props: {
       key={task_id}
       className={`${
         task_id === "00" ? "hidden" : ""
-      } ml-auto mr-auto bg-fuchsia-800 mt-3 bg-opacity-30 p-2 rounded`}
+      }  bg-fuchsia-800 mt-3 bg-opacity-30 p-2 rounded`}
     >
       <TaskHeader name={name} />
       <TaskDescription description={description} />

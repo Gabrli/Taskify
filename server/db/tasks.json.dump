@@ -1,0 +1,23 @@
+
+
+--- DUMP: 1704794809 ---
+<<<<<<< HEAD
+{
+  "7b7b194bfa2d4346bfd01f3f30d60140": {
+    "author": "d033e22ae348aeb5660fc2140aec35850c4da997",
+    "name": "Test",
+    "description": "Test na koncie \"admina\"",
+    "date_start": 1707260400,
+    "date_end": 1707346800
+  },
+  "c1795581bb1147a08311e7e72f377895": {
+    "author": "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3",
+    "name": "Test",
+    "description": "Testowe zadanie nr.1",
+    "date_start": 1704754800,
+    "date_end": 1705186800
+  }
+}
+=======
+{}
+>>>>>>> 3aeb302b2fd50d01f4e2938bc68744676bb5369d

@@ -7,7 +7,8 @@ interface notyfiaction {
     date_end:string,
     progress:number,
     futureDays: number,
-    finishedDays: number
+    finishedDays: number,
+    isStarted: boolean
 }
 
 export type { notyfiaction }

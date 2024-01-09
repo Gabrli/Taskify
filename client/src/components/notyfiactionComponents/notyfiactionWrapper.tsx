@@ -1,6 +1,7 @@
 import Notyfication from "./notyfication";
 import { useNotyficationLogic } from "../../hooks/useNotyficationLogic";
 export default function NotyfiactionWrapper() {
+  
   const { notyfiactions } = useNotyficationLogic();
 
   return (

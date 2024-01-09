@@ -8,7 +8,7 @@ export default function DashboardHeader(props: {
   setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const { isMobile, setCurrentModal, setIsActive, setTheme } =
+  const { isMobile, setCurrentModal, setIsActive, setTheme,  } =
     useDashboardHeaderLogic(props);
 
   return (

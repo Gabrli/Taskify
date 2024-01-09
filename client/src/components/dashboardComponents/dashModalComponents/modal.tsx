@@ -57,7 +57,7 @@ export default function Modal(props: {
   };
 
   return (
-    <form className="h-custom-height-modal bg-fuchsia-800 bg-opacity-45 w-modal rounded">
+    <form className="h-custom-height-modal bg-fuchsia-950 bg-opacity-45 w-modal rounded">
       <header className="pt-6 text-center">
         <h3 className="text-white text-2xl font-semibold">
           {currentModal === "create_modal"

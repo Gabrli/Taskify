@@ -107,3 +107,106 @@
 [09/01/2024 10:37:15] (fe35a7933d22416f9cd7ba289ee0b4eb) [tasks.py.remove_task#104]  Removed task
 =======
 >>>>>>> 3aeb302b2fd50d01f4e2938bc68744676bb5369d
+[09/01/2024 11:09:14] (3c0a783f98ab4a2c8ccbc4e7893b8110) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 11:10:33] (0689ff89518942ff98134620ac45e4d7) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 11:12:00] (0689ff89518942ff98134620ac45e4d7) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 11:12:12] (3c0a783f98ab4a2c8ccbc4e7893b8110) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 11:12:24] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 11:24:08] (aa7bc2cf1dbc4d2497ebf2aeb80fb72b) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 11:25:03] (aa7bc2cf1dbc4d2497ebf2aeb80fb72b) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 11:25:22] (3734e428c10b491c928bb54e4e7ccc3b) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 11:28:07] (3734e428c10b491c928bb54e4e7ccc3b) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 11:28:53] (ab1096e67480469b83d1d257dba8500f) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (adawd)
+[09/01/2024 11:29:53] (ab1096e67480469b83d1d257dba8500f) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 11:33:19] (31675957afc84be5a320336685d488cf) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 14:01:08] (31675957afc84be5a320336685d488cf) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 14:01:24] (779097bc103d4a0d8e0ae70dd029cce4) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 14:41:19] (779097bc103d4a0d8e0ae70dd029cce4) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 14:41:32] (2760e5d49e214d1fafce62414c4393fa) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 14:54:23] (2760e5d49e214d1fafce62414c4393fa) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 14:54:27] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 14:54:39] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 14:54:57] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 14:55:14] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 14:55:26] (74736f84df2a418092ee4200ea0a21d7) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 14:56:12] (7ef53dcdd3304b10bf1c01a6a4079ac5) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 14:58:23] (14c257fb1944460c857c9a19aea27dc8) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 15:04:47] (14c257fb1944460c857c9a19aea27dc8) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:05:07] (6eeec7cd0b244300828bdd959bb9e1aa) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 15:05:57] (7ef53dcdd3304b10bf1c01a6a4079ac5) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:06:09] (05b1f2156d1e43eaaab30398ae09b6ef) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 1)
+[09/01/2024 15:06:49] (05b1f2156d1e43eaaab30398ae09b6ef) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:06:49] (6eeec7cd0b244300828bdd959bb9e1aa) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:08:20] (fe35576364084f8e89fab2a8eacd50ad) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 ()
+[09/01/2024 15:08:27] (fe35576364084f8e89fab2a8eacd50ad) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:08:40] (e635c355e0644f2ab13e2ae836277678) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:09:55] (e635c355e0644f2ab13e2ae836277678) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:10:23] (e635c355e0644f2ab13e2ae836277678) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:10:40] (55d40598295a420fa2eb89fcbdd79f8f) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:11:00] (55d40598295a420fa2eb89fcbdd79f8f) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:11:08] (55d40598295a420fa2eb89fcbdd79f8f) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:11:21] (4ec6b51bf8c148f6a25f7538a63ef810) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:17:36] (4ec6b51bf8c148f6a25f7538a63ef810) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:17:52] (b143c90419d842cb8bfa3956702ec4e6) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:18:06] (b143c90419d842cb8bfa3956702ec4e6) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:19:19] (b143c90419d842cb8bfa3956702ec4e6) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:20:18] (b143c90419d842cb8bfa3956702ec4e6) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:21:40] (2636c4640707425cbf76aa2f77ee856d) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Testd)
+[09/01/2024 15:22:14] (83189e5f91984129883491da5ed43314) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (daw)
+[09/01/2024 15:23:16] (83189e5f91984129883491da5ed43314) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:23:53] (2636c4640707425cbf76aa2f77ee856d) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:24:14] (957a94c4b0474badbd38079594221353) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (da)
+[09/01/2024 15:24:22] (a7b4c7ee28204667a9d475b776434d8e) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (dad)
+[09/01/2024 15:26:05] (a7b4c7ee28204667a9d475b776434d8e) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 15:26:12] (a7b4c7ee28204667a9d475b776434d8e) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:26:38] (957a94c4b0474badbd38079594221353) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:26:39] (b143c90419d842cb8bfa3956702ec4e6) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:40:53] (e9a0004f738f4a638b4fdd6b9f0efe39) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:48:58] (e9a0004f738f4a638b4fdd6b9f0efe39) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:49:08] (d0101285e5a74bf5b6323592b84b628a) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 15:49:42] (e257e4278b04408e980a3079b3bf305e) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (test 2)
+[09/01/2024 15:51:33] (e257e4278b04408e980a3079b3bf305e) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:51:34] (d0101285e5a74bf5b6323592b84b628a) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 15:51:51] (41deeee8bcb44a97bc831207d25ed18b) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test )
+[09/01/2024 17:53:08] (f248407daa7b419aa6c2a4d9570c2571) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Task)
+[09/01/2024 17:55:19] (f248407daa7b419aa6c2a4d9570c2571) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 17:55:28] (2d3021765d574b3785fa4508fae3ef87) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (task)
+[09/01/2024 17:57:02] (2d3021765d574b3785fa4508fae3ef87) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 17:59:41] (2d3021765d574b3785fa4508fae3ef87) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 17:59:53] (681c5d624b3746a98f26d123fe0906bc) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test2)
+[09/01/2024 18:00:07] (685fbda2d9be4630be297016efa45140) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (dawdw)
+[09/01/2024 18:00:20] (685fbda2d9be4630be297016efa45140) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:02:04] (681c5d624b3746a98f26d123fe0906bc) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:02:09] (41deeee8bcb44a97bc831207d25ed18b) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 18:02:59] (b293b783b7524b5cb0f70aa7f1c41a3e) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test2)
+[09/01/2024 18:03:23] (4a486997a276483c953db3b4f686fc0c) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
+[09/01/2024 18:03:44] (b293b783b7524b5cb0f70aa7f1c41a3e) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:04:11] (4a486997a276483c953db3b4f686fc0c) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:04:29] (41deeee8bcb44a97bc831207d25ed18b) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:06:22] (5194c88f716848bba22e2470b91ff0d2) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 18:07:07] (5194c88f716848bba22e2470b91ff0d2) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 18:07:45] (5194c88f716848bba22e2470b91ff0d2) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 18:08:23] (5194c88f716848bba22e2470b91ff0d2) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:09:12] (04780d9c78634106b7b718cf620f5c15) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Tests)
+[09/01/2024 18:09:21] (04780d9c78634106b7b718cf620f5c15) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 18:09:37] (04780d9c78634106b7b718cf620f5c15) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:16:20] (a3507edf677143edb30c7cc647a3765d) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Testt)
+[09/01/2024 18:16:23] (a3507edf677143edb30c7cc647a3765d) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:16:57] (90a3af0125cc4518a6262a82634889cd) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 18:16:59] (90a3af0125cc4518a6262a82634889cd) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:17:12] (11bf0f10739a4fe89d791fa9e2d2cd6a) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 11)
+[09/01/2024 18:22:56] (11bf0f10739a4fe89d791fa9e2d2cd6a) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:24:04] (2dee22c3abb144b686362f625614f290) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 18:26:20] (e07a121728fa46f6ac9ef197f2ca1e07) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Testd)
+[09/01/2024 18:26:23] (e07a121728fa46f6ac9ef197f2ca1e07) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:26:26] (2dee22c3abb144b686362f625614f290) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:27:03] (9e400601dd9641b496dcd735f1960c3b) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (dwa)
+[09/01/2024 18:32:48] (1619f9a66aa94ae4ba1b0c256bb1b952) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Testdaw)
+[09/01/2024 18:32:50] (1619f9a66aa94ae4ba1b0c256bb1b952) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:32:52] (9e400601dd9641b496dcd735f1960c3b) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 18:53:46] (1cbe8dd8b2bb4fc7bac117bece52715e) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
+[09/01/2024 19:02:53] (1cbe8dd8b2bb4fc7bac117bece52715e) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 19:05:16] (1cbe8dd8b2bb4fc7bac117bece52715e) [tasks.py.edit_task#99]  Updated task
+[09/01/2024 19:05:33] (6075eb31a1034bf6b875e6ce4b21bf8f) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Zadanie 2)
+[09/01/2024 19:07:34] (6075eb31a1034bf6b875e6ce4b21bf8f) [tasks.py.remove_task#104]  Removed task
+[09/01/2024 19:07:35] (1cbe8dd8b2bb4fc7bac117bece52715e) [tasks.py.remove_task#104]  Removed task

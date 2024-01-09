@@ -7,6 +7,7 @@ export const useDashboardHeaderLogic = (props: {
 }) => {
   const { setTheme, setCurrentModal, setIsActive } = props;
   const [isMobile, setIsMobile] = useState(false);
+  
 
   useEffect(() => {
     const getCurrentClientWidth = () => {
@@ -26,5 +27,6 @@ export const useDashboardHeaderLogic = (props: {
     setCurrentModal,
     setIsActive,
     setTheme,
+   
   };
 };
