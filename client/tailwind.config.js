@@ -16,6 +16,8 @@ export default {
         "custom-height-modal": "525px",
         "custom-height-modal-textarea": "130px",
         "custom-height-modal-inputs": "35px",
+        "custom-height-notyfication-list": '400px'
+        
       },
       width: {
         logo: "30px",
@@ -30,6 +32,7 @@ export default {
         form: "320px",
         modalInputs: "250px",
         modal: "320px",
+        notyfication: "350px"
       },
       screens: {
         mobile1: { max: "877px" },

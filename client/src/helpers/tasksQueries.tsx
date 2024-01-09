@@ -4,8 +4,14 @@ import { userId } from "../auth/checkingIDFromDB";
 export const TASK_QUERY = async () => {
   return await axios.post("http://127.0.0.1:8000/tasks/getAll", {
     uid: userId,
-  });
+  })
 };
+
+export const NOTYFICATION_TASK_QUERY = async () => {
+  return await axios.post("http://127.0.0.1:8000/tasks/getAll", {
+    uid: userId
+  })
+}
 
 export const ADD_TASK_QUERY = async (
   taskName: string,
@@ -19,7 +25,7 @@ export const ADD_TASK_QUERY = async (
     description:taskDescryption,
     date_start: dateStart,
     date_end: dateEnd
-  });
+  })
   
 };
 

@@ -19,8 +19,10 @@ export default function DashboardModal(props: {
     taskId: string
   ) => void;
   task: task;
+ 
+  setIsWorng: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, currentModal, addNewTask, editTask, task } = props;
+  const { setIsActive, currentModal, addNewTask, editTask, task, setIsWorng, } = props;
 
 
 
@@ -34,6 +36,8 @@ export default function DashboardModal(props: {
         editTask={editTask}
         addNewTask={addNewTask}
         setIsActive={setIsActive}
+        
+        setIsWrong={setIsWorng}
       />
     </div>
   );

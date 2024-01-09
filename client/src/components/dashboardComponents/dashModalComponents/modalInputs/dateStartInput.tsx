@@ -12,6 +12,7 @@ export default function DateStartInput(props: {
       value={state}
       onChange={(e) => {
         setState(e.target.value);
+        
       }}
     />
   );

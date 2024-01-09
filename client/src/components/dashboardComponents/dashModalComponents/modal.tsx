@@ -22,9 +22,10 @@ export default function Modal(props: {
     dateEnd: string,
     taskId: string
   ) => void;
-  task: task;
+  task: task,
+  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, currentModal, addNewTask, editTask, task } = props;
+  const { setIsActive, currentModal, addNewTask, editTask, task,   } = props;
   const { task_id, name, description, date_start, date_end } = task;
 
   const [taskName, setTaskName] = useState("");
@@ -40,6 +41,8 @@ export default function Modal(props: {
     setDateStart(date_start);
     setDateEnd(date_end);
   }, []);
+
+  
 
   const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
@@ -65,7 +68,7 @@ export default function Modal(props: {
         >
           Task name:
         </label>
-        <TaskNameInput state={taskName} setState={setTaskName} />
+        <TaskNameInput   state={taskName} setState={setTaskName} />
         <label
           htmlFor="task_textarea_input"
           className="text-white mr-auto pl-3 font-semibold"
