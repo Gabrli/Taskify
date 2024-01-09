@@ -1,6 +1,8 @@
 <h1>Taskfiy - Inteligent task planner </h1>
 
 ---
+# ABOUT PROJECT :bulb: : 
+- <h3>:hammer: Why did we build this project ?</h3> Our motivation we found in the problem while planing our tasks. We needed something that would plan and calculate stages of our tasks for us.
 
 # LIVE:
 
