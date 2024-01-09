@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [30/12/2023 16:36:24] (127.0.0.1:65237) [api.py.register#87]  <True> Created account.
 [30/12/2023 16:38:17] (127.0.0.1:65319) [api.py.login#68]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [30/12/2023 16:39:18] (127.0.0.1:65360) [api.py.login#68]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
@@ -6240,3 +6241,5 @@
 [09/01/2024 10:37:11] (127.0.0.1:57578) [api.py.get_all_tasks#179]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [09/01/2024 10:37:15] (127.0.0.1:57578) [api.py.remove_task#168]  <True> Removed task: fe35a7933d22416f9cd7ba289ee0b4eb for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [09/01/2024 10:37:15] (127.0.0.1:57580) [api.py.get_all_tasks#179]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+=======
+>>>>>>> 3aeb302b2fd50d01f4e2938bc68744676bb5369d

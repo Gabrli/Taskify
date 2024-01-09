@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [30/12/2023 16:33:31] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'username', 'password', 'email'} file=./db/users.json>
 [30/12/2023 16:33:31] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'date_end', 'author', 'date_start', 'description', 'name'} file=./db/tasks.json>
 [30/12/2023 17:11:34] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'username', 'password', 'email'} file=./db/users.json>
@@ -113,3 +114,5 @@
 [09/01/2024 10:04:23] (tasks) [database.py.get#308]  (tasks) KeyNotFound: 174b079a82ea4d8b8b9423e127fdefd1
 [09/01/2024 10:21:28] (tasks) [database.py.get#308]  (tasks) KeyNotFound: 4915d06ea0c44bfcb6fb8cf6699cbdc7
 [09/01/2024 10:34:48] (tasks) [database.py.get#308]  (tasks) KeyNotFound: 3a7ee53aa2a945f9847a10bb05e7162d
+=======
+>>>>>>> 3aeb302b2fd50d01f4e2938bc68744676bb5369d

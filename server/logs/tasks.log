@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [02/01/2024 16:54:06] (381d2ac4ff4d491db9c9e91d8a9d2df1) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test)
 [02/01/2024 17:03:31] (381d2ac4ff4d491db9c9e91d8a9d2df1) [tasks.py.edit_task#99]  Updated task
 [02/01/2024 17:04:24] (381d2ac4ff4d491db9c9e91d8a9d2df1) [tasks.py.edit_task#99]  Updated task
@@ -104,3 +105,5 @@
 [09/01/2024 10:36:53] (fe35a7933d22416f9cd7ba289ee0b4eb) [tasks.py.create_task#53]  Created task for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 (Test 2)
 [09/01/2024 10:37:08] (fe35a7933d22416f9cd7ba289ee0b4eb) [tasks.py.edit_task#99]  Updated task
 [09/01/2024 10:37:15] (fe35a7933d22416f9cd7ba289ee0b4eb) [tasks.py.remove_task#104]  Removed task
+=======
+>>>>>>> 3aeb302b2fd50d01f4e2938bc68744676bb5369d

@@ -3,6 +3,7 @@ from fastapi.responses import JSONResponse
 from fastapi import FastAPI, Request
 
 from models import request_models
+from modules import timestamp
 from modules import database
 from modules import users
 from modules import tasks
@@ -123,6 +124,14 @@ async def change_password(data: request_models.M_ChangeAccountPassword, request:
 @api.post("/tasks/create")
 @users.validate_user_id
 async def create_task(data: request_models.M_CreateTask, request: Request) -> JSONResponse:
+    if timestamp.read_input_date(data.date_start) > timestamp.read_input_date(data.date_end):
+        return generate_response_and_log(
+            request,
+            False,
+            f"Cannot create task for: {data.uid} (date_end < date_start)",
+            "Invalid task's start and end dates."
+        )
+    
     task = tasks.Task.create_task(data.uid, data.name, data.description, data.date_start, data.date_end)
     if not task:
         return generate_response_and_log(
@@ -131,7 +140,6 @@ async def create_task(data: request_models.M_CreateTask, request: Request) -> JS
             f"Cannot create task for: {data.uid} (task name taken)",
             "Task's name already in use."
         )
-
 
     return generate_response_and_log(
         request,
