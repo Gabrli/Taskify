@@ -34,29 +34,30 @@ export const useNotyficationLogic = () => {
   const calculations = (
     dateStart: string,
     dateEnd: string,
-    isStarted: boolean,
-    
+    isStarted: boolean
   ) => {
     const startDate: Date = new Date(dateStart);
     const endDate: Date = new Date(dateEnd);
-
     const currentDate: Date = new Date();
+    const diffDays: number = Math.ceil(
+      (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
+    );
+    const timeDifferencePassed: number =
+      currentDate.getTime() - startDate.getTime();
+
+    let mustToDoResult: number;
+    let progress: number;
+    let futureDays: number;
+    let finishedDays: number;
+    let timeDifferenceFuture: number;
 
     if (startDate <= currentDate) {
       isStarted = true;
       if (currentDate >= endDate) {
-        
-        const diffDays: number = Math.ceil(
-          (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
-        );
-        const timeDifferencePassed: number =
-          currentDate.getTime() - startDate.getTime();
-        const mustToDoResult = 0;
-        const futureDays = 0;
-        const finishedDays = Math.floor(
-          timeDifferencePassed / (1000 * 60 * 60 * 24)
-        );
-        const progress = Math.round((finishedDays / diffDays) * 100);
+        mustToDoResult = 0;
+        futureDays = 0;
+        finishedDays = Math.floor(timeDifferencePassed / (1000 * 60 * 60 * 24));
+        progress = 100;
         return {
           mustToDoResult,
           futureDays,
@@ -65,22 +66,12 @@ export const useNotyficationLogic = () => {
           isStarted,
         };
       } else {
-        const diffDays: number = Math.ceil(
-          (endDate.getTime() - startDate.getTime()) / (1000 * 60 * 60 * 24)
-        );
+        mustToDoResult = Math.round((1 / diffDays) * 100);
+        timeDifferenceFuture = endDate.getTime() - currentDate.getTime();
 
-        const mustToDoResult: number = Math.round((1 / diffDays) * 100);
-        const timeDifferenceFuture: number =
-          endDate.getTime() - currentDate.getTime();
-        const timeDifferencePassed: number =
-          currentDate.getTime() - startDate.getTime();
-        const finishedDays = Math.floor(
-          timeDifferencePassed / (1000 * 60 * 60 * 24)
-        );
-        const futureDays = Math.ceil(
-          timeDifferenceFuture / (1000 * 60 * 60 * 24)
-        );
-        const progress = Math.round((finishedDays / diffDays) * 100);
+        finishedDays = Math.floor(timeDifferencePassed / (1000 * 60 * 60 * 24));
+        futureDays = Math.ceil(timeDifferenceFuture / (1000 * 60 * 60 * 24));
+        progress = Math.round((finishedDays / diffDays) * 100);
         return {
           mustToDoResult,
           progress,
@@ -91,15 +82,11 @@ export const useNotyficationLogic = () => {
       }
     } else {
       isStarted = false;
-      const timeDifferenceFuture: number =
-        startDate.getTime() - currentDate.getTime();
-      const futureDays = Math.ceil(
-        timeDifferenceFuture / (1000 * 60 * 60 * 24)
-      );
-      const progress = 0;
-      const finishedDays = 0;
-      const mustToDoResult = 0;
-      console.log(futureDays)
+      timeDifferenceFuture = startDate.getTime() - currentDate.getTime();
+      futureDays = Math.ceil(timeDifferenceFuture / (1000 * 60 * 60 * 24));
+      progress = 0;
+      finishedDays = 0;
+      mustToDoResult = 0;
 
       return {
         futureDays,
@@ -107,7 +94,6 @@ export const useNotyficationLogic = () => {
         finishedDays,
         mustToDoResult,
         isStarted,
-      
       };
     }
   };
@@ -117,12 +103,7 @@ export const useNotyficationLogic = () => {
       const { date_start, date_end, name } = task;
       let isStarted = false;
 
-      const calculationsFun = calculations(
-        date_start,
-        date_end,
-        isStarted,
-        
-      );
+      const calculationsFun = calculations(date_start, date_end, isStarted);
       const procent = calculationsFun.mustToDoResult;
       const finishedDays = calculationsFun.finishedDays;
       const futureDays = calculationsFun.futureDays;
@@ -138,7 +119,6 @@ export const useNotyficationLogic = () => {
         futureDays: futureDays,
         progress: progress,
         isStarted: calculationsFun.isStarted,
-        
       };
 
       return newNotyfication;

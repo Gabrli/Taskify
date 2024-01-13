@@ -24,11 +24,11 @@ export const useFormLogic = () => {
 
     if (currentLocation === "/login") {
       await LOGIN_FORM_QUERY(username, password).then((res) =>
-        checkingIDFromDb(res.data.uid, navigate)
+        checkingIDFromDb(res.data.uid, navigate, username)
       );
     } else {
       await REGISTER_FORM_QUERY(username, mail, hashedPassword).then((res) => {
-        checkingIDFromDb(res.data.uid, navigate);
+        checkingIDFromDb(res.data.uid, navigate, username);
       });
     }
   };
