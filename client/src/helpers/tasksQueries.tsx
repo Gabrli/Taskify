@@ -3,13 +3,13 @@ import { userId } from "../auth/checkingIDFromDB";
 
 export const TASK_QUERY = async () => {
   return await axios.post("http://127.0.0.1:8000/tasks/getAll", {
-    uid: userId,
+    uid: userId.id,
   })
 };
 
 export const NOTYFICATION_TASK_QUERY = async () => {
   return await axios.post("http://127.0.0.1:8000/tasks/getAll", {
-    uid: userId
+    uid: userId.id,
   })
 }
 
@@ -21,7 +21,7 @@ export const ADD_TASK_QUERY = async (
  
 ) => {
   return await axios.post("http://127.0.0.1:8000/tasks/create", {
-    uid: userId,
+    uid: userId.id,
     name: taskName,
     description:taskDescryption,
     date_start: dateStart,
@@ -38,7 +38,7 @@ export const EDIT_TASK_QUERY = async (taskName: string,
 
       return await axios
       .post("http://127.0.0.1:8000/tasks/edit", {
-        uid: userId,
+        uid: userId.id,
         task_id: taskId,
         name: taskName,
         description: taskDescryption,
@@ -50,7 +50,7 @@ export const EDIT_TASK_QUERY = async (taskName: string,
 export const REMOVE_TASK_QUERY = async (taskId: string) => {
    return await axios
    .post("http://127.0.0.1:8000/tasks/remove", {
-     uid: userId,
+     uid: userId.id,
      task_id: taskId,
    })
 }

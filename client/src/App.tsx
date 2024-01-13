@@ -4,6 +4,7 @@ import PrivateRoute from "./auth/privateRoute"
 import DashboardPage from "./components/pages/dashboardPage"
 import { Routes, Route } from 'react-router-dom'
 import RegisterPage from "./components/pages/registerPage"
+import AccountPage from "./components/pages/accountPage"
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
       <Route path="/register" element={<RegisterPage/>}/>
       <Route element={<PrivateRoute/>}>
         <Route element={<DashboardPage/>} path="/dashboard"/>
-        
+        <Route element={<AccountPage/>} path="/account"/>
       </Route>
      </Routes>
     </>

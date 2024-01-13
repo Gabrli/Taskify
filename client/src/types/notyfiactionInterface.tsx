@@ -8,7 +8,8 @@ interface notyfiaction {
     progress:number,
     futureDays: number,
     finishedDays: number,
-    isStarted: boolean
+    isStarted: boolean | undefined,
+    
 }
 
 export type { notyfiaction }

@@ -6865,3 +6865,399 @@
 [09/01/2024 19:07:34] (127.0.0.1:55644) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [09/01/2024 19:07:35] (127.0.0.1:55644) [api.py.remove_task#176]  <True> Removed task: 1cbe8dd8b2bb4fc7bac117bece52715e for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [09/01/2024 19:07:35] (127.0.0.1:55644) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:48:38] (127.0.0.1:56200) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:48:38] (127.0.0.1:56200) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:48:38] (127.0.0.1:56201) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:49:07] (127.0.0.1:56205) [api.py.create_task#144]  <True> Task created: 10e3f1ad76de427a9e3c5d5019bd0a80 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:49:07] (127.0.0.1:56205) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:49:14] (127.0.0.1:56206) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:49:14] (127.0.0.1:56208) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:11] (127.0.0.1:56210) [api.py.create_task#144]  <True> Task created: ec7977a0935d467dac71992d8649dd38 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:11] (127.0.0.1:56210) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:15] (127.0.0.1:56210) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:15] (127.0.0.1:56212) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:19] (127.0.0.1:56212) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:19] (127.0.0.1:56210) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:37] (127.0.0.1:56216) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:50:37] (127.0.0.1:56217) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:01] (127.0.0.1:56220) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:01] (127.0.0.1:56221) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:17] (127.0.0.1:56222) [api.py.edit_task#163]  <True> Edited task: ec7977a0935d467dac71992d8649dd38 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:18] (127.0.0.1:56222) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:19] (127.0.0.1:56222) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:19] (127.0.0.1:56223) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:27] (127.0.0.1:56224) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:27] (127.0.0.1:56225) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:45] (127.0.0.1:56227) [api.py.remove_task#176]  <True> Removed task: ec7977a0935d467dac71992d8649dd38 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:45] (127.0.0.1:56227) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:46] (127.0.0.1:56227) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:46] (127.0.0.1:56228) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:47] (127.0.0.1:56228) [api.py.remove_task#176]  <True> Removed task: 10e3f1ad76de427a9e3c5d5019bd0a80 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:51:47] (127.0.0.1:56228) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:14] (127.0.0.1:56242) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:14] (127.0.0.1:56242) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:14] (127.0.0.1:56243) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:24] (127.0.0.1:56245) [api.py.create_task#144]  <True> Task created: 6655c3ff164742c9a4e2480981e93aa5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:24] (127.0.0.1:56245) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:26] (127.0.0.1:56245) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:26] (127.0.0.1:56247) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:40] (127.0.0.1:56258) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:40] (127.0.0.1:56258) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:40] (127.0.0.1:56259) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:52:50] (127.0.0.1:56267) [api.py.login#54]  <False> Login for: admin failed (invalid username)
+[09/01/2024 19:52:51] (127.0.0.1:56267) [api.py.login#54]  <False> Login for: admin failed (invalid username)
+[09/01/2024 19:53:01] (127.0.0.1:56276) [api.py.register#88]  <True> Created account.
+[09/01/2024 19:53:01] (127.0.0.1:56276) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:01] (127.0.0.1:56277) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:12] (127.0.0.1:56278) [api.py.create_task#144]  <True> Task created: 82f3eba8001e444e9d23a8d2b0d83765 for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:12] (127.0.0.1:56278) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:15] (127.0.0.1:56278) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:15] (127.0.0.1:56280) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:25] (127.0.0.1:56288) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:53:25] (127.0.0.1:56288) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:53:25] (127.0.0.1:56289) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:53:34] (127.0.0.1:56297) [api.py.login#69]  <True> Successful login for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:34] (127.0.0.1:56297) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:34] (127.0.0.1:56298) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:37] (127.0.0.1:56298) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:37] (127.0.0.1:56297) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:40] (127.0.0.1:56297) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:40] (127.0.0.1:56298) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:46] (127.0.0.1:56303) [api.py.remove_task#176]  <True> Removed task: 82f3eba8001e444e9d23a8d2b0d83765 for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:46] (127.0.0.1:56303) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: d033e22ae348aeb5660fc2140aec35850c4da997
+[09/01/2024 19:53:56] (127.0.0.1:56311) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:53:56] (127.0.0.1:56311) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:53:56] (127.0.0.1:56312) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:00] (127.0.0.1:56312) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:00] (127.0.0.1:56311) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:11] (127.0.0.1:56314) [api.py.edit_task#163]  <True> Edited task: 6655c3ff164742c9a4e2480981e93aa5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:11] (127.0.0.1:56314) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:13] (127.0.0.1:56314) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[09/01/2024 19:54:13] (127.0.0.1:56316) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:03] (127.0.0.1:57908) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:04] (127.0.0.1:57908) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:04] (127.0.0.1:57910) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:06] (127.0.0.1:57910) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:06] (127.0.0.1:57908) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:20] (127.0.0.1:57913) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:20] (127.0.0.1:57914) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:27] (127.0.0.1:57916) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:39:27] (127.0.0.1:57917) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:54:40] (127.0.0.1:58333) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:54:40] (127.0.0.1:58333) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:54:40] (127.0.0.1:58335) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:55:50] (127.0.0.1:58358) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:55:50] (127.0.0.1:58358) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:55:50] (127.0.0.1:58359) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:56:33] (127.0.0.1:58400) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:56:33] (127.0.0.1:58400) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:56:33] (127.0.0.1:58401) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:57:00] (127.0.0.1:58433) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:57:00] (127.0.0.1:58433) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:57:00] (127.0.0.1:58434) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:58:44] (127.0.0.1:58552) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:58:44] (127.0.0.1:58552) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:58:44] (127.0.0.1:58553) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:21] (127.0.0.1:58598) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:21] (127.0.0.1:58598) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:21] (127.0.0.1:58599) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:58] (127.0.0.1:58639) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:58] (127.0.0.1:58639) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 17:59:58] (127.0.0.1:58640) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:13:09] (127.0.0.1:59156) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:13:09] (127.0.0.1:59157) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:13:09] (127.0.0.1:59156) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:14:45] (127.0.0.1:59231) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:14:45] (127.0.0.1:59231) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[10/01/2024 18:14:45] (127.0.0.1:59232) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:32] (127.0.0.1:52413) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:33] (127.0.0.1:52413) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:33] (127.0.0.1:52416) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:35] (127.0.0.1:52416) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:35] (127.0.0.1:52413) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:44] (127.0.0.1:52419) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:45:44] (127.0.0.1:52420) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:51:39] (127.0.0.1:52567) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:51:39] (127.0.0.1:52567) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:51:39] (127.0.0.1:52568) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:53:58] (127.0.0.1:52625) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:53:58] (127.0.0.1:52625) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:53:58] (127.0.0.1:52626) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:56:40] (127.0.0.1:52675) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:56:41] (127.0.0.1:52675) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 16:56:41] (127.0.0.1:52677) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:02:47] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:02:47] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:02:53] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:02:54] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:09:27] (127.0.0.1:53357) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:09:27] (127.0.0.1:53357) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:09:27] (127.0.0.1:53359) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:12:38] (127.0.0.1:53499) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:12:38] (127.0.0.1:53499) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:12:38] (127.0.0.1:53499) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:16:32] (127.0.0.1:53672) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:18:04] (127.0.0.1:53768) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:18:42] (127.0.0.1:53809) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:21:04] (127.0.0.1:53889) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:21:30] (127.0.0.1:53890) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:21:52] (127.0.0.1:53937) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:22:27] (127.0.0.1:53963) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:22:49] (127.0.0.1:53981) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:23:36] (127.0.0.1:54020) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:24:23] (127.0.0.1:54050) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:25:32] (127.0.0.1:54089) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:27:14] (127.0.0.1:54168) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:28:07] (127.0.0.1:54199) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:30:04] (127.0.0.1:54278) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:30:04] (127.0.0.1:54278) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:30:04] (127.0.0.1:54279) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:31:58] (127.0.0.1:54367) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:31:58] (127.0.0.1:54367) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:31:58] (127.0.0.1:54368) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:34:16] (127.0.0.1:54525) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:34:36] (127.0.0.1:54544) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:34:36] (127.0.0.1:54544) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:34:36] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:41] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:41] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:54] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:54] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:55] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:34:55] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:05] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:05] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:06] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:06] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:16] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:16] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:26] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:26] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:28] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:28] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:29] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:29] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:33] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:33] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:36] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:35:36] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:01] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:01] ([object Object]) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:11] (127.0.0.1:54657) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:36:11] (127.0.0.1:54657) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:36:11] (127.0.0.1:54658) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:36:15] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:15] (127.0.0.1:54657) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:36:26] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:26] (127.0.0.1:54682) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[12/01/2024 17:36:31] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[12/01/2024 17:36:31] (127.0.0.1:54680) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:55:58] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 08:55:58] (127.0.0.1:55983) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:02] (127.0.0.1:55983) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:02] (127.0.0.1:55981) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:28] (127.0.0.1:55995) [api.py.edit_task#163]  <True> Edited task: 6655c3ff164742c9a4e2480981e93aa5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:28] (127.0.0.1:55995) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:30] (127.0.0.1:55995) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:56:30] (127.0.0.1:55996) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:14] (127.0.0.1:56009) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:14] (127.0.0.1:56010) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:32] (127.0.0.1:56012) [api.py.edit_task#163]  <True> Edited task: 6655c3ff164742c9a4e2480981e93aa5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:32] (127.0.0.1:56012) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:34] (127.0.0.1:56012) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:57:34] (127.0.0.1:56013) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:22] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:24] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:27] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:31] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:35] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:58:38] (127.0.0.1:56044) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 08:59:35] (127.0.0.1:56091) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:00:01] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:00:01] (127.0.0.1:56107) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:00:04] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:00:04] (127.0.0.1:56106) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:00:06] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:00:06] (127.0.0.1:56107) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:05:33] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:05:33] (127.0.0.1:56222) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:05:39] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:05:39] (127.0.0.1:56233) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:04] (127.0.0.1:56364) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:04] (127.0.0.1:56366) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:06] (127.0.0.1:56366) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:06] (127.0.0.1:56364) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:18] (127.0.0.1:56375) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:18] (127.0.0.1:56375) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:18] (127.0.0.1:56376) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:21] (127.0.0.1:56375) [api.py.remove_task#176]  <True> Removed task: 6655c3ff164742c9a4e2480981e93aa5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:21] (127.0.0.1:56375) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:22] (127.0.0.1:56375) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:22] (127.0.0.1:56376) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:38] (127.0.0.1:56379) [api.py.create_task#144]  <True> Task created: 84e9ae8e73bb481ea54a56947fa61751 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:38] (127.0.0.1:56379) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:40] (127.0.0.1:56379) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:40] (127.0.0.1:56380) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:55] (127.0.0.1:56382) [api.py.edit_task#163]  <True> Edited task: 84e9ae8e73bb481ea54a56947fa61751 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:55] (127.0.0.1:56382) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:58] (127.0.0.1:56382) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:10:58] (127.0.0.1:56383) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:11:46] (127.0.0.1:56388) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:11:46] (127.0.0.1:56389) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:11:49] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:11:49] (127.0.0.1:56388) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:11:50] (127.0.0.1:56388) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:11:50] (127.0.0.1:56389) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:28] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:14:28] (127.0.0.1:56453) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:29] (127.0.0.1:56453) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:29] (127.0.0.1:56452) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:32] (127.0.0.1:56452) [api.py.remove_task#176]  <True> Removed task: 84e9ae8e73bb481ea54a56947fa61751 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:32] (127.0.0.1:56452) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:46] (127.0.0.1:56455) [api.py.create_task#144]  <True> Task created: ddbd385e03e048d28c0b8a27ee71b559 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:46] (127.0.0.1:56455) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:47] (127.0.0.1:56455) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:14:47] (127.0.0.1:56457) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:15:49] (127.0.0.1:56478) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:15:49] (127.0.0.1:56479) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:38] (127.0.0.1:56497) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:38] (127.0.0.1:56498) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:52] (127.0.0.1:56499) [api.py.edit_task#163]  <True> Edited task: ddbd385e03e048d28c0b8a27ee71b559 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:52] (127.0.0.1:56499) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:53] (127.0.0.1:56499) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:16:53] (127.0.0.1:56500) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:12] (127.0.0.1:56507) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:31] (127.0.0.1:56520) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:31] (127.0.0.1:56520) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:31] (127.0.0.1:56521) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:36] (127.0.0.1:56522) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:36] (127.0.0.1:56523) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:54] (127.0.0.1:56533) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:18:56] (127.0.0.1:56533) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:07] (127.0.0.1:56540) [api.py.edit_task#163]  <True> Edited task: ddbd385e03e048d28c0b8a27ee71b559 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:07] (127.0.0.1:56540) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:08] (127.0.0.1:56540) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:08] (127.0.0.1:56541) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:35] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:19:35] (127.0.0.1:56563) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:36] (127.0.0.1:56563) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:36] (127.0.0.1:56562) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:44] (127.0.0.1:56568) [api.py.edit_task#163]  <True> Edited task: ddbd385e03e048d28c0b8a27ee71b559 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:44] (127.0.0.1:56568) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:46] (127.0.0.1:56568) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:46] (127.0.0.1:56571) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:58] (127.0.0.1:56577) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:19:58] (127.0.0.1:56578) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:03] (127.0.0.1:56589) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:03] (127.0.0.1:56589) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:03] (127.0.0.1:56590) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:07] (127.0.0.1:56590) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:07] (127.0.0.1:56592) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:24] (127.0.0.1:56608) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:20:24] (127.0.0.1:56609) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:25:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 09:25:23] (127.0.0.1:56823) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:25:24] (127.0.0.1:56823) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 09:25:24] (127.0.0.1:56822) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:35] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 10:44:35] (127.0.0.1:57626) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:38] (127.0.0.1:57626) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:38] (127.0.0.1:57624) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:41] (127.0.0.1:57626) [api.py.remove_task#176]  <True> Removed task: ddbd385e03e048d28c0b8a27ee71b559 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:41] (127.0.0.1:57626) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:51] (127.0.0.1:57628) [api.py.create_task#144]  <True> Task created: a3966125b6da4b2e82cb08340397180b for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:51] (127.0.0.1:57628) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:53] (127.0.0.1:57628) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:44:53] (127.0.0.1:57629) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:25] (127.0.0.1:57639) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:33] (127.0.0.1:57644) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:38] (127.0.0.1:57644) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:46] (127.0.0.1:57649) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:55] (127.0.0.1:57653) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:45:59] (127.0.0.1:57653) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:01] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 10:46:01] (127.0.0.1:57661) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:02] (127.0.0.1:57661) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:02] (127.0.0.1:57653) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:04] (127.0.0.1:57653) [api.py.remove_task#176]  <True> Removed task: a3966125b6da4b2e82cb08340397180b for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:04] (127.0.0.1:57653) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:14] (127.0.0.1:57662) [api.py.create_task#144]  <True> Task created: 6ad58267f04d4a149b1f912ade7322cf for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:14] (127.0.0.1:57662) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:15] (127.0.0.1:57662) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:15] (127.0.0.1:57664) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:46:56] (127.0.0.1:57668) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:47:52] (127.0.0.1:57671) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:14] (127.0.0.1:57674) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:19] (127.0.0.1:57674) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:29] (127.0.0.1:57680) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:29] (127.0.0.1:57680) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:29] (127.0.0.1:57681) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:30] (127.0.0.1:57681) [api.py.remove_task#176]  <True> Removed task: 6ad58267f04d4a149b1f912ade7322cf for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:30] (127.0.0.1:57681) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:39] (127.0.0.1:57683) [api.py.create_task#144]  <True> Task created: 996ff8a5142c4201b5db1eddf1aac3b1 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:39] (127.0.0.1:57683) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:40] (127.0.0.1:57683) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:40] (127.0.0.1:57685) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:50] (127.0.0.1:57686) [api.py.remove_task#176]  <True> Removed task: 996ff8a5142c4201b5db1eddf1aac3b1 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:48:50] (127.0.0.1:57686) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:49:00] (127.0.0.1:57688) [api.py.create_task#144]  <True> Task created: e6f33081e12d40c789290246b707aa2e for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:49:00] (127.0.0.1:57688) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:49:01] (127.0.0.1:57688) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:49:01] (127.0.0.1:57689) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:01] (127.0.0.1:57700) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:11] (127.0.0.1:57704) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:13] (127.0.0.1:57704) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:24] (127.0.0.1:57709) [api.py.edit_task#163]  <True> Edited task: e6f33081e12d40c789290246b707aa2e for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:24] (127.0.0.1:57709) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:26] (127.0.0.1:57709) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:26] (127.0.0.1:57710) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:33] (127.0.0.1:57713) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:52] (127.0.0.1:57715) [api.py.remove_task#176]  <True> Removed task: e6f33081e12d40c789290246b707aa2e for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:50:52] (127.0.0.1:57715) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:51:26] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 10:51:26] (127.0.0.1:57729) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:22] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 10:55:22] (127.0.0.1:57813) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:30] (127.0.0.1:57814) [api.py.create_task#144]  <True> Task created: f3fe0b79be8e44afb681a1b287a485db for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:31] (127.0.0.1:57814) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:32] (127.0.0.1:57814) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:32] (127.0.0.1:57815) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:36] (127.0.0.1:57814) [api.py.remove_task#176]  <True> Removed task: f3fe0b79be8e44afb681a1b287a485db for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:36] (127.0.0.1:57814) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:45] (127.0.0.1:57817) [api.py.create_task#144]  <True> Task created: b0b0532b471d402b8346865ad4e45b76 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:45] (127.0.0.1:57817) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:47] (127.0.0.1:57817) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:55:47] (127.0.0.1:57818) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:56:27] (127.0.0.1:57831) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:57:06] (127.0.0.1:57861) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 10:57:12] (127.0.0.1:57867) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:04] (127.0.0.1:57944) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:04] (127.0.0.1:57944) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:04] (127.0.0.1:57945) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:07] (127.0.0.1:57944) [api.py.remove_task#176]  <True> Removed task: b0b0532b471d402b8346865ad4e45b76 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:07] (127.0.0.1:57944) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:19] (127.0.0.1:57947) [api.py.create_task#144]  <True> Task created: 3cf4b38e4c1f40a5a50bc8103a0070b7 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:19] (127.0.0.1:57947) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:23] (127.0.0.1:57947) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:23] (127.0.0.1:57946) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:24] (127.0.0.1:57946) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:24] (127.0.0.1:57947) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:38] (127.0.0.1:57954) [api.py.edit_task#163]  <True> Edited task: 3cf4b38e4c1f40a5a50bc8103a0070b7 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:38] (127.0.0.1:57954) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:40] (127.0.0.1:57954) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:00:40] (127.0.0.1:57955) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:01:18] (127.0.0.1:57962) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:01:34] (127.0.0.1:57973) [api.py.edit_task#163]  <True> Edited task: 3cf4b38e4c1f40a5a50bc8103a0070b7 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:01:34] (127.0.0.1:57973) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:01:36] (127.0.0.1:57973) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:01:36] (127.0.0.1:57975) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:02:21] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[13/01/2024 11:02:21] (127.0.0.1:58013) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:08] (127.0.0.1:58038) [api.py.create_task#144]  <True> Task created: 4816532c5ad244eabc7a2142192265bc for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:08] (127.0.0.1:58038) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:10] (127.0.0.1:58038) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:10] (127.0.0.1:58041) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:35] (127.0.0.1:58053) [api.py.remove_task#176]  <True> Removed task: 4816532c5ad244eabc7a2142192265bc for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:35] (127.0.0.1:58053) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:36] (127.0.0.1:58053) [api.py.remove_task#176]  <True> Removed task: 3cf4b38e4c1f40a5a50bc8103a0070b7 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[13/01/2024 11:03:36] (127.0.0.1:58053) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3

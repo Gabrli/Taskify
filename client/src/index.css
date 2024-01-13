@@ -67,7 +67,9 @@
   background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
 }
  
-
+.account_page{
+  background: linear-gradient(to left, var(--bg-color1), var(--bg-color2), var(--bg-color3));
+}
 .footer_box{
   background: linear-gradient(to right, var(--bg-footer1), var(--bg-footer2), var(--bg-footer3));
   

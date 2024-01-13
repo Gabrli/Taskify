@@ -1,16 +1,18 @@
 import { NavigateFunction } from "react-router";
 import { authToken } from "./token";
-let userId: string;
-export const checkingIDFromDb = (id:string, navigate: NavigateFunction) => {
+const userId = {id: ""}
+export const checkingIDFromDb = (id: string, navigate: NavigateFunction) => {
+  console.log(id)
+  if (id) {
+    authToken.token = true;
+    userId.id = id;
+    localStorage.setItem("token", `${authToken.token}`)
+    localStorage.setItem("uid", `${userId.id}`)
+    navigate("/dashboard");
     
-    if (id) {
-        authToken.token = true;
-        userId = id
-        navigate("/dashboard");
-        console.log(userId)
-      } else {
-        authToken.token = false;
-    }
-}
+  } else {
+    authToken.token = false;
+  }
+};
 
-export { userId }
+export { userId };
