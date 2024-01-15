@@ -93,6 +93,18 @@ async def register(data: request_models.M_CreateAccount, request: Request) -> JS
         additional_data={"uid": account.db_key}
     )
 
+@api.get("/accounts/getAllNames")
+async def get_all_names(request: Request) -> JSONResponse:
+    names = [model.username for model in database.users_db.get_all_models()]
+    return generate_response_and_log(
+        request,
+        True,
+        f"Passing all {len(names)} usernames.",
+        additional_data = {
+            "names": names
+        }
+    )
+
 @api.post("/accounts/delete")
 @users.validate_user_id
 async def delete_account(data: request_models.M_DeleteAccount, request: Request) -> JSONResponse:
