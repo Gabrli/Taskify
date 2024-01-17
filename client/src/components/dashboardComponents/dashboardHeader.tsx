@@ -12,7 +12,7 @@ export default function DashboardHeader(props: {
     useDashboardHeaderLogic(props);
 
   return (
-    <header className="flex justify-between items-center pt-2 pl-4 pr-4">
+    <header className="flex justify-between items-center pt-3 pl-4 pr-4">
       <LeftSection />
       <CenterSection
         isMobile={isMobile}

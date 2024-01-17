@@ -11,7 +11,7 @@ export default function LandingPage() {
     <>
       <themeContext.Provider value={theme}>
         <div
-          className={`landing_page h-screen w-screen flex flex-col gap-36 ${
+          className={`landing_page h-screen  w-screen flex flex-col   ${
             theme === "dark" ? "dark" : "light"
           } `}
         >
