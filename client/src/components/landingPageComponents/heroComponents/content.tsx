@@ -12,7 +12,7 @@ export default function HeroContent(){
         <SubTitle />
         
         </div>
-        <div className="flex justify-center gap-4  pl-7 items-center w-full mobile1:flex-col  mobile1:mr-auto mobile1:pl-2 mobile1:pr-8 ">
+        <div className="flex justify-center gap-4  pl-7 items-center w-full mobile1:flex-col  mobile1:mr-auto mobile1:pl-3 mobile1:pr-5 ">
         <ButtonGetStarted/>
         <ButtonHowItWorking/>
         </div>

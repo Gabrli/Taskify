@@ -40,7 +40,7 @@ export default {
       width: {
         logo: "30px",
         heroImg: "350px",
-        mobileHeroImg: "300px",
+        mobileHeroImg: "285px",
         mobileTextContent: "350px",
         contactImg: "200px",
         maxContentHeroBox: "600px",
