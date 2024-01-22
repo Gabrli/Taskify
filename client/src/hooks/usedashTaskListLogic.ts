@@ -7,14 +7,15 @@ import {
   REMOVE_TASK_QUERY,
 } from "../helpers/tasksQueries";
 import { task } from "../types/taskInterface";
-import { counterNotyficationsContext } from "../components/pages/dashboardPage";
+import { counterNotyficationsContext, taskListContext } from "../components/pages/dashboardPage";
 
 
 
-export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAction<number>>) => {
-  const [taskList, setTaskList] = useState<task[]>([]);
+export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAction<number>>, setTaskList: React.Dispatch<React.SetStateAction<task[]>>) => {
+ 
   const [isWrong, setIsWrong] = useState(false);
   const counter = useContext(counterNotyficationsContext)
+  const taskList = useContext(taskListContext)
 
   useEffect(() => {
     getTasksFromBackend();

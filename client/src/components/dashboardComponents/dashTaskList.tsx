@@ -1,9 +1,10 @@
 
 import DashTask from "./dashTask";
 import { createContext } from "react";
-
+import { task } from "../../types/taskInterface";
 import DashboardModal from "./dashboardModal";
 import { useDashTaskListLogic } from "../../hooks/usedashTaskListLogic";
+import DashSearchBox from "./dashSearchBox";
 
 
 
@@ -14,8 +15,9 @@ export default function DashTaskList(props: {
   isActive: boolean;
   currentModal: string;
   setCounter: React.Dispatch<React.SetStateAction<number>>
+  setTaskList: React.Dispatch<React.SetStateAction<task[]>>
 }) {
-  const { setIsActive, isActive, setCurrentModal, currentModal, setCounter } = props;
+  const { setIsActive, isActive, setCurrentModal, currentModal, setCounter, setTaskList } = props;
   const {
     isWrong,
     taskList,
@@ -24,14 +26,15 @@ export default function DashTaskList(props: {
     addNewTask,
     setIsWrong,
     
-  } = useDashTaskListLogic(setCounter)
+  } = useDashTaskListLogic(setCounter, setTaskList)
   
 
   
    
 
   return (
-    <div className="   flex justify-center items-center">
+    <div className=" w-4/5   flex flex-col justify-center items-center">
+      <DashSearchBox/>
       <isWrongContext.Provider value={isWrong}>
         <ul className="flex gap-6 pt-24  justify-center items-center w-full">
           {isActive ? (
@@ -47,6 +50,7 @@ export default function DashTaskList(props: {
                 description: "",
                 date_start: "",
                 date_end: "",
+                isStarted:false
               }}
             />
           ) : (
@@ -77,9 +81,9 @@ export default function DashTaskList(props: {
         {taskList.length >= 1 ? (
           ""
         ) : (
-          <div className="flex flex-col items-center justify-center gap-5 absolute top-1/2 ">
+          <div className="flex flex-col items-center  justify-center gap-5 absolute top-1/2 ">
             <p
-              className={`text-stone-500 ${
+              className={`text_dash_info ${
                 isActive ? "hidden" : ""
               } font-semibold text-2xl`}
             >
@@ -91,9 +95,9 @@ export default function DashTaskList(props: {
                 setIsActive(true);
                 setCurrentModal("create_modal");
               }}
-              className={`btn_new font-semibold transition duration-700 ease-in-out hover:bg-fuchsia-800 ${
+              className={`btn_new font-semibold transition duration-700 ease-in-out  ${
                 isActive ? "hidden" : ""
-              }  text-white rounded bg-fuchsia-900 pl-4 pr-4 pt-2 pb-2`}
+              }  text-white rounded pl-6 pr-6 pt-3 pb-3`}
             >
               Create new
             </button>

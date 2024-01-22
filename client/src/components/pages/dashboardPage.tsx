@@ -4,7 +4,9 @@ import DashboardHeader from "../dashboardComponents/dashboardHeader";
 import DashTaskList from "../dashboardComponents/dashTaskList";
 import { authToken } from "../../auth/token";
 import { userId } from "../../auth/checkingIDFromDB";
+import { task } from "../../types/taskInterface";
 
+const taskListContext = createContext<task[]>([])
 const themeContext = createContext("");
 const counterNotyficationsContext = createContext(0);
 
@@ -13,6 +15,7 @@ export default function DashboardPage() {
   const [isActive, setIsActive] = useState(false);
   const [currentModal, setCurrentModal] = useState("");
   const [counterNotyfications, setCounterNotyfications] = useState(0);
+  const [taskList, setTaskList] = useState<task[]>([]);
 
   useEffect(() => {
     const localToken = localStorage.getItem("token")
@@ -34,22 +37,26 @@ export default function DashboardPage() {
     >
       <themeContext.Provider value={theme}>
         <counterNotyficationsContext.Provider value={counterNotyfications}>
-          <DashboardHeader
+         <taskListContext.Provider value={taskList}>
+         <DashboardHeader
             setTheme={setTheme}
             setCurrentModal={setCurrentModal}
             setIsActive={setIsActive}
           />
+        
           <DashTaskList
             isActive={isActive}
             setIsActive={setIsActive}
             setCurrentModal={setCurrentModal}
             currentModal={currentModal}
             setCounter={setCounterNotyfications}
+            setTaskList={setTaskList}
           />
+         </taskListContext.Provider>
         </counterNotyficationsContext.Provider>
       </themeContext.Provider>
     </div>
   );
 }
 
-export { themeContext, counterNotyficationsContext };
+export { themeContext, counterNotyficationsContext, taskListContext };

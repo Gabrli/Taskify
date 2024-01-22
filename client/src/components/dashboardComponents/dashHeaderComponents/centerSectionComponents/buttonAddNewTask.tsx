@@ -1,4 +1,6 @@
-import { IoIosAdd } from "react-icons/io";
+import { useContext } from "react";
+
+import { themeContext } from "../../../pages/dashboardPage";
 
 export default function ButtonAddNewTask(props: {
   isMobile: boolean;
@@ -6,7 +8,7 @@ export default function ButtonAddNewTask(props: {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   const { isMobile, setCurrentModal, setIsActive } = props;
-
+  const theme = useContext(themeContext);
   const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
 
@@ -17,9 +19,11 @@ export default function ButtonAddNewTask(props: {
   return (
     <button
       onClick={(e) => eventHandler(e)}
-      className="transition duration-700 ease-in-out text-white  flex items-center justify-center font-semibold gap-1 hover:text-pink-500"
+      className={`dash_nav_elements text-sm ${
+        theme === "dark" ? "text-text_dark" : "text-text_light"
+      }  flex items-center justify-center font-semibold gap-1 `}
     >
-      <IoIosAdd /> {isMobile ? "" : "new task"}
+      {isMobile ? "" : "New task"}
     </button>
   );
 }

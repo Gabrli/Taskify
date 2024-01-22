@@ -1,9 +1,11 @@
-import ButtonLogOut from "./leftSectionComponents/buttonLogOut";
+import { useContext } from "react";
+import { themeContext } from "../../pages/dashboardPage";
 
-export default function LeftSection(){
-    return (
-        <section className="flex justify-center items-center gap-5 rounded bg-custom-bg-nav-color p-2 border border-custom-border-nav mobile1:gap-6">
-            <ButtonLogOut/>
-        </section>
-    )
+export default function LeftSection() {
+  const theme = useContext(themeContext)
+  return (
+    <section>
+      <p className={`font-bold text-xl ${theme === "dark" ? "text-text_dark" : "text-text_light"} `}>Dashboard</p>
+    </section>
+  );
 }

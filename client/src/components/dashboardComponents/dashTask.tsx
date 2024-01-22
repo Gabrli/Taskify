@@ -17,7 +17,7 @@ export default function DashTask(props: {
       key={task_id}
       className={`${
         task_id === "00" ? "hidden" : ""
-      } task rounded   mt-3  p-2  `}
+      }  rounded  bg-primary3 mt-3  p-2  `}
     >
       <TaskHeader name={name} />
       <TaskDescription description={description} />

@@ -19,7 +19,7 @@ export default function Form() {
   } = useFormLogic();
 
   return (
-    <form className="w-form flex flex-col justify-center items-center bg-black rounded-lg">
+    <form className="w-form flex flex-col justify-center items-center bg-primary2 rounded-lg">
       <header className="p-2 pb-6">
         <h2 className="text-white font-bold text-3xl p-2">
           {correctContent === "login_form" ? "Login" : "Register"}
