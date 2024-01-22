@@ -18,6 +18,7 @@ export default function DashChart(props: { foundItem: searchItem}) {
   const handleClick = useCallback(
     (entry: any, index: number) => {
       setActiveIndex(index);
+      console.log(entry)
     },
     [setActiveIndex]
   );
@@ -32,6 +33,7 @@ export default function DashChart(props: { foundItem: searchItem}) {
               cursor="pointer"
               fill={index === activeIndex ? "#82ca9d" : "#8884d8"}
               key={`cell-${index}`}
+              className={`${entry}`}
             />
           ))}
         </Bar>
