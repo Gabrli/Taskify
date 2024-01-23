@@ -164,3 +164,11 @@
 [22/01/2024 14:18:01] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'description', 'author', 'date_start', 'name', 'date_end'} file=./db/tasks.json>
 [22/01/2024 15:16:33] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'password', 'email', 'username'} file=./db/users.json>
 [22/01/2024 15:16:33] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'author', 'description', 'name', 'date_end', 'date_start'} file=./db/tasks.json>
+[23/01/2024 10:42:25] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'password', 'email', 'username'} file=./db/users.json>
+[23/01/2024 10:42:26] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'description', 'date_end', 'name', 'author', 'date_start'} file=./db/tasks.json>
+[23/01/2024 12:52:38] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'email', 'username', 'password'} file=./db/users.json>
+[23/01/2024 12:52:38] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'date_start', 'author', 'name', 'date_end', 'description'} file=./db/tasks.json>
+[23/01/2024 13:34:57] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'password', 'email', 'username'} file=./db/users.json>
+[23/01/2024 13:34:57] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'name', 'description', 'author', 'date_start', 'date_end'} file=./db/tasks.json>
+[23/01/2024 13:54:53] (users) [database.py.__init__#168]  Build Database object for: users <DB: name=users keyProvider=username columns={'username', 'email', 'password'} file=./db/users.json>
+[23/01/2024 13:54:53] (tasks) [database.py.__init__#168]  Build Database object for: tasks <DB: name=tasks keyProvider=_UUID4KEY columns={'author', 'date_start', 'name', 'description', 'date_end'} file=./db/tasks.json>

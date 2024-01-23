@@ -44,7 +44,20 @@
   width: 100vw;
   overflow-x: hidden;
 }
-
+body{
+  height: 100vh;
+  background: var(--bg-color);
+}
+.chartsBox{
+  background: var(--bg-footer);
+}
+.btnDashFooter{
+  transition: all .6s;
+  background: var(--btn_how-color);
+}
+.dashFooter {
+  background: var(--bg-footer);
+}
 .text_dash_info {
   background: linear-gradient(
     to right,
@@ -83,6 +96,21 @@
 }
 .landing_page {
   background: var(--bg-color);
+  height: 100vh;
+}
+.landing_page main {
+  background: var(--bg-color);
+}
+.notifications_wrapper{
+  overflow-y: scroll;
+}
+.notifications_wrapper::-webkit-scrollbar{
+  background: transparent;
+  
+}
+.notifications_wrapper::-webkit-scrollbar-thumb{
+  background: var(--bg-search-box);
+  border-radius: 8px;
 }
 .login_page {
   background: #0c040c;
@@ -172,6 +200,9 @@
 .btn_form:hover {
   transform: translate(0, -3px);
   box-shadow: 0 20px 80px -10px #4f176d4d;
+}
+.btnDashFooter:hover{
+  background: var(--bg-search-box);
 }
 .btn_edit:hover {
   transform: translate(0, -3px);

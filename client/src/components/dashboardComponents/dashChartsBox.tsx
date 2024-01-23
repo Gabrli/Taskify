@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { themeContext } from "../pages/dashboardPage"
+import { charstBoxIsActiveContext, isMobileContext, themeContext } from "../pages/dashboardPage"
 import DashChart from "./dashChartsComponents/dashPercentChart"
 import DashDaysChart from "./dashChartsComponents/dashDaysChart"
 import { searchItem } from "../../types/searchItem"
@@ -7,8 +7,10 @@ import { searchItem } from "../../types/searchItem"
 export default function DashChartsBox(props: {foundItem: searchItem}){
     const { foundItem } = props
     const theme = useContext(themeContext)
+    const isMobile = useContext(isMobileContext)
+    const charstBoxIsActive = useContext(charstBoxIsActiveContext)
     return (
-        <aside className={`h-max absolute right-5 top-20 `}>
+        <aside className={`h-max  ${isMobile && charstBoxIsActive ? "block fixed top-20 left-0 chartsBox pb-6  w-full z-10 ": isMobile ? "hidden" : "absolute top-20 right-2"} `}>
             <header className={`p-5 w-full pb-7 `}>
                 <h3 className={`font-medium ${theme === "dark"?"text-text_dark":"text-text_light"}`}>Charts and Calculations</h3>
             </header>

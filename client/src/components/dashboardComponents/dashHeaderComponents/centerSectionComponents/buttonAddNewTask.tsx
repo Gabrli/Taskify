@@ -1,14 +1,16 @@
 import { useContext } from "react";
-
-import { themeContext } from "../../../pages/dashboardPage";
+import { IoMdAdd } from "react-icons/io";
+import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
 
 export default function ButtonAddNewTask(props: {
-  isMobile: boolean;
+  
   setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const { isMobile, setCurrentModal, setIsActive } = props;
+  const {  setCurrentModal, setIsActive } = props;
   const theme = useContext(themeContext);
+  const isMobile = useContext(isMobileContext)
+
   const eventHandler = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     e.preventDefault();
 
@@ -21,9 +23,9 @@ export default function ButtonAddNewTask(props: {
       onClick={(e) => eventHandler(e)}
       className={`dash_nav_elements text-sm ${
         theme === "dark" ? "text-text_dark" : "text-text_light"
-      }  flex items-center justify-center font-semibold gap-1 `}
+      }   font-semibold  `}
     >
-      {isMobile ? "" : "New task"}
+      {isMobile ? <IoMdAdd/> : "New task"}
     </button>
   );
 }

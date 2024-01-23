@@ -22,7 +22,7 @@ export default function DashSearchBox() {
     
   }
   return (
-    <div className="w-full  flex justify-evenly items-center pt-20 mobile1:pl-5 mobile1:pr-5">
+    <div className="w-full  flex justify-evenly items-center pt-20 mobile1:pl-0 mobile1:pr-5">
       <DashSearchInputbox fun={filterTaskList} />
       <DashChartsBox foundItem={foundItem}/>
     </div>

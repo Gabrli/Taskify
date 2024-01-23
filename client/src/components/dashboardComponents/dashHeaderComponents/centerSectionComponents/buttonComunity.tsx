@@ -1,10 +1,11 @@
 import { useContext } from "react";
-
-import { themeContext } from "../../../pages/dashboardPage";
-export default function ButtonComunity(props: {isMobile:boolean}){
-    const { isMobile } = props
+import { FaUsers } from "react-icons/fa";
+import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
+export default function ButtonComunity(){
+    
     const theme = useContext(themeContext)
+    const isMobile = useContext(isMobileContext)
     return (
-        <button className={`dash_nav_elements ${theme === "dark" ? "text-text_dark" : "text-text_light"} text-sm flex items-center gap-2 font-semibold `}>{isMobile ? '' : 'Comunity'}</button>
+        <button className={`dash_nav_elements ${theme === "dark" ? "text-text_dark" : "text-text_light"} text-sm   font-semibold `}>{isMobile ? <FaUsers/> : 'Comunity'}</button>
     )
 }

@@ -1,12 +1,13 @@
+import { useContext } from "react";
 import { IoNotifications } from "react-icons/io5";
-export default function NotyficationsHeader(){
-    
-    return (
-        <header className=" p-2 bg-custom-not-2 rounded flex justify-center items-center gap-4">
-            <p className="text-white pl-1 pr-1 font-bold text-lg flex justify-center items-center gap-2"><IoNotifications/> Your notyfications</p>
-            
-            
-            
-        </header>
-    )
+import { themeContext } from "../pages/dashboardPage";
+export default function NotyficationsHeader() {
+  const theme = useContext(themeContext)
+  return (
+    <header className={` p-2  ${theme === "dark" ? "bg-dark_popup_header" : "bg-custom-not-2"} rounded flex justify-center items-center gap-4 w-full`}>
+      <p className={`${theme === "dark" ? "text-text_dark" : "text-text_light"} pl-1 pr-1 font-bold text-lg flex justify-center items-center gap-2 `}>
+        <IoNotifications /> Your notyfications
+      </p>
+    </header>
+  );
 }

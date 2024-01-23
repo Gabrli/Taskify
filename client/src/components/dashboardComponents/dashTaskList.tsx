@@ -1,10 +1,11 @@
 
 import DashTask from "./dashTask";
-import { createContext } from "react";
+import { createContext, useContext } from "react";
 import { task } from "../../types/taskInterface";
 import DashboardModal from "./dashboardModal";
 import { useDashTaskListLogic } from "../../hooks/usedashTaskListLogic";
 import DashSearchBox from "./dashSearchBox";
+import { isMobileContext } from "../pages/dashboardPage";
 
 
 
@@ -27,16 +28,18 @@ export default function DashTaskList(props: {
     setIsWrong,
     
   } = useDashTaskListLogic(setCounter, setTaskList)
+
+  const isMobile = useContext(isMobileContext)
   
 
   
    
 
   return (
-    <div className=" w-4/5   flex flex-col justify-center items-center">
+    <div className={` ${isMobile ? "w-full" : "w-4/5"}  flex flex-col justify-center items-center`}>
       <DashSearchBox/>
       <isWrongContext.Provider value={isWrong}>
-        <ul className="flex gap-6 pt-24  justify-center items-center w-full">
+        <ul className={`flex gap-6 pt-24 ${isMobile ? "flex-col" : ""} justify-center items-center w-full`}>
           {isActive ? (
             <DashboardModal
               setIsActive={setIsActive}

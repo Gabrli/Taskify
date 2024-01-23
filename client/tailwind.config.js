@@ -9,8 +9,8 @@ export default {
         "custom-border-nav": "#4c095f",
         "custom-btn-color": "#4f176d4d",
         "cutom-not-1": "#20262E",
-        "custom-not-2": "#913175",
-        "custom-not-3": "#CD5888",
+        "custom-not-2": "#EEEE",
+        "custom-not-3": "#f8f8f8",
         "custom-not-4": "#E9E8E8",
         "custom-header-dash": "#440653",
         "custom-dash-btn": "#870d7f4d",
@@ -27,6 +27,10 @@ export default {
         static2: "#0000001a",
         static3: "#ffffff08",
         static4: "#00000008",
+        dark_popup: "#232931",
+        dark_popup_header: "#393E46",
+        dark_notifications: "#323643",
+        
       },
 
       height: {

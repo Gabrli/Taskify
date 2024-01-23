@@ -1,10 +1,11 @@
 import { useContext } from "react";
-
-import { themeContext } from "../../../pages/dashboardPage";
-export default function ButtonNotyfication(props: {isMobile:boolean, isDropNotyfications: boolean, setIsDropNotyfications: React.Dispatch<React.SetStateAction<boolean>>}){
-    const { isMobile, isDropNotyfications, setIsDropNotyfications } = props
+import { MdNotificationsActive } from "react-icons/md"
+import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
+export default function ButtonNotyfication(props: { isDropNotyfications: boolean, setIsDropNotyfications: React.Dispatch<React.SetStateAction<boolean>>}){
+    const {  isDropNotyfications, setIsDropNotyfications } = props
     const theme = useContext(themeContext)
+    const isMobile = useContext(isMobileContext)
     return (
-        <button onClick={() => setIsDropNotyfications(!isDropNotyfications)}  className={`dash_nav_elements ${theme === "dark" ? "text-text_dark" : "text-text_light"} flex items-center justify-center text-sm font-semibold gap-2 `}> {isMobile ? '' : 'Notyfication'}</button>
+        <button onClick={() => setIsDropNotyfications(!isDropNotyfications)}  className={`dash_nav_elements ${theme === "dark" ? "text-text_dark" : "text-text_light"} text-sm font-semibold  `}> {isMobile ? <MdNotificationsActive/> : 'Notyfication'}</button>
     )
 }
