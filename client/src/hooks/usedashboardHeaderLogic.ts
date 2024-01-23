@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react";
+import {  useContext } from "react";
 import { isMobileContext, themeContext } from "../components/pages/dashboardPage";
 
 export const useDashboardHeaderLogic = (props: {
