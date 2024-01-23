@@ -9315,3 +9315,6 @@
 [23/01/2024 14:12:34] (127.0.0.1:65046) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [23/01/2024 14:12:37] (127.0.0.1:65046) [api.py.remove_task#176]  <True> Removed task: eb03329ff3da4c5cb4776a8e2129e6e5 for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [23/01/2024 14:12:37] (127.0.0.1:65046) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[23/01/2024 14:19:28] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[23/01/2024 14:21:02] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[23/01/2024 14:21:03] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid

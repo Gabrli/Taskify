@@ -33,6 +33,12 @@ export default function DashboardPage() {
       
     
     } else authToken.token = false
+
+    if(window.innerWidth <= 1050){
+      setIsMobile(true)
+    } else {
+      setIsMobile(false)
+    }
   })
 
   window.addEventListener('resize', () => {
