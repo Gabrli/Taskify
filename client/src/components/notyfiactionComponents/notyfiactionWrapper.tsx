@@ -1,5 +1,5 @@
 import Notyfication from "./notyfication";
-import { useNotyficationLogic } from "../../hooks/useNotyficationLogic";
+import { useNotyficationLogic } from "../../hooks/LogicComponentsHooks/useNotyficationLogic";
 export default function NotyfiactionWrapper() {
   
   const { notyfiactions } = useNotyficationLogic();

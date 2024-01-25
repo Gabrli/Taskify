@@ -4,10 +4,10 @@ import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
 
 export default function ButtonAddNewTask(props: {
   
-  setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
+
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const {  setCurrentModal, setIsActive } = props;
+  const {   setIsActive } = props;
   const theme = useContext(themeContext);
   const isMobile = useContext(isMobileContext)
 
@@ -15,7 +15,7 @@ export default function ButtonAddNewTask(props: {
     e.preventDefault();
 
     setIsActive(true);
-    setCurrentModal("create_modal");
+ 
   };
 
   return (

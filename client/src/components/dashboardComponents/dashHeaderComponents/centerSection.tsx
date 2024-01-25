@@ -8,10 +8,10 @@ import { counterNotyficationsContext, isMobileContext, themeContext } from "../.
 
 export default function CenterSection(props: {
  
-  setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
+ 
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  const {  setCurrentModal, setIsActive } = props;
+  const {   setIsActive } = props;
   const [isDropNotyfications, setIsDropNotyfications] = useState(false);
   const counter = useContext(counterNotyficationsContext);
   const theme = useContext(themeContext)
@@ -22,7 +22,7 @@ export default function CenterSection(props: {
       <ButtonComunity />
       <ButtonAddNewTask
         
-        setCurrentModal={setCurrentModal}
+        
         setIsActive={setIsActive}
       />
       <ButtonNotyfication

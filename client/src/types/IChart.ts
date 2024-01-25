@@ -1,9 +1,9 @@
 
-interface chartDaysData{
+interface IChart{
     name:string,
     pv:number,
     uv:number,
     amt:number
 }
 
-export type { chartDaysData }
+export type { IChart }

@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { notyfiaction } from "../../types/notyfiactionInterface";
+import { notyfiaction } from "../../types/INotyfiactionInterface";
 import { themeContext } from "../pages/dashboardPage";
 export default function Notyfication(props: { element: notyfiaction }) {
   const { id, name, mustToDo, finishedDays, progress, futureDays, isStarted } =

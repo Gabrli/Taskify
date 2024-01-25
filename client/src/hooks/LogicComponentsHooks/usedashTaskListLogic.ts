@@ -1,32 +1,32 @@
-import {  useContext, useEffect, useState } from "react";
-import signalEffect from "../assets/audio/livechat-129007.mp3";
+import { useContext, useEffect, useState } from "react";
+import signalEffect from "../../assets/audio/livechat-129007.mp3"
 import {
   TASK_QUERY,
   ADD_TASK_QUERY,
   EDIT_TASK_QUERY,
   REMOVE_TASK_QUERY,
-} from "../helpers/tasksQueries";
-import { task } from "../types/taskInterface";
-import { counterNotyficationsContext, taskListContext } from "../components/pages/dashboardPage";
+} from "../../helpers/tasksQueries";
+import { ITask } from "../../types/ITask";
+import {
+  counterNotyficationsContext,
+  taskListContext,
+} from "../../components/pages/dashboardPage";
 
-
-
-export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAction<number>>, setTaskList: React.Dispatch<React.SetStateAction<task[]>>) => {
- 
+export const useDashTaskListLogic = (
+  setCounter: React.Dispatch<React.SetStateAction<number>>,
+  setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>
+) => {
   const [isWrong, setIsWrong] = useState(false);
-  const counter = useContext(counterNotyficationsContext)
-  const taskList = useContext(taskListContext)
+  const counter = useContext(counterNotyficationsContext);
+  const taskList = useContext(taskListContext);
 
   useEffect(() => {
     getTasksFromBackend();
-    
-  
   }, []);
 
   useEffect(() => {
-    setCounter(taskList.length)
-    
-  }, [taskList])
+    setCounter(taskList.length);
+  }, [taskList]);
 
   const signalPlay = () => {
     const signal = new Audio(signalEffect);
@@ -36,8 +36,6 @@ export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAc
   const getTasksFromBackend = async () => {
     await TASK_QUERY().then((res) => {
       setTaskList(res.data.tasks);
-      
-      
     });
   };
 
@@ -54,7 +52,7 @@ export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAc
         } else {
           getTasksFromBackend();
           signalPlay();
-          setCounter(counter + 1)
+          setCounter(counter + 1);
         }
       }
     );
@@ -76,27 +74,21 @@ export const useDashTaskListLogic = (setCounter: React.Dispatch<React.SetStateAc
     );
     getTasksFromBackend();
     signalPlay();
-    
   };
 
   const removeTask = async (taskId: string) => {
     await REMOVE_TASK_QUERY(taskId);
     getTasksFromBackend();
-    
-   
   };
-
-  
 
   return {
     isWrong,
-    
+
     taskList,
     removeTask,
     addNewTask,
     editTask,
     setIsWrong,
-    signalPlay
+    signalPlay,
   };
 };
-

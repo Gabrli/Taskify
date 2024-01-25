@@ -1,10 +1,10 @@
 import { useState } from "react";
 import bcrypt from "bcryptjs";
 import { useNavigate } from "react-router";
-import { LOGIN_FORM_QUERY, REGISTER_FORM_QUERY } from "../helpers/formQueries";
-import { checkingIDFromDb } from "../auth/checkingIDFromDB";
-import useCurrentLocation from "../hooks/useCurrentLocation";
-import useCorrectContent from "../hooks/useCorrectContent";
+import { LOGIN_FORM_QUERY, REGISTER_FORM_QUERY } from "../../helpers/formQueries";
+import { checkingIDFromDb } from "../../auth/checkingIDFromDB";
+import useCurrentLocation from "../useCurrentLocation";
+import useCorrectContent from "../useCorrectContent";
 
 export const useFormLogic = () => {
   const [username, setUserName] = useState("");

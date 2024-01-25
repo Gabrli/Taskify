@@ -1,14 +1,13 @@
 import { createContext, useEffect, useState } from "react";
 import DashboardHeader from "../dashboardComponents/dashboardHeader";
-
 import DashTaskList from "../dashboardComponents/dashTaskList";
 import { authToken } from "../../auth/token";
 import { userId } from "../../auth/checkingIDFromDB";
-import { task } from "../../types/taskInterface";
+import { ITask } from "../../types/ITask";
 import DashFooter from "../dashboardComponents/dashFooter";
 
 
-const taskListContext = createContext<task[]>([])
+const taskListContext = createContext<ITask[]>([])
 const themeContext = createContext("");
 const counterNotyficationsContext = createContext(0);
 const isMobileContext = createContext(false)
@@ -17,9 +16,9 @@ const charstBoxIsActiveContext = createContext(false)
 export default function DashboardPage() {
   const [theme, setTheme] = useState("dark");
   const [isActive, setIsActive] = useState(false);
-  const [currentModal, setCurrentModal] = useState("");
+ 
   const [counterNotyfications, setCounterNotyfications] = useState(0);
-  const [taskList, setTaskList] = useState<task[]>([]);
+  const [taskList, setTaskList] = useState<ITask[]>([]);
   const [isMobile, setIsMobile] = useState(false)
   const [charstBoxIsActive, setChartsBoxIsActive] = useState(false)
 
@@ -62,7 +61,7 @@ export default function DashboardPage() {
           <charstBoxIsActiveContext.Provider value={charstBoxIsActive}>
           <DashboardHeader
             setTheme={setTheme}
-            setCurrentModal={setCurrentModal}
+           
             setIsActive={setIsActive}
           />
 
@@ -72,8 +71,7 @@ export default function DashboardPage() {
           <DashTaskList
             isActive={isActive}
             setIsActive={setIsActive}
-            setCurrentModal={setCurrentModal}
-            currentModal={currentModal}
+           
             setCounter={setCounterNotyfications}
             setTaskList={setTaskList}
           />

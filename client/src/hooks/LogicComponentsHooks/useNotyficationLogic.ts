@@ -1,17 +1,17 @@
 import { useEffect, useState } from "react";
-import { TASK_QUERY } from "../helpers/tasksQueries";
-import signalEffect from "../assets/audio/livechat-129007.mp3";
-import { task } from "../types/taskInterface";
-import { notyfiaction } from "../types/notyfiactionInterface";
-import { useCalculations } from "./useCalculations";
+import { TASK_QUERY } from "../../helpers/tasksQueries";
+import signalEffect from "../../assets/audio/livechat-129007.mp3";
+import { ITask } from "../../types/ITask";
+import { INotyfiaction } from "../../types/INotyfiactionInterface";
+import { useCalculations } from "../useCalculations";
 export const useNotyficationLogic = () => {
-  const [notyfiactions, setNotyfications] = useState<notyfiaction[]>([]);
+  const [notyfiactions, setNotyfications] = useState<INotyfiaction[]>([]);
 
   useEffect(() => {
     const getElementsFromTask = async () => {
       try {
         const res = await TASK_QUERY();
-        const newTasks = res.data.tasks.map((task: task) => task);
+        const newTasks = res.data.tasks.map((task: ITask) => task);
         builderNotyfications(newTasks);
       } catch (error) {
         console.log(error);
@@ -31,24 +31,22 @@ export const useNotyficationLogic = () => {
     checkElementsInNotyficationList();
   }, []);
 
-  
-  const builderNotyfications = (tasks: task[]) => {
+  const builderNotyfications = (tasks: ITask[]) => {
     const newExtractedList = tasks.map((task) => {
       const { date_start, date_end, name, isStarted } = task;
-      
 
       const calculationsFun = useCalculations(date_start, date_end, isStarted);
-      const procent = calculationsFun.mustToDoResult;
+      const percentages = calculationsFun.mustToDoResult;
       const finishedDays = calculationsFun.finishedDays;
       const futureDays = calculationsFun.futureDays;
       const progress = calculationsFun.progress;
 
-      const newNotyfication: notyfiaction = {
+      const newNotyfication: INotyfiaction = {
         id: Math.random(),
         name: name,
         date_start: date_start,
         date_end: date_end,
-        mustToDo: procent,
+        mustToDo: percentages,
         finishedDays: finishedDays,
         futureDays: futureDays,
         progress: progress,

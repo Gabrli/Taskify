@@ -1,9 +1,11 @@
-import { useFormLogic } from "../../hooks/useFormLogic";
-import NameInput from "./inputs/nameInput";
-import PasswordInput from "./inputs/passwordInput";
-import EmailInput from "./inputs/emailInput";
+import { useFormLogic } from "../../hooks/LogicComponentsHooks/useFormLogic";
 import ButtonForm from "./inputs/buttonForm";
 import FormFooter from "./formFooter";
+import FormInput from "./inputs/formInput";
+import { FaRegUser } from "react-icons/fa";
+import { RiLockPasswordFill } from "react-icons/ri";
+import { CiMail } from "react-icons/ci";
+
 export default function Form() {
   const {
     username,
@@ -35,38 +37,63 @@ export default function Form() {
       <div className="flex flex-col justify-center items-center gap-4 pb-4">
         {correctContent === "login_form" ? (
           <>
-            <NameInput
+            <FormInput
               isWrong={isWrong}
               setIsWrong={setIsWrong}
-              setUserName={setUserName}
-              username={username}
+              value={username}
+              setValue={setUserName}
+              placeholder="Your name"
+              type="text"
+              inputId="form_name_input"
+              inputName="form_name_input"
+              icon={<FaRegUser />}
             />
-            <PasswordInput
+            <FormInput
               isWrong={isWrong}
               setIsWrong={setIsWrong}
-              setPassword={setPassword}
-              password={password}
+              value={password}
+              setValue={setPassword}
+              placeholder="Your password"
+              type="password"
+              inputId="form_password_input"
+              inputName="form_password_input"
+              icon={<RiLockPasswordFill />}
             />
           </>
         ) : (
           <>
-            <NameInput
+            <FormInput
               isWrong={isWrong}
               setIsWrong={setIsWrong}
-              setUserName={setUserName}
-              username={username}
+              value={username}
+              setValue={setUserName}
+              placeholder="Your name"
+              type="text"
+              inputId="form_name_input"
+              inputName="form_name_input"
+              icon={<FaRegUser />}
             />
-            <PasswordInput
+            <FormInput
               isWrong={isWrong}
               setIsWrong={setIsWrong}
-              setPassword={setPassword}
-              password={password}
+              value={password}
+              setValue={setPassword}
+              placeholder="Your password"
+              type="password"
+              inputId="form_password_input"
+              inputName="form_password_input"
+              icon={<RiLockPasswordFill />}
             />
-            <EmailInput
+            <FormInput
               isWrong={isWrong}
               setIsWrong={setIsWrong}
-              setMail={setMail}
-              mail={mail}
+              value={mail}
+              setValue={setMail}
+              placeholder="Your email"
+              type="mail"
+              inputId="form_mail_input"
+              inputName="form_mail_input"
+              icon={<CiMail />}
             />
           </>
         )}

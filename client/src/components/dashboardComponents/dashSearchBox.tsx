@@ -2,7 +2,7 @@ import { useContext, useState } from "react";
 import DashChartsBox from "./dashChartsBox";
 import DashSearchInputbox from "./dashSearchComponents/dashSearchInputBox";
 import { taskListContext } from "../pages/dashboardPage";
-import { searchItem } from "../../types/searchItem";
+import { searchItem } from "../../types/ISearchItem";
 
 export default function DashSearchBox() {
   const taskList = useContext(taskListContext)

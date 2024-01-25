@@ -1,6 +1,8 @@
 import { FaUserShield, FaCode, FaInstagram } from "react-icons/fa";
 import { themeContext } from "../pages/landingPage";
 import { useContext } from "react";
+import SocialHref from "./landingFooterComponents/socialHref";
+import QuickLink from "./landingFooterComponents/quicLink";
 export default function Footer() {
   const theme = useContext(themeContext)
   return (
@@ -15,9 +17,9 @@ export default function Footer() {
           <div>
             <p className={`font-semibold text-text_dark ${theme === "dark"?"":"text-text_light"}`}>Quick Links</p>
             <ul>
-              <li ><a className={`link_quic t font-medium text-gray-500 pt- `} href="/landing">Home</a></li>
-              <li><a className={`link_quic  font-medium text-gray-500 pt-1`}  href="/login">Login</a></li>
-              <li ><a className={`link_quic font-medium  text-gray-500 pt-1 `}  href="/register">Register</a></li>
+              <QuickLink href="/home" content="Home"/>
+              <QuickLink href="/login" content="Login"/>
+              <QuickLink href="/register" content="Register"/>
             </ul>
           </div>
           <div className="pb-12">
@@ -30,9 +32,9 @@ export default function Footer() {
             <p className={`text-text_dark  ${theme === "dark"?"":"text-text_light"} mobile1:text-center`}>Social Handlers</p>
           </header>
           <div className="flex justify-center items-center pt-4 gap-5">
-            <a className={`social_item  ${theme === "dark"?"text-text_dark":"text-text_light"} p-3 rounded bg-social_item`} href="#"><FaUserShield/></a>
-            <a className={`social_item ${theme === "dark"?"text-text_dark":"text-text_light"} p-3 rounded bg-social_item`} href="#"><FaCode/></a>
-            <a className={`social_item ${theme === "dark"?"text-text_dark":"text-text_light"} p-3 rounded bg-social_item`} href="#"><FaInstagram/></a>
+          <SocialHref href="#" icon={<FaInstagram/>}/>
+          <SocialHref href="#" icon={<FaUserShield/>}/>
+          <SocialHref href="#" icon={<FaCode/>}/>
           </div>
         </section>
       </section>

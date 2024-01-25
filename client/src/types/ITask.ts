@@ -1,5 +1,5 @@
 
-interface task{
+interface ITask{
     task_id: string,
     name: string,
     description:string,
@@ -8,4 +8,4 @@ interface task{
     isStarted:boolean
 }
 
-export type { task }
+export type { ITask }

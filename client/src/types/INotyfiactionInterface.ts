@@ -1,5 +1,5 @@
 
-interface notyfiaction {
+interface INotyfiaction {
     id:number,
     name:string,
     mustToDo: number,
@@ -12,4 +12,4 @@ interface notyfiaction {
     
 }
 
-export type { notyfiaction }
+export type { INotyfiaction }

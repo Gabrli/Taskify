@@ -1,81 +1,56 @@
-
 import DashTask from "./dashTask";
 import { createContext, useContext } from "react";
-import { task } from "../../types/taskInterface";
+import { task } from "../../types/ITask";
 import DashboardModal from "./dashboardModal";
-import { useDashTaskListLogic } from "../../hooks/usedashTaskListLogic";
+import { useDashTaskListLogic } from "../../hooks/LogicComponentsHooks/usedashTaskListLogic";
 import DashSearchBox from "./dashSearchBox";
 import { isMobileContext } from "../pages/dashboardPage";
-
-
 
 const isWrongContext = createContext(false);
 export default function DashTaskList(props: {
   setIsActive: React.Dispatch<React.SetStateAction<boolean>>;
-  setCurrentModal: React.Dispatch<React.SetStateAction<string>>;
+
   isActive: boolean;
-  currentModal: string;
-  setCounter: React.Dispatch<React.SetStateAction<number>>
-  setTaskList: React.Dispatch<React.SetStateAction<task[]>>
+
+  setCounter: React.Dispatch<React.SetStateAction<number>>;
+  setTaskList: React.Dispatch<React.SetStateAction<task[]>>;
 }) {
-  const { setIsActive, isActive, setCurrentModal, currentModal, setCounter, setTaskList } = props;
-  const {
-    isWrong,
-    taskList,
-    removeTask,
-    editTask,
-    addNewTask,
-    setIsWrong,
-    
-  } = useDashTaskListLogic(setCounter, setTaskList)
+  const { setIsActive, isActive, setCounter, setTaskList } = props;
+  const { isWrong, taskList, removeTask, editTask, addNewTask, setIsWrong } =
+    useDashTaskListLogic(setCounter, setTaskList);
 
-  const isMobile = useContext(isMobileContext)
-  
-
-  
-   
+  const isMobile = useContext(isMobileContext);
 
   return (
-    <div className={` ${isMobile ? "w-full" : "w-4/5"}  flex flex-col justify-center items-center`}>
-      <DashSearchBox/>
+    <div
+      className={` ${
+        isMobile ? "w-full" : "w-4/5"
+      }  flex flex-col justify-center items-center`}
+    >
+      <DashSearchBox />
       <isWrongContext.Provider value={isWrong}>
-        <ul className={`flex gap-6 pt-24 ${isMobile ? "flex-col" : ""} justify-center items-center w-full`}>
+        <ul
+          className={`flex gap-6 pt-24 ${
+            isMobile ? "flex-col" : ""
+          } justify-center items-center w-full`}
+        >
           {isActive ? (
             <DashboardModal
               setIsActive={setIsActive}
-              currentModal={currentModal}
               addNewTask={addNewTask}
-              editTask={editTask}
               setIsWorng={setIsWrong}
-              task={{
-                task_id: "00",
-                name: "",
-                description: "",
-                date_start: "",
-                date_end: "",
-                isStarted:false
-              }}
             />
           ) : (
             ""
           )}
           {taskList.map((task) => {
-            return isActive ? (
-              <DashboardModal
-                setIsActive={setIsActive}
-                currentModal={currentModal}
-                addNewTask={addNewTask}
-                editTask={editTask}
-                task={task}
-                setIsWorng={setIsWrong}
-              />
-            ) : (
+            return (
               <DashTask
                 key={task.task_id}
                 element={task}
-                setIsActive={setIsActive}
-                setCurrentModal={setCurrentModal}
                 removeTask={removeTask}
+                isWrong={isWrong}
+                editTask={editTask}
               />
             );
           })}
@@ -96,7 +71,6 @@ export default function DashTaskList(props: {
               onClick={(e) => {
                 e.preventDefault();
                 setIsActive(true);
-                setCurrentModal("create_modal");
               }}
               className={`btn_new font-semibold transition duration-700 ease-in-out  ${
                 isActive ? "hidden" : ""

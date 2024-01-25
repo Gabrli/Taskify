@@ -105,13 +105,10 @@ body{
   overflow-y: scroll;
 }
 .notifications_wrapper::-webkit-scrollbar{
-  background: transparent;
+  background: var(--bg-search-box)
   
 }
-.notifications_wrapper::-webkit-scrollbar-thumb{
-  background: var(--bg-search-box);
-  border-radius: 8px;
-}
+
 .login_page {
   background: #0c040c;
 }

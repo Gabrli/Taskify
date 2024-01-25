@@ -62,6 +62,7 @@ export default {
         modal: "320px",
         notyfication: "350px",
         counter: "20px",
+        taskW: "300px"
       },
       screens: {
         mobile1: { max: "877px" },
