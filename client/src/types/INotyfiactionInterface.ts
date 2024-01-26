@@ -8,7 +8,7 @@ interface INotyfiaction {
     progress:number,
     futureDays: number,
     finishedDays: number,
-    isStarted: boolean | undefined,
+    status: string
     
 }
 

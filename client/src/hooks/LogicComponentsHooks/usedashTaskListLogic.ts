@@ -1,5 +1,5 @@
-import { useContext, useEffect, useState } from "react";
-import signalEffect from "../../assets/audio/livechat-129007.mp3"
+import { useContext, useEffect } from "react";
+import signalEffect from "../../assets/audio/livechat-129007.mp3";
 import {
   TASK_QUERY,
   ADD_TASK_QUERY,
@@ -14,9 +14,10 @@ import {
 
 export const useDashTaskListLogic = (
   setCounter: React.Dispatch<React.SetStateAction<number>>,
-  setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>
+  setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>,
+  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
-  const [isWrong, setIsWrong] = useState(false);
+ 
   const counter = useContext(counterNotyficationsContext);
   const taskList = useContext(taskListContext);
 
@@ -47,12 +48,17 @@ export const useDashTaskListLogic = (
   ) => {
     await ADD_TASK_QUERY(taskName, taskDescryption, dateStart, dateEnd).then(
       (res) => {
-        if (res.status === 500) {
-          setIsWrong(true);
+        console.log(res.code)
+        if (res.code === "ERR_NETWORK") {
+           console.log("error")
+           setIsWrong(true)
+         
         } else {
+          setIsWrong(false)
           getTasksFromBackend();
           signalPlay();
           setCounter(counter + 1);
+         
         }
       }
     );
@@ -82,13 +88,14 @@ export const useDashTaskListLogic = (
   };
 
   return {
-    isWrong,
+ 
 
     taskList,
     removeTask,
     addNewTask,
     editTask,
-    setIsWrong,
     signalPlay,
+    
+    
   };
 };

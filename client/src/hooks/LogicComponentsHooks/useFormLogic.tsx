@@ -23,12 +23,23 @@ export const useFormLogic = () => {
     const hashedPassword = bcrypt.hashSync(password, 10);
 
     if (currentLocation === "/login") {
-      await LOGIN_FORM_QUERY(username, password).then((res) =>
-        checkingIDFromDb(res.data.uid, navigate, username)
-      );
+      await LOGIN_FORM_QUERY(username, password).then((res) =>{
+        console.log(res.code)
+        if(res.code === "ERR_BAD_REQUEST"){
+          setIsWrong(true)
+        } else {
+          checkingIDFromDb(res.data.uid, navigate, username)
+          setIsWrong(false)
+        }
+    });
     } else {
       await REGISTER_FORM_QUERY(username, mail, hashedPassword).then((res) => {
-        checkingIDFromDb(res.data.uid, navigate, username);
+        if(res.code === "ERR_BAD_REQUEST"){
+          setIsWrong(true)
+        } else {
+          checkingIDFromDb(res.data.uid, navigate, username)
+          setIsWrong(false)
+        }
       });
     }
   };

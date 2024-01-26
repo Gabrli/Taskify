@@ -22,13 +22,13 @@ export default function Form() {
 
   return (
     <form className="w-form flex flex-col justify-center items-center bg-primary2 rounded-lg">
-      <header className="p-2 pb-6">
-        <h2 className="text-white font-bold text-3xl p-2">
+      <header className="p-2 pb-6 flex flex-col justify-center items-center">
+        <h2 className="text-white font-bold text-3xl p-2 ">
           {correctContent === "login_form" ? "Login" : "Register"}
         </h2>
         {isWrong ? (
           <p className="text-red-500 p-1 text-center">
-            Incorrect data in the form. Correct data!
+            Incorrect data in the form. Check entered data !
           </p>
         ) : (
           ""

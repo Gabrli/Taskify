@@ -6,6 +6,6 @@ export default function ButtonRemove(props: { removeTask: (taskId: string) => vo
         <button onClick={(e) => {
             e.preventDefault()
             removeTask(taskId)
-        }}  className="transition duration-700 font-semibold ease-in-out bg-custom-btn-color rounded text-white flex items-center  pl-2 pr-2 pt-1 pb-1 gap-1 hover:bg-primary3"><IoTrashBin/> Remove</button>
+        }}  className="transition duration-700 font-semibold ease-in-out bg-custom-btn-color rounded-full text-white flex items-center  p-2  hover:bg-primary3"><IoTrashBin/></button>
     )
 }

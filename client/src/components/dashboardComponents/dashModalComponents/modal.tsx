@@ -1,4 +1,4 @@
-import {  useState } from "react";
+import { useState } from "react";
 
 import ModalFooter from "./modalFooter";
 
@@ -15,10 +15,9 @@ export default function Modal(props: {
     dateStart: string,
     dateEnd: string
   ) => void;
-
-  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>;
+  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, addNewTask, setIsWrong } = props;
+  const { setIsActive, addNewTask, setIsWrong} = props;
 
   const [taskName, setTaskName] = useState("");
   const [taskDescryption, setTaskDescryption] = useState("");
@@ -48,6 +47,7 @@ export default function Modal(props: {
           inputId="task_input_name"
           inputName="task_input_name"
           setValue={setTaskName}
+          
         />
         <label
           htmlFor="task_textarea_input"
@@ -92,7 +92,7 @@ export default function Modal(props: {
           </div>
         </div>
       </section>
-      <ModalFooter eventHandler={eventHandler} setIsActive={setIsActive} />
+      <ModalFooter eventHandler={eventHandler} setIsActive={setIsActive} setIsWrong={setIsWrong} />
     </form>
   );
 }

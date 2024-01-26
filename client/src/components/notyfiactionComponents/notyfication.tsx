@@ -1,14 +1,14 @@
 import { useContext } from "react";
-import { notyfiaction } from "../../types/INotyfiactionInterface";
+import { INotyfiaction } from "../../types/INotyfiactionInterface";
 import { themeContext } from "../pages/dashboardPage";
-export default function Notyfication(props: { element: notyfiaction }) {
-  const { id, name, mustToDo, finishedDays, progress, futureDays, isStarted } =
+export default function Notyfication(props: { element: INotyfiaction }) {
+  const { id, name, mustToDo, finishedDays, progress, futureDays, status } =
     props.element;
 
   const theme = useContext(themeContext)
 
   const checkStageInTask = () => {
-    if(isStarted === true){
+    if(status === "started"){
       return  <p className={`${theme === "dark" ? "text-text_dark" : "text-text_light"} pl-2`}>
       Today you need to complete <span className={`pl-1 pr-1 ${theme === "dark" ? "text-text_dark" : "text-text_light"} font-bold text-lg`}>{mustToDo}%</span> of this task. Your progress is
 

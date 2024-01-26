@@ -11,10 +11,9 @@ export default function ButtonEdit(props: {
         e.preventDefault();
         setIsEditing(!isEditing);
       }}
-      className="btn_edit font-semibold  bg-primary3 text-white flex items-center gap-1 pl-2 pr-2 pt-1 pb-1 rounded "
+      className="btn_edit font-semibold  bg-primary3 text-white flex items-center  p-2 rounded-full "
     >
       <FaEdit />
-      Edit
     </button>
   );
 }

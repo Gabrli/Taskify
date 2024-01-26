@@ -6,7 +6,7 @@ export default function TaskDescription(props: { description: string }) {
   const theme = useContext(themeContext)
   return (
     <section>
-      <p className={`p-2 ${theme === "dark" ? "text-text_dark" : "text-text_light"} text-opacity-40 font-semibold`}>
+      <p className={`pl-5 pr-5 pt-2 ${theme === "dark" ? "text-text_dark" : "text-text_light"}  `}>
         {description}
       </p>
     </section>

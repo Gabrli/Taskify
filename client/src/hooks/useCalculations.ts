@@ -1,12 +1,12 @@
 export const useCalculations = (
   dateStart: string,
   dateEnd: string,
-  isStarted: boolean
+  
 ) => {
   const calculations = (
     dateStart: string,
     dateEnd: string,
-    isStarted: boolean
+    
   ) => {
     const startDate: Date = new Date(dateStart);
     const endDate: Date = new Date(dateEnd);
@@ -22,10 +22,12 @@ export const useCalculations = (
     let futureDays: number;
     let finishedDays: number;
     let timeDifferenceFuture: number;
+    let status:string;
 
     if (startDate <= currentDate) {
-      isStarted = true;
+      status = "started";
       if (currentDate >= endDate) {
+        status = "complited"
         mustToDoResult = 0;
         futureDays = 0;
         finishedDays = Math.floor(timeDifferencePassed / (1000 * 60 * 60 * 24));
@@ -35,10 +37,11 @@ export const useCalculations = (
           futureDays,
           finishedDays,
           progress,
-          isStarted,
+          status,
           diffDays
         };
       } else {
+       
         mustToDoResult = Math.round((1 / diffDays) * 100);
         timeDifferenceFuture = endDate.getTime() - currentDate.getTime();
 
@@ -50,12 +53,12 @@ export const useCalculations = (
           progress,
           finishedDays,
           futureDays,
-          isStarted,
+          status,
           diffDays
         };
       }
     } else {
-      isStarted = false;
+      status = "waiting";
       timeDifferenceFuture = startDate.getTime() - currentDate.getTime();
       futureDays = Math.ceil(timeDifferenceFuture / (1000 * 60 * 60 * 24));
       progress = 0;
@@ -67,11 +70,11 @@ export const useCalculations = (
         progress,
         finishedDays,
         mustToDoResult,
-        isStarted,
+        status,
         diffDays
       };
     }
   };
 
- return  calculations(dateStart, dateEnd, isStarted);
+ return  calculations(dateStart, dateEnd);
 };

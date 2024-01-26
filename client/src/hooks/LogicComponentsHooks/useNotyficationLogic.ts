@@ -33,9 +33,9 @@ export const useNotyficationLogic = () => {
 
   const builderNotyfications = (tasks: ITask[]) => {
     const newExtractedList = tasks.map((task) => {
-      const { date_start, date_end, name, isStarted } = task;
+      const { date_start, date_end, name } = task;
 
-      const calculationsFun = useCalculations(date_start, date_end, isStarted);
+      const calculationsFun = useCalculations(date_start, date_end);
       const percentages = calculationsFun.mustToDoResult;
       const finishedDays = calculationsFun.finishedDays;
       const futureDays = calculationsFun.futureDays;
@@ -50,7 +50,7 @@ export const useNotyficationLogic = () => {
         finishedDays: finishedDays,
         futureDays: futureDays,
         progress: progress,
-        isStarted: calculationsFun.isStarted,
+        status: calculationsFun.status,
       };
 
       return newNotyfication;

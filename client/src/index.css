@@ -53,7 +53,7 @@ body{
 }
 .btnDashFooter{
   transition: all .6s;
-  background: var(--btn_how-color);
+  background: #d9268533;
 }
 .dashFooter {
   background: var(--bg-footer);
@@ -185,7 +185,7 @@ body{
 }
 
 .dash_nav_elements:hover {
-  border-color: var(--text-title-color1);
+  border-color: #7E0C49;
 }
 .dash_search_box:focus-within {
   box-shadow: 0 20px 80px -10px var(--bg-search-box);

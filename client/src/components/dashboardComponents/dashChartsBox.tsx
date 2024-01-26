@@ -1,6 +1,6 @@
-import { useContext } from "react"
+import { useContext} from "react"
 import { useCalculations } from "../../hooks/useCalculations"
-import { charstBoxIsActiveContext, isMobileContext, themeContext } from "../pages/dashboardPage"
+import { isMobileContext, themeContext, charstBoxIsActiveContext} from "../pages/dashboardPage"
 import DashChart from "./dashChartsComponents/dashChart"
 import { ISearchItem } from "../../types/ISearchItem"
 
@@ -9,7 +9,10 @@ export default function DashChartsBox(props: {foundItem: ISearchItem}){
     const theme = useContext(themeContext)
     const isMobile = useContext(isMobileContext)
     const charstBoxIsActive = useContext(charstBoxIsActiveContext)
-    const calculations = useCalculations(foundItem.date_start as string, foundItem.date_end as string, foundItem.isStarted as boolean)
+    const calculations = useCalculations(foundItem.date_start as string, foundItem.date_end as string)
+
+   
+    
     return (
         <aside className={`h-max  ${isMobile && charstBoxIsActive ? "block fixed top-20 left-0 chartsBox pb-6  w-full z-10 ": isMobile ? "hidden" : "absolute top-20 right-2"} `}>
             <header className={`p-5 w-full pb-7 `}>

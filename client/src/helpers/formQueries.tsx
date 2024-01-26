@@ -16,5 +16,7 @@ export const REGISTER_FORM_QUERY = async (username:string, mail:string, haschedP
       username: username,
       email: mail,
       password: haschedPassword,
+    }).catch((err) => {
+      return err
     })
 }

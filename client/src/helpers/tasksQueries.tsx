@@ -26,6 +26,8 @@ export const ADD_TASK_QUERY = async (
     description:taskDescryption,
     date_start: dateStart,
     date_end: dateEnd
+  }).catch((err) => {
+    return err
   })
   
 };
@@ -44,6 +46,8 @@ export const EDIT_TASK_QUERY = async (taskName: string,
         description: taskDescryption,
         date_start: dateStart,
         date_end: dateEnd,
+      }).catch((err) => {
+        return err
       })
 }
 

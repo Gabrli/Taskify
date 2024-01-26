@@ -1,17 +1,17 @@
 import { ITask } from "../../types/ITask";
-import ButtonEdit from "./dashTaskComponents/buttonEdit";
-import ButtonRemove from "./dashTaskComponents/buttonRemove";
 import TaskHeader from "./dashTaskComponents/taskHeader";
 import TaskDescription from "./dashTaskComponents/taskDescription";
 import TaskDates from "./dashTaskComponents/taskDates";
-import { useState } from "react";
+import { useContext, useEffect, useState } from "react";
 
 import TaskEditForm from "./dashTaskComponents/taskEditFormComponents/taskEditForm";
+import { useCalculations } from "../../hooks/useCalculations";
+import { taskListContext } from "../pages/dashboardPage";
 export default function DashTask(props: {
   element: ITask;
 
   removeTask: (taskId: string) => void;
-  isWrong: boolean;
+ 
   editTask: (
     taskName: string,
     taskDescryption: string,
@@ -19,17 +19,25 @@ export default function DashTask(props: {
     dateEnd: string,
     taskId: string
   ) => Promise<void>;
+  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 }) {
   const { task_id, name, description, date_start, date_end } = props.element;
-  const { removeTask, editTask } = props;
+  const { removeTask, editTask, setIsWrong} = props;
   const [isEditing, setIsEditing] = useState(false);
+  const [taskStatus, setTaskStatus] = useState("");
+  const calculations = useCalculations(date_start, date_end);
+  const taskList = useContext(taskListContext);
+
+  useEffect(() => {
+    setTaskStatus(calculations.status);
+  }, [taskList]);
 
   return (
     <li
       key={task_id}
       className={`${
         task_id === "00" ? "hidden" : ""
-      }  rounded  bg-primary3 mt-3  p-2  `}
+      }  rounded-2xl  bg-primary3 mt-3  w-taskW  `}
     >
       {isEditing ? (
         <TaskEditForm
@@ -40,16 +48,20 @@ export default function DashTask(props: {
           setIsEditing={setIsEditing}
           editTask={editTask}
           task_id={task_id}
+          setIsWrong={setIsWrong}
         />
       ) : (
         <>
-          <TaskHeader name={name} />
+          <TaskHeader
+            name={name}
+            setIsEditing={setIsEditing}
+            isEditing={isEditing}
+            removeTask={removeTask}
+            taskId={task_id}
+            status={taskStatus}
+          />
           <TaskDescription description={description} />
           <TaskDates date_start={date_start} date_end={date_end} />
-          <section className="flex justify-center items-center gap-2 p-2">
-            <ButtonRemove removeTask={removeTask} taskId={task_id} />
-            <ButtonEdit setIsEditing={setIsEditing} isEditing={isEditing} />
-          </section>
         </>
       )}
     </li>

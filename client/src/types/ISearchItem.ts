@@ -1,9 +1,7 @@
-
-interface ISearchItem{
-  
-    date_start:string | undefined,
-    date_end:string | undefined,
-    isStarted:boolean | undefined
+interface ISearchItem {
+  date_start: string | undefined;
+  date_end: string | undefined;
+  status: string | undefined;
 }
 
-export type {ISearchItem}
+export type { ISearchItem };
