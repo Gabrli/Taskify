@@ -84,12 +84,15 @@ When the value is `False`, the required action failed,
 
 **All endpoints are POST methods**
 
+(except `/accounts/getAllNames` which is **GET**)
+
 | **ENDPOINT**               | **INPUT DATA**                                                   | **DATA ON SUCCESS**                                                                                 |
 | -------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
 | `/accounts/login`          | `username`, `password`                                           | uid: `str`                                                                                          |
 | `/accounts/register`       | `username`, `password`, `email`                                  | uid: `str`                                                                                          |
 | `/accounts/delete`         | `uid`                                                            | -                                                                                                   |
-| `/accounts/changePassowrd` | `uid`, `new`                                                     | -                                                                                                   |
+| `/accounts/changePassword` | `uid`, `new`                                                     | -                                                                                                   |
+| `/accounts/getAllNames`    |                                                                  | names: `List[string]`                                                                               |
 | `/tasks/create`            | `uid`, `name`, `description`, `date_start`, `date_end`           | task_id: `str`                                                                                      |
 | `/tasks/edit`              | `uid`, `task_id` `name`, `description`, `date_start`, `date_end` | -                                                                                                   |
 | `/tasks/remove`            | `uid`, `task_id`                                                 | -                                                                                                   |
