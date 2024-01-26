@@ -1,16 +1,19 @@
 <h1>Taskfiy - Inteligent task planner </h1>
 
 ---
-# ABOUT PROJECT :bulb: : 
-- <h3>:hammer: Why did we build this project ?</h3> Our motivation we found in the problem while planing our tasks. We needed something that would plan and calculate stages of our tasks for us.
-
-# LIVE:
+<h2>LIVE:</h2>
 
 - https://taskify-seven-phi.vercel.app/
+---
+# ABOUT PROJECT :bulb: : 
+- <h3>:hammer: Why did we build this project ?</h3> Our motivation we found in the problem while planing our tasks. We needed something that would plan and calculate stages of our tasks for us.
+- <h3>:technologist: How we found the solution ? </h3> So, we thought that is possible create a function which based on chooised by user <strong> start date</strong> and <strong> end date</strong> with help <strong> current date</strong>, will be calculate all needed informations and show data on charts. To sum up, the most important thing in all this are calculations based on <strong>3 dates</strong> and after all calculations our application show user his <strong> progress, finished days, future days and how much he must to do </strong> in chooised task.
+
+
 
 ---
 
-### :man_technologist:
+### :raising_hand_man:
 
 | AUTORS                                                     | FRONTEND                              | BACKEND                               |
 |:----------------------------------------------------------:|:-------------------------------------:|:-------------------------------------:|
@@ -38,6 +41,26 @@
 ### Other tools
 
 - <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-plain-wordmark.svg"  title="GIT" alt="GIT" width="20" height="20"/>  Git - version control system
+
+---
+
+<h2>SCREENS:</h2>
+<h3>1.Landing page: </h3>
+- Dark mode: 
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/a1f08a6e-f325-4aca-962b-1e1ab0f9a622"/>
+
+- Light mode:
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/3d49c4db-e80b-47c3-b736-90338ca649ea"/>
+
+
+
+<h3>2.Dashboard:</h3>
+- Dark mode:
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/93b980cb-c8b4-4de2-9ce6-3b2975dfcc8e"/>
+
+- Light mode:
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/1f8b49d6-13ed-4af0-a2e8-e329cf9d99a8"/>
+
 
 ---
 
