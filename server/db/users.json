@@ -13,5 +13,10 @@
     "username": "d",
     "password": "$2a$10$OK6lsq/t4owG6LUUM4dCTO7q4xdQV1W.ryv3kbO48Ot.2ZzyrvOiu",
     "email": "d"
+  },
+  "ecb252044b5ea0f679ee78ec1a12904739e2904d": {
+    "username": "string",
+    "password": "$2a$10$xV8UXDKZxVMoZVDrXSm8vubZdTfbkmYy79t5c/JAXT5veVmP6Mf7W",
+    "email": "string@a.com"
   }
 }

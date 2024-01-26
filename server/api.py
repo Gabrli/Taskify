@@ -45,6 +45,20 @@ def generate_response_and_log(
 # -- ACCOUNTS -- #
 
 
+@api.get("/accounts/getAllNames")
+async def get_all_names(request: Request) -> JSONResponse:
+    """ Return all users' names. """        
+    names = [user_model.username for user_model in database.users_db.get_all_models()]
+    return generate_response_and_log(
+        request,
+        True,
+        "Passing all users names",
+        additional_data = {
+            "names": names
+        }
+    )
+    
+
 @api.post("/accounts/login")
 async def login(data: request_models.M_AccountLogin, request: Request) -> JSONResponse:
     try:

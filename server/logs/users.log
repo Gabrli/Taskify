@@ -1,3 +1,4 @@
-[09/01/2024 11:08:50] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.create_user#60]  Created account: test
-[09/01/2024 19:53:01] (d033e22ae348aeb5660fc2140aec35850c4da997) [users.py.create_user#60]  Created account: admin
-[25/01/2024 14:35:20] (3c363836cf4e16666669a25da280a1865c2d2874) [users.py.create_user#60]  Created account: d
+[26/01/2024 18:57:12] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.create_user#60]  Created account: string
+[26/01/2024 18:58:02] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.create_user#60]  Created account: string
+[26/01/2024 18:58:17] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.change_password#99]  Password changed for: string
+[26/01/2024 18:58:26] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.change_password#99]  Password changed for: string
