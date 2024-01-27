@@ -4,6 +4,8 @@ import Footer from "../landingPageComponents/footer";
 import "../../index.css";
 import { useContext } from "react";
 import { themeContext } from "../../App";
+import Destiny from "../landingPageComponents/destiny";
+import Process from "../landingPageComponents/process";
 
 
 
@@ -22,7 +24,8 @@ export default function LandingPage(props: {setTheme: React.Dispatch<React.SetSt
           <Header setTheme={setTheme} />
 
           <Hero />
-
+          <Destiny/>
+          <Process/>
           <Footer />
         </div>
       

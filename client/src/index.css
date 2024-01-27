@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .dark {
   --bg-color: #0c040c;
   --text-title-color1: #d129c8;
@@ -17,6 +21,9 @@
   --bg-task2: rgb(99, 15, 151);
   --bg-task3: rgb(71, 19, 110);
   --bg-search-box: #f5e5ee0d;
+  --bg-destiny1: #2c0e2c;
+  --bg-destiny2: #22052b;
+  --process_tile: #2c0e2c;
 }
 .light {
   --bg-color: #fbf4fb;
@@ -27,6 +34,9 @@
   --bg-footer: #f3eafa;
   --text-color: #070307;
   --bg-search-box: #00000008;
+  --bg-destiny1: #ffeaff;
+  --bg-destiny2: #f8e2ff;
+  --process_tile: #e6c2f1;
 }
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -84,6 +94,28 @@ body{
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.text_who{
+  background: linear-gradient(
+    to right,
+    var(--text-title-color1),
+    var(--text-title-color2)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.destiny_box{
+  background: linear-gradient(to right,var(--bg-destiny1), var(--bg-destiny2) );
+}
+.desiny_header{
+  background: var(--bg-color);
+}
+.procces_box{
+  background: var(--bg-color);
+ 
+}
+.p_tile{
+  transition: all .6s;
 }
 .fo_title {
   background: linear-gradient(
@@ -206,6 +238,10 @@ body{
 .btn_edit:hover {
   transform: translate(0, -3px);
   box-shadow: 0 20px 80px -10px #581a65;
+}
+.p_tile:hover{
+  transform: scale(1.1,1.1);
+  box-shadow: 0 20px 80px -10px var(--process_tile);
 }
 .link_quic:hover {
   color: #dd5e89;

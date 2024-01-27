@@ -38,7 +38,8 @@ export default {
         "custom-height-landing-plus": "250px",
         "custom-height-mobile-hero-text-content": "180px",
         "custom-height-mobile-footer": "400px",
-
+        "custom-height-process-tile": '200px',
+        "custom-height-order-process":"40px",
         "custom-height-modal": "525px",
         "custom-height-modal-textarea": "130px",
         "custom-height-modal-inputs": "35px",
@@ -59,6 +60,7 @@ export default {
         mobileFooterImg: "150px",
         form: "320px",
         modalInputs: "250px",
+        customWidthOrderProcess: "40px",
         modal: "320px",
         notyfication: "350px",
         counter: "20px",
