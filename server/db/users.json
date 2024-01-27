@@ -1,17 +1,12 @@
 {
-  "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3": {
-    "username": "test",
-    "password": "$2a$10$HDzWgatwoHdpgQHJNo0VrOF.9rQp48cvZ5DGtTMf2yuujgKSU83gO",
-    "email": "test@op.com"
-  },
   "d033e22ae348aeb5660fc2140aec35850c4da997": {
     "username": "admin",
     "password": "$2a$10$Id5M3Q9zedtFfNJuzrTcJe3CRkkcAf0ZcYxNqpl0XaTEpUJh6x5ha",
     "email": "admin@op.pl"
   },
-  "3c363836cf4e16666669a25da280a1865c2d2874": {
-    "username": "d",
-    "password": "$2a$10$OK6lsq/t4owG6LUUM4dCTO7q4xdQV1W.ryv3kbO48Ot.2ZzyrvOiu",
-    "email": "d"
+  "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3": {
+    "username": "test",
+    "password": "$2a$10$nleHEA.c66PUCb7K8OGXsenXFIHgASuITEipgp.SaIwIFO0f9vkm6",
+    "email": "test@op.pl"
   }
 }

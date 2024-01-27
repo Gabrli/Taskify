@@ -1,5 +1,5 @@
 import { useContext, useState } from "react"
-import { themeContext } from "../../pages/dashboardPage"
+import { themeContext } from "../../../App"
 
 export default function DashSearchInput(props: {fun: (value: string) => void}){
     const { fun } = props

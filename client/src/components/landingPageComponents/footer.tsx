@@ -1,5 +1,5 @@
 import { FaUserShield, FaCode, FaInstagram } from "react-icons/fa";
-import { themeContext } from "../pages/landingPage";
+import { themeContext } from "../../App";
 import { useContext } from "react";
 import SocialHref from "./landingFooterComponents/socialHref";
 import QuickLink from "./landingFooterComponents/quicLink";
@@ -15,9 +15,9 @@ export default function Footer() {
             <p className={`text-text_dark  ${theme === "dark"?"":"text-text_light"} `}>Follow us</p>
           </header>
           <div className="flex justify-start items-center pt-4 gap-5">
-          <SocialHref href="#" icon={<FaInstagram/>}/>
-          <SocialHref href="#" icon={<FaUserShield/>}/>
-          <SocialHref href="#" icon={<FaCode/>}/>
+          <SocialHref href="https://www.instagram.com/gabrl18/" icon={<FaInstagram/>}/>
+          <SocialHref href="https://github.com/Gabrli/Taskify/blob/main/README.md" icon={<FaUserShield/>}/>
+          <SocialHref href="https://github.com/Gabrli/Taskify" icon={<FaCode/>}/>
           </div>
         </section>
     
@@ -27,14 +27,14 @@ export default function Footer() {
           <div className="pt-3">
             <p className={`font-semibold text-text_dark ${theme === "dark"?"":"text-text_light"}`}>Quick Links</p>
             <ul>
-              <QuickLink href="/home" content="Home"/>
+              <QuickLink href="/" content="Home"/>
               <QuickLink href="/login" content="Login"/>
               <QuickLink href="/register" content="Register"/>
             </ul>
           </div>
           <div className="pb-9">
             <p className={`font-semibold  ${theme === "dark"?"text-text_dark":"text-text_light"}`}>Support</p>
-            <a className="text-gray-500 link_quic font-medium" href="">Report a bug</a>
+            <a className="text-gray-500 link_quic font-medium" href="mailto:gabrys.wisniewski@op.pl">Report a bug</a>
           </div>
         </section>
        

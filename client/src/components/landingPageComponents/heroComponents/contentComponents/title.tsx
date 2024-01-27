@@ -1,5 +1,5 @@
 import { useContext } from "react"
-import { themeContext } from "../../../pages/landingPage"
+import { themeContext } from "../../../../App"
 export default function Title(){
 
     const theme = useContext(themeContext)

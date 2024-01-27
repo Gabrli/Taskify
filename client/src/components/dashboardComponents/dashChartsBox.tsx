@@ -1,6 +1,7 @@
 import { useContext} from "react"
 import { useCalculations } from "../../hooks/useCalculations"
-import { isMobileContext, themeContext, charstBoxIsActiveContext} from "../pages/dashboardPage"
+import { isMobileContext, charstBoxIsActiveContext} from "../pages/dashboardPage"
+import { themeContext } from "../../App"
 import DashChart from "./dashChartsComponents/dashChart"
 import { ISearchItem } from "../../types/ISearchItem"
 

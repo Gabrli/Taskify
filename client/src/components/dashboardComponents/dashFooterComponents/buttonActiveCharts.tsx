@@ -1,5 +1,6 @@
 import { useContext } from "react"
-import { charstBoxIsActiveContext, themeContext } from "../../pages/dashboardPage"
+import { charstBoxIsActiveContext } from "../../pages/dashboardPage"
+import { themeContext } from "../../../App";
 import { MdKeyboardArrowUp, MdKeyboardArrowDown } from "react-icons/md";
 export default function ButtonActiveChartsBox(props: {setChartsBoxIsActive: React.Dispatch<React.SetStateAction<boolean>>}){
     const { setChartsBoxIsActive } = props

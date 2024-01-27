@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import logo from '../../assets/img/logoipsum-300.svg'
 import LandingNav from './landingNav';
-import { themeContext } from '../pages/landingPage';
+import { themeContext } from '../../App';
 export default function Header(props: { setTheme:React.Dispatch<React.SetStateAction<string>>}) {
 
   const { setTheme } = props

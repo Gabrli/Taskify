@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { themeContext } from "../../pages/dashboardPage";
+import { themeContext } from "../../../App";
 
 export default function LeftSection() {
   const theme = useContext(themeContext)

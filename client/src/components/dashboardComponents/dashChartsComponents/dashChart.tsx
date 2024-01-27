@@ -1,6 +1,6 @@
 import { useCallback, useState, useContext } from "react";
 import { ISearchItem } from "../../../types/ISearchItem";
-import { themeContext } from "../../pages/dashboardPage";
+import { themeContext } from "../../../App";
 import { BarChart, Bar, Cell } from "recharts";
 import { IChart } from "../../../types/IChart";
 export default function DashChart(props: {

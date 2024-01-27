@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { INotyfiaction } from "../../types/INotyfiactionInterface";
-import { themeContext } from "../pages/dashboardPage";
+import { themeContext } from "../../App";
 export default function Notyfication(props: { element: INotyfiaction }) {
   const { id, name, mustToDo, finishedDays, progress, futureDays, status } =
     props.element;

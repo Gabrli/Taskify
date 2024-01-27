@@ -2,14 +2,18 @@ import Header from "../landingPageComponents/header";
 import Hero from "../landingPageComponents/hero";
 import Footer from "../landingPageComponents/footer";
 import "../../index.css";
-import { createContext, useState } from "react";
-const themeContext = createContext("");
+import { useContext } from "react";
+import { themeContext } from "../../App";
 
-export default function LandingPage() {
-  const [theme, setTheme] = useState("dark");
+
+
+export default function LandingPage(props: {setTheme: React.Dispatch<React.SetStateAction<string>>}) {
+  const { setTheme } = props
+  const theme = useContext(themeContext)
+ 
   return (
     <>
-      <themeContext.Provider value={theme}>
+      
         <div
           className={`landing_page h-screen  w-screen flex flex-col   ${
             theme === "dark" ? "dark" : "light"
@@ -21,9 +25,9 @@ export default function LandingPage() {
 
           <Footer />
         </div>
-      </themeContext.Provider>
+      
     </>
   );
 }
 
-export { themeContext };
+

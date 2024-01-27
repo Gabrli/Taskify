@@ -1,3 +1,17 @@
 [09/01/2024 11:08:50] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.create_user#60]  Created account: test
 [09/01/2024 19:53:01] (d033e22ae348aeb5660fc2140aec35850c4da997) [users.py.create_user#60]  Created account: admin
 [25/01/2024 14:35:20] (3c363836cf4e16666669a25da280a1865c2d2874) [users.py.create_user#60]  Created account: d
+[26/01/2024 20:37:35] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[26/01/2024 20:45:30] (3c363836cf4e16666669a25da280a1865c2d2874) [users.py.change_password#99]  Password changed for: d
+[26/01/2024 20:49:41] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.create_user#60]  Created account: test
+[26/01/2024 20:49:49] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:07:36] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:08:02] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:08:03] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:08:59] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:09:30] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:10:18] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:10:22] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:10:23] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:10:23] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test
+[27/01/2024 10:11:03] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.change_password#99]  Password changed for: test

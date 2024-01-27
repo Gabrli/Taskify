@@ -4,7 +4,7 @@ import AccounteHeader from "./accountHeader";
 
 export default function AccountCard(){
     return(
-        <div className="h-screen bg-white p-3 bg-opacity-30 flex flex-col justify-between ">
+        <div className="h-screen  p-3 bg-primary3 flex flex-col justify-between ">
             <AccounteHeader/>
             <AccountForm/>
             <AccountFooter/>

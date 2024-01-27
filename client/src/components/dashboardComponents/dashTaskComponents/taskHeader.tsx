@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { themeContext } from "../../pages/dashboardPage";
+import { themeContext } from "../../../App";
 import TaskBadge from "./taskBadge";
 import ButtonActiveOptions from "./taskHeaderComponents/buttonActiveOptions";
 import ButtonEdit from "./buttonEdit";

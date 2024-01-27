@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { IoMdAdd } from "react-icons/io";
-import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
+import { isMobileContext} from "../../../pages/dashboardPage";
+import { themeContext } from "../../../../App";
 
 export default function ButtonAddNewTask(props: {
   

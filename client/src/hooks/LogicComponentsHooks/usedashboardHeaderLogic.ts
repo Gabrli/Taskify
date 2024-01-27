@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import {
   isMobileContext,
-  themeContext,
 } from "../../components/pages/dashboardPage";
+import { themeContext } from "../../App";
 
 export const useDashboardHeaderLogic = (props: {
   setTheme: React.Dispatch<React.SetStateAction<string>>;

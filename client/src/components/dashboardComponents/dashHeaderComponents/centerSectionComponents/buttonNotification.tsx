@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import { MdNotificationsActive } from "react-icons/md"
-import { isMobileContext, themeContext } from "../../../pages/dashboardPage";
+import { isMobileContext } from "../../../pages/dashboardPage";
+import { themeContext } from "../../../../App";
 export default function ButtonNotyfication(props: { isDropNotyfications: boolean, setIsDropNotyfications: React.Dispatch<React.SetStateAction<boolean>>}){
     const {  isDropNotyfications, setIsDropNotyfications } = props
     const theme = useContext(themeContext)

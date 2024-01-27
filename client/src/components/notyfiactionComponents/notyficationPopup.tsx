@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import NotyfiactionWrapper from "./notyfiactionWrapper";
 import NotyficationsHeader from "./notyficationHeader";
-import { isMobileContext, themeContext } from "../pages/dashboardPage";
+import { isMobileContext } from "../pages/dashboardPage";
+import { themeContext } from "../../App";
 
 export default function NotyficationPopup() {
   const isMobile = useContext(isMobileContext);

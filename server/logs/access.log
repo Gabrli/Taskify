@@ -11713,3 +11713,242 @@
 [26/01/2024 08:30:10] (127.0.0.1:58668) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [26/01/2024 08:30:11] (127.0.0.1:58668) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [26/01/2024 08:30:11] (127.0.0.1:58667) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 08:53:30] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 08:53:30] (127.0.0.1:59212) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:01:11] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:01:11] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:01:36] (127.0.0.1:59360) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:01:36] (127.0.0.1:59360) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:01:36] (127.0.0.1:59361) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:04:52] (127.0.0.1:59403) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:04:52] (127.0.0.1:59403) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:04:52] (127.0.0.1:59404) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:04:56] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:04:56] (127.0.0.1:59403) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:05:00] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:00] (127.0.0.1:59404) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:05:50] (127.0.0.1:59436) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:05:50] (127.0.0.1:59436) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:05:50] (127.0.0.1:59437) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:05:53] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:53] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:57] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:57] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:59] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:05:59] (127.0.0.1:59436) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:06:06] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:06:06] (127.0.0.1:59453) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:09:21] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:09:21] (127.0.0.1:59535) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:09:22] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:09:22] (127.0.0.1:59534) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:09:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:09:23] (127.0.0.1:59535) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:09:47] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:09:47] (127.0.0.1:59548) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:02] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:02] (127.0.0.1:59557) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:04] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:04] (127.0.0.1:59556) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:10] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:10] (127.0.0.1:59567) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:13] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:13] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:17] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:17] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:19] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:19] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:25] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:25] (127.0.0.1:59566) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:27] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:27] (127.0.0.1:59567) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:35] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:35] (127.0.0.1:59588) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:56] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:56] (127.0.0.1:59597) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:10:58] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:10:58] (127.0.0.1:59596) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:11:35] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:11:35] (127.0.0.1:59614) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:12:58] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:12:58] (127.0.0.1:59662) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:13:14] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:14] (127.0.0.1:59670) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:13:20] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:20] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:24] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:24] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:26] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:26] (127.0.0.1:59678) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:13:29] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:29] (127.0.0.1:59677) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:13:32] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:32] (127.0.0.1:59678) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:13:45] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:45] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:46] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:13:46] (127.0.0.1:59696) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:14:00] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:14:00] (127.0.0.1:59714) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:14:44] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:14:44] (127.0.0.1:59743) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:15:12] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:15:12] (127.0.0.1:59769) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:15:28] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:15:28] (127.0.0.1:59787) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:15:55] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:15:55] (127.0.0.1:59811) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:15:58] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:15:58] (127.0.0.1:59810) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:04] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:04] (127.0.0.1:59825) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:12] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:12] (127.0.0.1:59832) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:23] (127.0.0.1:59847) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:37] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:37] (127.0.0.1:59863) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:40] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:40] (127.0.0.1:59862) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:46] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:46] (127.0.0.1:59879) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:16:53] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:16:53] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:03] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:03] (127.0.0.1:59906) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:05] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:05] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:09] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:09] (127.0.0.1:59906) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:13] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:13] (127.0.0.1:59905) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:15] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:15] (127.0.0.1:59906) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:17] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:17] (127.0.0.1:59905) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:31] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:31] (127.0.0.1:59949) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:17:50] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:17:50] (127.0.0.1:59966) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:18:26] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:18:26] (127.0.0.1:60000) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:18:35] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:18:35] (127.0.0.1:60010) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:18:38] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:18:38] (127.0.0.1:60009) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:05] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:05] (127.0.0.1:60037) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:10] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:10] (127.0.0.1:60037) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:17] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:17] (127.0.0.1:60049) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:19] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:19] (127.0.0.1:60042) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:24] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:24] (127.0.0.1:60049) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:29] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:29] (127.0.0.1:60067) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:38] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:38] (127.0.0.1:60080) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:19:45] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:19:45] (127.0.0.1:60089) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:20:54] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:20:54] (127.0.0.1:60124) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:21:00] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:21:00] (127.0.0.1:60139) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:22:11] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:22:11] (127.0.0.1:60187) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:30:21] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:30:21] (127.0.0.1:60531) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:37:21] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:37:21] (127.0.0.1:60919) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:37:25] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:37:25] (127.0.0.1:60918) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:37:34] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:37:34] (127.0.0.1:60934) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:37:38] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:37:38] (127.0.0.1:60933) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:38:23] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:38:23] (127.0.0.1:60958) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:39:22] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:39:22] (127.0.0.1:60987) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:40:24] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:40:24] (127.0.0.1:61009) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:40:29] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:40:29] (127.0.0.1:61007) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 09:41:06] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 09:41:06] (127.0.0.1:61027) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:06:39] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:06:39] (127.0.0.1:61780) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:06:51] (127.0.0.1:61781) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:06:51] (127.0.0.1:61782) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:19:27] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:19:27] (127.0.0.1:62128) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:19:30] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:19:30] (127.0.0.1:62126) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:19:37] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:19:37] (127.0.0.1:62149) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:19:40] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:19:40] (127.0.0.1:62148) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:19:50] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 11:19:50] (127.0.0.1:62166) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:29:51] (127.0.0.1:62533) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:29:51] (127.0.0.1:62533) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 11:29:51] (127.0.0.1:62555) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 13:59:45] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 13:59:45] (127.0.0.1:63159) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:04:07] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 14:04:07] (127.0.0.1:63419) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:04:19] (127.0.0.1:63432) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:04:19] (127.0.0.1:63432) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:04:19] (127.0.0.1:63433) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:37:57] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 14:37:57] (127.0.0.1:63873) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:38:09] (127.0.0.1:63875) [api.py.edit_task#163]  <True> Edited task: de7e8208531748fe9e45e42800ac40cc for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:38:09] (127.0.0.1:63875) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 14:40:36] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 14:40:36] (127.0.0.1:63897) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:37:27] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 20:37:27] (127.0.0.1:49234) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:37:35] (127.0.0.1:49246) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:45:19] (127.0.0.1:49575) [api.py.login#69]  <True> Successful login for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:19] (127.0.0.1:49575) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:19] (127.0.0.1:49576) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:30] (127.0.0.1:49590) [api.py.change_password#114]  <True> Password updated for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:46] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 20:45:46] (127.0.0.1:49610) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:52] (127.0.0.1:49618) [api.py.login#69]  <True> Successful login for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:52] (127.0.0.1:49618) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:45:52] (127.0.0.1:49619) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:46:04] (127.0.0.1:49637) [api.py.login#69]  <True> Successful login for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:46:04] (127.0.0.1:49637) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:46:04] (127.0.0.1:49638) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:47:09] (127.0.0.1:49691) [api.py.delete_account#102]  <True> Removed account: 3c363836cf4e16666669a25da280a1865c2d2874
+[26/01/2024 20:47:17] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 20:47:17] (3c363836cf4e16666669a25da280a1865c2d2874) [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 20:47:32] (127.0.0.1:49721) [api.py.login#54]  <False> Login for: d failed (invalid username)
+[26/01/2024 20:49:41] (127.0.0.1:49832) [api.py.register#88]  <True> Created account.
+[26/01/2024 20:49:41] (127.0.0.1:49832) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:49:41] (127.0.0.1:49834) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:49:49] (127.0.0.1:49846) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[26/01/2024 20:49:51] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[26/01/2024 20:49:51] (127.0.0.1:49847) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:07:29] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[27/01/2024 10:07:29] (127.0.0.1:50379) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:07:36] (127.0.0.1:50391) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:08:02] (127.0.0.1:50392) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:08:03] (127.0.0.1:50392) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:08:59] (127.0.0.1:50443) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:09:30] (127.0.0.1:50465) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:10:18] (127.0.0.1:50490) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:10:22] (127.0.0.1:50490) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:10:23] (127.0.0.1:50490) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:10:23] (127.0.0.1:50490) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:11:03] (127.0.0.1:50535) [api.py.change_password#114]  <True> Password updated for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:11:58] (127.0.0.1:50578) [api.py.login#69]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:11:58] (127.0.0.1:50578) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:11:58] (127.0.0.1:50579) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[27/01/2024 10:12:18] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
+[27/01/2024 10:12:18] (127.0.0.1:50599) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3

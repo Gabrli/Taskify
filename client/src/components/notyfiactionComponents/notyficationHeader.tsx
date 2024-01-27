@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { IoNotifications } from "react-icons/io5";
-import { themeContext } from "../pages/dashboardPage";
+import { themeContext } from "../../App";
 export default function NotyficationsHeader() {
   const theme = useContext(themeContext)
   return (
