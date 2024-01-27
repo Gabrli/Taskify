@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [30/12/2023 16:36:24] (127.0.0.1:65237) [api.py.register#87]  <True> Created account.
 [30/12/2023 16:38:17] (127.0.0.1:65319) [api.py.login#68]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [30/12/2023 16:39:18] (127.0.0.1:65360) [api.py.login#68]  <True> Successful login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
@@ -11952,3 +11953,13 @@
 [27/01/2024 10:11:58] (127.0.0.1:50579) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [27/01/2024 10:12:18] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
 [27/01/2024 10:12:18] (127.0.0.1:50599) [api.py.get_all_tasks#187]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+=======
+[26/01/2024 18:56:26] (127.0.0.1:52306) [api.py.get_all_names#52]  <True> Passing all users names
+[26/01/2024 18:57:12] (127.0.0.1:52307) [api.py.register#102]  <True> Created account.
+[26/01/2024 18:57:25] (127.0.0.1:52336) [api.py.login#83]  <True> Successful login for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[26/01/2024 18:57:40] (127.0.0.1:52337) [api.py.delete_account#116]  <True> Removed account: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[26/01/2024 18:57:57] (127.0.0.1:52366) [api.py.login#68]  <False> Login for: string failed (invalid username)
+[26/01/2024 18:58:02] (127.0.0.1:52366) [api.py.register#102]  <True> Created account.
+[26/01/2024 18:58:17] (127.0.0.1:52367) [api.py.change_password#128]  <True> Password updated for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[26/01/2024 18:58:26] (127.0.0.1:52381) [api.py.change_password#128]  <True> Password updated for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+>>>>>>> a79120a580cc6ac0f26370e7641940f73853542a
