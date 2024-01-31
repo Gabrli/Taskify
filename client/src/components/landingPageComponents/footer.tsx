@@ -20,6 +20,10 @@ export default function Footer() {
           <SocialHref href="https://github.com/Gabrli/Taskify" icon={<FaCode/>}/>
           </div>
         </section>
+        <section className="pt-6 flex justify-start font-medium  items-center gap-5">
+        <a className={`text-stone-500 transition duration-700 ease-in-out ${theme === "dark" ? "hover:text-text_dark" : "hover:text-text_light"}`} href="https://storyset.com/">Images are from Storyset</a>
+        <a className={`text-stone-500 transition duration-700 ease-in-out ${theme === "dark" ? "hover:text-text_dark" : "hover:text-text_light"}`} href="https://www.freepik.com/author/stories">Images are from Freepik </a>
+      </section>
     
       </header>
       <section className="w-2/3 flex justify-between items-center pb-5  mobile1:flex-col mobile1:w-full mobile1:pl-5">
@@ -34,11 +38,12 @@ export default function Footer() {
           </div>
           <div className="pb-9">
             <p className={`font-semibold  ${theme === "dark"?"text-text_dark":"text-text_light"}`}>Support</p>
-            <a className="text-gray-500 link_quic font-medium" href="mailto:gabrys.wisniewski@op.pl">Report a bug</a>
+            <a className={`text-stone-500 transition duration-700 ease-in-out link_quic font-medium ${theme === "dark" ? "hover:text-text_dark" : "hover:text-text_light"}`} href="mailto:gabrys.wisniewski@op.pl">Report a bug</a>
           </div>
         </section>
        
       </section>
+      
     </footer>
   );
 }
