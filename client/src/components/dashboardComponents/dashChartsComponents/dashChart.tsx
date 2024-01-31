@@ -1,28 +1,18 @@
-import { useCallback, useState, useContext } from "react";
 import { ISearchItem } from "../../../types/ISearchItem";
-import { themeContext } from "../../../App";
+
 import { BarChart, Bar, Cell } from "recharts";
 import { IChart } from "../../../types/IChart";
+import { useChart } from "../../../hooks/useChart";
 export default function DashChart(props: {
   foundItem: ISearchItem;
   chartOne: IChart;
   chartTwo: IChart;
-  chartType:string
+  chartType: string;
 }) {
   const { chartOne, chartTwo, chartType } = props;
-  const theme = useContext(themeContext);
-
-  const chartsData: IChart[] = [chartOne, chartTwo];
-
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeItem = chartsData[activeIndex];
-
-  const handleClick = useCallback(
-    (entry: any, index: number) => {
-      setActiveIndex(index);
-      console.log(entry);
-    },
-    [setActiveIndex]
+  const { theme, chartsData, handleClick, activeItem, activeIndex } = useChart(
+    chartOne,
+    chartTwo
   );
 
   return (
@@ -50,7 +40,9 @@ export default function DashChart(props: {
         className={`content text-sm pb-3  pl-3 ${
           theme === "dark" ? "text-text_dark" : "text-text_light"
         }`}
-      >{` ${activeItem.name}: ${activeItem.uv} ${chartType === "days" ? "days" : "%"}`}</p>
+      >{` ${activeItem.name}: ${activeItem.uv} ${
+        chartType === "days" ? "days" : "%"
+      }`}</p>
     </div>
   );
 }

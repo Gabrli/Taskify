@@ -17,7 +17,6 @@ export const useDashTaskListLogic = (
   setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>,
   setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
- 
   const counter = useContext(counterNotyficationsContext);
   const taskList = useContext(taskListContext);
 
@@ -48,17 +47,14 @@ export const useDashTaskListLogic = (
   ) => {
     await ADD_TASK_QUERY(taskName, taskDescryption, dateStart, dateEnd).then(
       (res) => {
-        console.log(res.code)
-        if (res.code === "ERR_NETWORK") {
-           console.log("error")
-           setIsWrong(true)
-         
+       
+        if (res.code === "ERR_NETWORK" || res.code === "ERR_BAD_REQUEST") {
+          setIsWrong(true);
         } else {
-          setIsWrong(false)
+          setIsWrong(false);
           getTasksFromBackend();
           signalPlay();
           setCounter(counter + 1);
-         
         }
       }
     );
@@ -88,14 +84,10 @@ export const useDashTaskListLogic = (
   };
 
   return {
- 
-
     taskList,
     removeTask,
     addNewTask,
     editTask,
     signalPlay,
-    
-    
   };
 };

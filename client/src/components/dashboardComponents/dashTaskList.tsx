@@ -5,6 +5,7 @@ import DashboardModal from "./dashboardModal";
 import { useDashTaskListLogic } from "../../hooks/LogicComponentsHooks/usedashTaskListLogic";
 import DashSearchBox from "./dashSearchBox";
 import { isMobileContext } from "../pages/dashboardPage";
+import { themeContext } from "../../App";
 
 const isWrongContext = createContext(false);
 export default function DashTaskList(props: {
@@ -17,6 +18,7 @@ export default function DashTaskList(props: {
 }) {
   const { setIsActive, isActive, setCounter, setTaskList } = props;
   const isMobile = useContext(isMobileContext);
+  const theme = useContext(themeContext)
   const [isWrong, setIsWrong] = useState(false);
   const { taskList, removeTask, editTask, addNewTask } = useDashTaskListLogic(
     setCounter,
@@ -66,7 +68,7 @@ export default function DashTaskList(props: {
           ) : (
             <div className="flex flex-col items-center  justify-center gap-5 absolute top-1/2 ">
               <p
-                className={`text_dash_info ${
+                className={`text-stone-600 ${
                   isActive ? "hidden" : ""
                 } font-semibold text-2xl`}
               >
@@ -79,7 +81,7 @@ export default function DashTaskList(props: {
                 }}
                 className={`btn_new font-semibold transition duration-700 ease-in-out  ${
                   isActive ? "hidden" : ""
-                }  text-white rounded pl-6 pr-6 pt-3 pb-3`}
+                }  ${theme === "dark" ? "text-text_dark" :"text-text_light"} rounded pl-6 pr-6 pt-3 pb-3`}
               >
                 Create new
               </button>

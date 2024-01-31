@@ -10,7 +10,7 @@ export default function Destiny(){
     const theme = useContext(themeContext)
     return (
         <section className="w-full ">
-            <header className="pl-10 pb-10 pt-6 flex justify-center items-center desiny_header">
+            <header className=" pb-10 pt-6 flex justify-center items-center desiny_header">
                 <h3 className={`${theme === "dark" ? "text-text_dark" : "text-text_light"} text-4xl font-semibold`}><span className="text_who">Who</span> is it for ?</h3>
             </header>
             <section className="destiny_box flex justify-evenly items-center pb-4 pt-4 mobile1:flex-col mobile1:gap-4 ">

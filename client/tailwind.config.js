@@ -27,10 +27,9 @@ export default {
         static2: "#0000001a",
         static3: "#ffffff08",
         static4: "#00000008",
-        dark_popup: "#232931",
+        dark_popup: "#111",
         dark_popup_header: "#393E46",
         dark_notifications: "#323643",
-        
       },
 
       height: {
@@ -38,8 +37,8 @@ export default {
         "custom-height-landing-plus": "250px",
         "custom-height-mobile-hero-text-content": "180px",
         "custom-height-mobile-footer": "400px",
-        "custom-height-process-tile": '200px',
-        "custom-height-order-process":"40px",
+        "custom-height-process-tile": "200px",
+        "custom-height-order-process": "40px",
         "custom-height-modal": "525px",
         "custom-height-modal-textarea": "130px",
         "custom-height-modal-inputs": "35px",
@@ -62,9 +61,9 @@ export default {
         modalInputs: "250px",
         customWidthOrderProcess: "40px",
         modal: "320px",
-        notyfication: "350px",
+        notification: "350px",
         counter: "20px",
-        taskW: "300px"
+        taskW: "300px",
       },
       screens: {
         mobile1: { max: "877px" },
@@ -76,4 +75,3 @@ export default {
   },
   plugins: [],
 };
-

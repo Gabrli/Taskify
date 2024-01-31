@@ -10,7 +10,7 @@ export default function TaskEditForm(props: {name:string, description:string, da
     const [newDateStart, setNewDateStart] = useState(date_start)
     const [newDateEnd, setNewDateEnd] = useState(date_end)
     return (
-        <form className="flex flex-col gap-2 p-4">
+        <form className="flex flex-col gap-2 p-6">
           <TaskNameInput value={newTaskName} inputId="edit_task_name_input" inputName="edit_task_name_input" setValue={setNewTaskName}  />
           <TaskDescriptionInput value={newTaskDescription} inputId="edit_task_description_input" inputName="edit_task_description_input" setValue={setNewTaskDescription}/>
           <section className="flex justify-between items-center gap-3">
