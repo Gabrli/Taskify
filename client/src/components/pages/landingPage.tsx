@@ -7,30 +7,26 @@ import { themeContext } from "../../App";
 import Destiny from "../landingPageComponents/destiny";
 import Process from "../landingPageComponents/process";
 
+export default function LandingPage(props: {
+  setTheme: React.Dispatch<React.SetStateAction<string>>;
+}) {
+  const { setTheme } = props;
+  const theme = useContext(themeContext);
 
-
-export default function LandingPage(props: {setTheme: React.Dispatch<React.SetStateAction<string>>}) {
-  const { setTheme } = props
-  const theme = useContext(themeContext)
- 
   return (
     <>
-      
-        <div
-          className={`landing_page h-screen  w-screen flex flex-col   ${
-            theme === "dark" ? "dark" : "light"
-          } `}
-        >
-          <Header setTheme={setTheme} />
+      <div
+        className={`landing_page h-screen  w-screen flex flex-col   ${
+          theme === "dark" ? "dark" : "light"
+        } `}
+      >
+        <Header setTheme={setTheme} />
 
-          <Hero />
-          <Destiny/>
-          <Process/>
-          <Footer />
-        </div>
-      
+        <Hero />
+        <Destiny />
+        <Process />
+        <Footer />
+      </div>
     </>
   );
 }
-
-
