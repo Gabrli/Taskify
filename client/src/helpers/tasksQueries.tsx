@@ -2,13 +2,13 @@ import axios from "axios";
 import { userId } from "../auth/checkingIDFromDB";
 
 export const TASK_QUERY = async () => {
-  return await axios.post("/tasks/getAll", {
+  return await axios.post(`https://taskify-bed.onrender.com/tasks/getAll`, {
     uid: userId.id,
   })
 };
 
 export const NOTYFICATION_TASK_QUERY = async () => {
-  return await axios.post("/tasks/getAll", {
+  return await axios.post(`https://taskify-bed.onrender.com/tasks/getAll`, {
     uid: userId.id,
   })
 }
@@ -20,7 +20,7 @@ export const ADD_TASK_QUERY = async (
   dateEnd: string,
  
 ) => {
-  return await axios.post("/tasks/create", {
+  return await axios.post(`https://taskify-bed.onrender.com/tasks/create`, {
     uid: userId.id,
     name: taskName,
     description:taskDescryption,
@@ -39,7 +39,7 @@ export const EDIT_TASK_QUERY = async (taskName: string,
    taskId: string) => {
 
       return await axios
-      .post("/tasks/edit", {
+      .post(`https://taskify-bed.onrender.com/tasks/edit`, {
         uid: userId.id,
         task_id: taskId,
         name: taskName,
@@ -53,7 +53,7 @@ export const EDIT_TASK_QUERY = async (taskName: string,
 
 export const REMOVE_TASK_QUERY = async (taskId: string) => {
    return await axios
-   .post("/tasks/remove", {
+   .post(`https://taskify-bed.onrender.com/tasks/remove`, {
      uid: userId.id,
      task_id: taskId,
    })

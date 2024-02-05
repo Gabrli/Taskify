@@ -12,6 +12,7 @@ export const checkingIDFromDb = (
     localStorage.setItem("token", `${authToken.token}`);
     localStorage.setItem("uid", `${userId.id}`);
     localStorage.setItem("username", `${username}`);
+    console.log(userId.id)
     navigate("/dashboard");
   } else {
     authToken.token = false;

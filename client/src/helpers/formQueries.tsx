@@ -1,8 +1,9 @@
 import axios from "axios";
 
 export const LOGIN_FORM_QUERY = async (username:string, password:string) => {
+
     return await axios
-    .post("/accounts/login", {
+    .post(`https://taskify-bed.onrender.com/accounts/login`, {
       username: username,
       password: password,
     }).catch((err) => {
@@ -11,8 +12,9 @@ export const LOGIN_FORM_QUERY = async (username:string, password:string) => {
 }
 
 export const REGISTER_FORM_QUERY = async (username:string, mail:string, haschedPassword:string) => {
+
     return await axios
-    .post("/accounts/register", {
+    .post(`https://taskify-bed.onrender.com/accounts/register`, {
       username: username,
       email: mail,
       password: haschedPassword,
