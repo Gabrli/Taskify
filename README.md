@@ -47,10 +47,10 @@
 <h2>SCREENS:</h2>
 <h3>1.Landing page: </h3>
 - Dark mode: 
-<img src="https://github.com/Gabrli/Taskify/assets/110058841/a1f08a6e-f325-4aca-962b-1e1ab0f9a622"/>
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/d322cac8-bece-43a8-90c2-c797ea063102"/>
 
 - Light mode:
-<img src="https://github.com/Gabrli/Taskify/assets/110058841/3d49c4db-e80b-47c3-b736-90338ca649ea"/>
+<img src="https://github.com/Gabrli/Taskify/assets/110058841/40c78426-4175-4efd-9cc8-11199aa0babc"/>
 
 
 
