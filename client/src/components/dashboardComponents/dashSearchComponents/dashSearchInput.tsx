@@ -7,7 +7,7 @@ export default function DashSearchInput(props: {fun: (value: string) => void}){
     const [value, setValue] = useState("")
     return (
         <input type="text" id="dash_search_input" value={value} onChange={(e) => setValue(e.target.value)} onKeyDown={(e) => {
-            if(e.code === "Enter"){
+            if(e.keyCode === 13){
                 fun(value)
             } else {
                 return 

@@ -36,7 +36,7 @@ export default function Modal(props: {
   
 
   return (
-    <form className="h-custom-height-modal bg-secondary  w-modal rounded">
+    <form className="h-custom-height-modal bg-secondary p-2  w-modal rounded">
       <header className="pt-6 text-center">
         <h3 className="text-white text-2xl font-semibold">Create new task !</h3>
       </header>
@@ -58,7 +58,7 @@ export default function Modal(props: {
           htmlFor="task_textarea_input"
           className="text-white mr-auto pl-3 font-semibold"
         >
-          Task descryption:
+          Task description:
         </label>
         <TaskDescriptionInput
           value={taskDescryption}
