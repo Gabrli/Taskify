@@ -57,6 +57,7 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
     <head>
       <title>dashboard</title>
       <meta name="description" content="Planning your task in dashboard."/>
+      <link rel="canonical" href="/dashboard"/>
     </head>
     <div
       className={`dashboard_page  ${
