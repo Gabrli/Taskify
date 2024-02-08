@@ -1,4 +1,0 @@
-https://taskify-seven-phi.vercel.app/
-https://taskify-seven-phi.vercel.app/login
-https://taskify-seven-phi.vercel.app/register
-https://taskify-seven-phi.vercel.app/dashboard
