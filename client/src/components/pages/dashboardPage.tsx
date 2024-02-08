@@ -53,6 +53,11 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
   });
 
   return (
+    <>
+    <head>
+      <title>dashboard</title>
+      <meta name="description" content="Planning your task in dashboard."/>
+    </head>
     <div
       className={`dashboard_page  ${
         theme === "dark" ? "dark" : "light"
@@ -85,6 +90,7 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
         </counterNotyficationsContext.Provider>
       </themeContext.Provider>
     </div>
+    </>
   );
 }
 

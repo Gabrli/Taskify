@@ -7,15 +7,20 @@ import RegisterPage from "./components/pages/registerPage"
 import AccountPage from "./components/pages/accountPage"
 import { createContext, useEffect, useState } from "react"
 
+
 const themeContext = createContext("")
 
 function App() {
  
   const [theme, setTheme] = useState("dark")
+  
+
+  
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme") as string
     setTheme(localTheme)
+   
   } ,[])
 
   return (
