@@ -7,11 +7,13 @@ import { ITask } from "../../types/ITask";
 import DashFooter from "../dashboardComponents/dashFooter";
 import { themeContext } from "../../App";
 import { Helmet } from "react-helmet-async";
+import LoaderPopup from "../loaderComponents/loaderPopup";
 const taskListContext = createContext<ITask[]>([]);
 
 const counterNotyficationsContext = createContext(0);
 const isMobileContext = createContext(false);
 const charstBoxIsActiveContext = createContext(false);
+
 
 export default function DashboardPage(props: {setTheme: React.Dispatch<React.SetStateAction<string>>}) {
   const { setTheme } = props
@@ -21,6 +23,7 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
   const [counterNotyfications, setCounterNotyfications] = useState(0);
   const [taskList, setTaskList] = useState<ITask[]>([]);
   const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
   const [charstBoxIsActive, setChartsBoxIsActive] = useState(false);
   const theme = useContext(themeContext)
 
@@ -64,12 +67,15 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
         theme === "dark" ? "dark" : "light"
       } min-h-screen ${isMobile ? "pb-16" : ""}`}
     >
+      <LoaderPopup isLoading={isLoading}/>
       <themeContext.Provider value={theme}>
         <counterNotyficationsContext.Provider value={counterNotyfications}>
           <taskListContext.Provider value={taskList}>
             <isMobileContext.Provider value={isMobile}>
               <charstBoxIsActiveContext.Provider value={charstBoxIsActive}>
-                <DashboardHeader
+                
+             <>
+                  <DashboardHeader
                   setTheme={setTheme}
                   setIsActive={setIsActive}
                 />
@@ -79,12 +85,19 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
                   setIsActive={setIsActive}
                   setCounter={setCounterNotyfications}
                   setTaskList={setTaskList}
+                  setIsLoading={setIsLoading}
                 />
+                
+
                 {isMobile ? (
                   <DashFooter setChartsBoxIsActive={setChartsBoxIsActive} />
                 ) : (
                   ""
                 )}
+                
+                </>
+                
+                
               </charstBoxIsActiveContext.Provider>
             </isMobileContext.Provider>
           </taskListContext.Provider>

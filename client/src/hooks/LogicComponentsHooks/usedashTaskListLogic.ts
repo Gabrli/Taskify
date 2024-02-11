@@ -15,12 +15,14 @@ import {
 export const useDashTaskListLogic = (
   setCounter: React.Dispatch<React.SetStateAction<number>>,
   setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>,
-  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
+  setIsWrong: React.Dispatch<React.SetStateAction<boolean>>,
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
 ) => {
   const counter = useContext(counterNotyficationsContext);
   const taskList = useContext(taskListContext);
 
   useEffect(() => {
+    setIsLoading(true)
     getTasksFromBackend();
   }, []);
 
@@ -34,7 +36,9 @@ export const useDashTaskListLogic = (
   };
 
   const getTasksFromBackend = async () => {
+   
     await TASK_QUERY().then((res) => {
+      setIsLoading(false)
       setTaskList(res.data.tasks);
     });
   };

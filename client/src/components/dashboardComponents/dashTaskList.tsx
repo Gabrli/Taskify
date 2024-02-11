@@ -15,15 +15,17 @@ export default function DashTaskList(props: {
 
   setCounter: React.Dispatch<React.SetStateAction<number>>;
   setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>;
+  setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, isActive, setCounter, setTaskList } = props;
+  const { setIsActive, isActive, setCounter, setTaskList,setIsLoading } = props;
   const isMobile = useContext(isMobileContext);
   const theme = useContext(themeContext)
   const [isWrong, setIsWrong] = useState(false);
   const { taskList, removeTask, editTask, addNewTask } = useDashTaskListLogic(
     setCounter,
     setTaskList,
-    setIsWrong
+    setIsWrong,
+    setIsLoading
   );
 
   return (

@@ -5,8 +5,11 @@ import FormInput from "./inputs/formInput";
 import { FaRegUser } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
+import LoaderPopup from "../loaderComponents/loaderPopup";
+
 
 export default function Form() {
+  
   const {
     username,
     setUserName,
@@ -18,10 +21,13 @@ export default function Form() {
     setIsWrong,
     correctContent,
     sendDataToServer,
+    isLoading
   } = useFormLogic();
 
   return (
-    <form className="w-form flex flex-col justify-center items-center bg-primary2 rounded-lg">
+      <>
+      <LoaderPopup isLoading={isLoading}/>
+      <form className="w-form flex flex-col justify-center items-center bg-primary2 rounded-lg">
       <header className="p-2 pb-6 flex flex-col justify-center items-center">
         <h2 className="text-white font-bold text-3xl p-2 ">
           {correctContent === "login_form" ? "Login" : "Register"}
@@ -101,5 +107,9 @@ export default function Form() {
       </div>
       <FormFooter />
     </form>
+      
+    </>
+    
+    
   );
 }
