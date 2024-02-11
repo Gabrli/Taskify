@@ -40,7 +40,11 @@ export const useDashTaskListLogic = (
     await TASK_QUERY().then((res) => {
       setIsLoading(false)
       setTaskList(res.data.tasks);
-    });
+    }).catch((err) => {
+      if(err){
+        setIsLoading(false)
+      }
+    })
   };
 
   const addNewTask = async (
