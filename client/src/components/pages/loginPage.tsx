@@ -1,13 +1,13 @@
 import Form from "../formComponents/form";
-
+import { Helmet } from "react-helmet-async";
 export default function LoginPage() {
   return (
     <>
-      <head>
-      <title>Login</title>
-      <meta name="description" content="Login to your taskify account"/>
-      <link rel="canonical" href="/login"/>
-    </head>
+    <Helmet>
+     <title>Login</title>
+     <meta name="description" content="Login to your account in Taskify !"/>
+     <link rel="canonical" href="/login"/>
+    </Helmet>
     <main className="login_page h-screen flex justify-center items-center">
       <Form />
     </main>

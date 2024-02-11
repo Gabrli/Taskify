@@ -6,7 +6,7 @@ import { userId } from "../../auth/checkingIDFromDB";
 import { ITask } from "../../types/ITask";
 import DashFooter from "../dashboardComponents/dashFooter";
 import { themeContext } from "../../App";
-
+import { Helmet } from "react-helmet-async";
 const taskListContext = createContext<ITask[]>([]);
 
 const counterNotyficationsContext = createContext(0);
@@ -54,11 +54,11 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
 
   return (
     <>
-    <head>
-      <title>dashboard</title>
-      <meta name="description" content="Planning your task in dashboard."/>
-      <link rel="canonical" href="/dashboard"/>
-    </head>
+     <Helmet>
+     <title>Dashboard</title>
+     <meta name="description" content="Back to work ! Go to the your dashboard."/>
+     <link rel="canonical" href="/dashboard"/>
+    </Helmet>
     <div
       className={`dashboard_page  ${
         theme === "dark" ? "dark" : "light"
