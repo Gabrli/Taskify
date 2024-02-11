@@ -3,7 +3,7 @@
 ---
 <h2>LIVE:</h2>
 
-- https://taskify-seven-phi.vercel.app/
+- https://taskify-work-planner.vercel.app/
 ---
 # ABOUT PROJECT :bulb: : 
 - <h3>:hammer: Why did we build this project ?</h3> Our motivation we found in the problem while planing our tasks. We needed something that would plan and calculate stages of our tasks for us.
