@@ -22,7 +22,7 @@ export const useDashTaskListLogic = (
   const taskList = useContext(taskListContext);
 
   useEffect(() => {
-    setIsLoading(true)
+   
     getTasksFromBackend();
   }, []);
 
@@ -36,7 +36,7 @@ export const useDashTaskListLogic = (
   };
 
   const getTasksFromBackend = async () => {
-   
+    setIsLoading(true)
     await TASK_QUERY().then((res) => {
       setIsLoading(false)
       setTaskList(res.data.tasks);
