@@ -16,7 +16,7 @@ export default function TaskDateInput(props: {
       id={inputId}
       value={value}
       onChange={(e) => setValue(e.target.value)}
-      className={`transition  duration-700 ease-in-out bg-white border-2 ${isWrong ? "border-red-500" : "border-transparent"} outline-none bg-opacity-25 text-white   `}
+      className={`transition w-full  duration-700 p-1 rounded ease-in-out bg-gray-100 border-2 ${isWrong ? "border-red-500" : "border-transparent"} outline-none  text-gray-500   `}
     />
   );
 }

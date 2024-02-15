@@ -15,7 +15,7 @@ export default function TaskDescriptionInput(props: {
       placeholder="Enter the description"
       value={value}
       onChange={(e) => setValue(e.target.value)}
-      className={`transition  duration-700  ease-in-out text-white border ${isWrong ? "border-red-500" : "border-transparent"} bg-opacity-20 resize-none bg-white p-1 w-modalInputs h-custom-height-modal-textarea ml-auto mr-auto  outline-none rounded focus:border `}
+      className={`transition  duration-700  ease-in-out text-gray-500 border ${isWrong ? "border-red-500" : "border-transparent"}  resize-none bg-gray-100 p-1 w-modalInputs h-custom-height-modal-textarea ml-auto mr-auto  outline-none rounded focus:border placeholder:text-sm placeholder:font-base placeholder:text-gray-500`}
     ></textarea>
   );
 }

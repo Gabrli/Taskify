@@ -36,17 +36,12 @@ export default function Modal(props: {
   
 
   return (
-    <form className="h-custom-height-modal bg-secondary p-2  w-modal rounded">
+    <form className="h-custom-height-modal bg-white  p-2  w-modal rounded">
       <header className="pt-6 text-center">
-        <h3 className="text-white text-2xl font-semibold">Create new task !</h3>
+        <h3 className="text-black text-2xl font-semibold">Create new task !</h3>
       </header>
       <section className="flex flex-col items-center p-6 gap-3 ">
-        <label
-          className="text-white mr-auto pl-3 font-semibold"
-          htmlFor="task_input_name"
-        >
-          Task name:
-        </label>
+      
         <TaskNameInput
           value={taskName}
           inputId="task_input_name"
@@ -54,26 +49,16 @@ export default function Modal(props: {
           setValue={setTaskName}
           
         />
-        <label
-          htmlFor="task_textarea_input"
-          className="text-white mr-auto pl-3 font-semibold"
-        >
-          Task description:
-        </label>
+       
         <TaskDescriptionInput
           value={taskDescryption}
           inputId="task_textarea_input"
           inputName="ask_textarea_input"
           setValue={setTaskDescryption}
         />
-        <div className="flex justify-evanly items-center gap-4">
-          <div className="flex flex-col gap-2">
-            <label
-              className="text-white text-center font-semibold "
-              htmlFor="date_start_input"
-            >
-              Date start:
-            </label>
+        <div className="w-full flex flex-col items-center gap-4">
+          <div className="w-full flex flex-col gap-2">
+           
             <TaskDateInput
               value={dateStart}
               inputId="date_start_input"
@@ -81,13 +66,8 @@ export default function Modal(props: {
               setValue={setDateStart}
             />
           </div>
-          <div className="flex flex-col gap-2">
-            <label
-              className="text-white text-center font-semibold"
-              htmlFor="date_end_input"
-            >
-              Date end:
-            </label>
+          <div className="w-full flex flex-col gap-2">
+          
             <TaskDateInput
               value={dateEnd}
               inputId="date_end_input"
