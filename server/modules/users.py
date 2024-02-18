@@ -1,11 +1,5 @@
-"""
-MODULE
-    users.py
-
-DESCRIPTION
-    Module contains User object which is interface for user management. 
-"""
 from modules.database import SET_AFTER_INIT
+from modules.tasks import Task
 from modules import database
 from modules import logs
 
@@ -32,6 +26,8 @@ class User:
     username: str
     password: str
     email: str
+    tasks: list
+    folders: list
 
     # Automatically set after initialization.
     db_key: str = SET_AFTER_INIT
@@ -45,13 +41,17 @@ class User:
         user = User(
             username=username,
             password=password,
-            email=email
+            email=email,
+            tasks=[],
+            folders=[]
         )
 
         model = database.UserModel(
             username=username,
             password=password,
-            email=email
+            email=email,
+            tasks=[],
+            folders=[]
         )
 
         db_key = database.users_db.insert(model)
@@ -66,7 +66,9 @@ class User:
         return User(
             username=user_model.username,
             password=user_model.password,
-            email=user_model.email
+            email=user_model.email,
+            tasks=user_model.tasks,
+            folders=user_model.folders
         )
 
     @staticmethod
@@ -102,6 +104,54 @@ class User:
     def delete_user(self) -> None:
         """ Remove user from database. """
         database.users_db.delete(self.db_key)
+
+    def add_task(self, task_id: str) -> bool:
+        """ Add new task to user's list. Returns False if task is already on the list, True on success. """
+        if task_id in self.tasks:
+            logs.users_logger.log(self.db_key, f"Cannot add new task: {task_id} (task already on list)")
+            return False
+        
+        self.tasks.append(task_id)
+        database.users_db.update(self.db_key, {"tasks": task_id}, iter_append=True)
+        logs.users_logger.log(self.db_key, f"Added new task: {task_id}")
+        return True
+    
+    def remove_task(self, task_id: str) -> bool:
+        """ Remove task form user's list. Returns True on success, False if task was not found. """
+        if task_id not in self.tasks:
+            logs.users_logger.log(self.db_key, f"Cannot remove task: {task_id} from user's list (task not found)") 
+            return False
+        
+        self.tasks.remove(task_id)
+        database.users_db.update(self.db_key, {"tasks": task_id}, iter_pop=True)
+        logs.users_logger.log(self.db_key, f"Removed task: {task_id} from user's list.")
+        return True
+
+    def get_all_tasks(self) -> list[Task]:
+        """ Return all tasks that belongs to user. """
+        return [Task.get_task_by_key(task_id) for task_id in self.tasks]
+
+    def add_folder(self, folder_key: str) -> bool:
+        """ Add new folder to user's list. Returns False if folder already on list, True on success. """
+        if folder_key in self.folders:
+            logs.users_logger.log(self.db_key, f"Cannot add folder: {folder_key} (folder already on users's list)")
+            return False
+        
+        self.folders.append(folder_key)
+        database.users_db.update(self.db_key, {"folders": folder_key}, iter_append=True)
+        logs.users_logger.log(self.db_key, f"Added folder: {folder_key} to user's list.")
+        return True
+    
+    def remove_folder(self, folder_key: str) -> bool:
+        """ Remove folder form users's list. Returns False if folder was not found, True on success. """
+        if folder_key not in self.folders:
+            logs.users_logger.log(self.db_key, f"Cannot remove folder: {folder_key} (folder not found on list)")
+            return False
+    
+        self.folders.remove(folder_key)
+        database.users_db.update(self.db_key, {"folders": folder_key}, iter_pop=True)
+        logs.users_logger.log(self.db_key, f"Removed folder: {folder_key} from users's list.")
+        return True
 
 
 def validate_user_id(function):

@@ -2,3 +2,24 @@
 [09/01/2024 19:53:01] (d033e22ae348aeb5660fc2140aec35850c4da997) [users.py.create_user#60]  Created account: admin
 [25/01/2024 14:35:20] (3c363836cf4e16666669a25da280a1865c2d2874) [users.py.create_user#60]  Created account: d
 [27/01/2024 15:53:14] (a94a8fe5ccb19ba61c4c0873d391e987982fbbd3) [users.py.create_user#60]  Created account: test
+[18/02/2024 23:02:26] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.create_user#60]  Created account: string
+[18/02/2024 23:04:29] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_task#116]  Added new task: be0c0a7de8e9492db2aa3c4e977220aa
+[18/02/2024 23:05:03] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_folder#142]  Added folder: f735b2f2088b4d5f9837ecae3f9dbb4e to user's list.
+[18/02/2024 23:05:03] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.new_folder#44]  Created folder: string (f735b2f2088b4d5f9837ecae3f9dbb4e)
+[18/02/2024 23:05:03] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_folder#137]  Cannot add folder: f735b2f2088b4d5f9837ecae3f9dbb4e (folder already on users's list)
+[18/02/2024 23:05:54] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.update_metadata#72]  Updated folder: f735b2f2088b4d5f9837ecae3f9dbb4e (name=string1, color=string2)
+[18/02/2024 23:07:20] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_task#116]  Added new task: b2bcaf6ec94c46c4bde34003a8e2d8d9
+[18/02/2024 23:07:20] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.add_task#80]  Added task: b2bcaf6ec94c46c4bde34003a8e2d8d9 to folder: f735b2f2088b4d5f9837ecae3f9dbb4e
+[18/02/2024 23:07:20] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [api.py.create_task#168]  Added task: b2bcaf6ec94c46c4bde34003a8e2d8d9 to folder: f735b2f2088b4d5f9837ecae3f9dbb4e
+[18/02/2024 23:09:07] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_task#127]  Removed task: b2bcaf6ec94c46c4bde34003a8e2d8d9 from user's list.
+[18/02/2024 23:09:07] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#153]  Removed folder: f735b2f2088b4d5f9837ecae3f9dbb4e from users's list.
+[18/02/2024 23:09:07] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.remove_folder#60]  Removed folder: string1 (f735b2f2088b4d5f9837ecae3f9dbb4e)
+[18/02/2024 23:09:07] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#148]  Cannot remove folder: f735b2f2088b4d5f9837ecae3f9dbb4e (folder not found on list)
+[18/02/2024 23:12:14] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_folder#142]  Added folder: abb35e24094841a682b336ad0dd154ef to user's list.
+[18/02/2024 23:12:14] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.new_folder#42]  Created folder: string (abb35e24094841a682b336ad0dd154ef)
+[18/02/2024 23:12:14] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_folder#137]  Cannot add folder: abb35e24094841a682b336ad0dd154ef (folder already on users's list)
+[18/02/2024 23:12:35] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.add_task#80]  Added task: b2bcaf6ec94c46c4bde34003a8e2d8d9 to folder: abb35e24094841a682b336ad0dd154ef
+[18/02/2024 23:14:00] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.remove_task#91]  Removed task: b2bcaf6ec94c46c4bde34003a8e2d8d9 from folder: abb35e24094841a682b336ad0dd154ef
+[18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#153]  Removed folder: abb35e24094841a682b336ad0dd154ef from users's list.
+[18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.remove_folder#60]  Removed folder: string (abb35e24094841a682b336ad0dd154ef)
+[18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#148]  Cannot remove folder: abb35e24094841a682b336ad0dd154ef (folder not found on list)

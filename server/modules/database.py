@@ -51,7 +51,7 @@ CODE SUMMARY
   
 """
 from models.db_models import NOT_REQUIRED, KEY_AS_UUID4
-from models.db_models import UserModel, TaskModel
+from models.db_models import UserModel, TaskModel, FolderModel
 
 from modules.paths import Path
 from modules import timestamp
@@ -330,3 +330,4 @@ class Database:
 
 users_db = Database(UserModel)
 tasks_db = Database(TaskModel)
+folders_db = Database(FolderModel)

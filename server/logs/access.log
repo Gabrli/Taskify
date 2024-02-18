@@ -12301,3 +12301,21 @@
 [31/01/2024 17:42:07] (127.0.0.1:53004) [api.py.get_all_tasks#201]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
 [31/01/2024 17:42:10] () [routing.py.run_endpoint_function#191]  Request pre-validator fail: invalid uid
 [31/01/2024 17:42:10] (127.0.0.1:53013) [api.py.get_all_tasks#201]  <True> Passed all user's tasks for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3
+[18/02/2024 23:02:07] (127.0.0.1:53521) [api.py.login#76]  <False> Login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 failed (invalid password)
+[18/02/2024 23:02:10] (127.0.0.1:53521) [api.py.login#76]  <False> Login for: a94a8fe5ccb19ba61c4c0873d391e987982fbbd3 failed (invalid password)
+[18/02/2024 23:02:19] (127.0.0.1:53538) [api.py.login#76]  <False> Login for: d033e22ae348aeb5660fc2140aec35850c4da997 failed (invalid password)
+[18/02/2024 23:02:26] (127.0.0.1:53542) [api.py.register#102]  <True> Created account.
+[18/02/2024 23:03:18] (127.0.0.1:53563) [api.py.login#83]  <True> Successful login for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:04:29] (127.0.0.1:53591) [api.py.create_task#170]  <True> Task created: be0c0a7de8e9492db2aa3c4e977220aa for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:04:45] (127.0.0.1:53599) [api.py.get_all_tasks#217]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:05:03] (127.0.0.1:53605) [api.py.create_folder#256]  <True> Generated folder: f735b2f2088b4d5f9837ecae3f9dbb4e for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:05:54] (127.0.0.1:53656) [api.py.update_folder#283]  <True> Updated folder: f735b2f2088b4d5f9837ecae3f9dbb4e for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:06:07] (127.0.0.1:53662) [api.py.get_folder#269]  <True> Passing folder data: f735b2f2088b4d5f9837ecae3f9dbb4e to: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:07:02] (127.0.0.1:53689) [api.py.get_folder#269]  <True> Passing folder data: f735b2f2088b4d5f9837ecae3f9dbb4e to: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:07:20] (127.0.0.1:53696) [api.py.create_task#170]  <True> Task created: b2bcaf6ec94c46c4bde34003a8e2d8d9 for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:07:38] (127.0.0.1:53704) [api.py.get_folder#269]  <True> Passing folder data: f735b2f2088b4d5f9837ecae3f9dbb4e to: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:09:07] (127.0.0.1:53769) [api.py.remove_folder#299]  <True> Removed folder: f735b2f2088b4d5f9837ecae3f9dbb4e for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:12:14] (127.0.0.1:53916) [api.py.create_folder#256]  <True> Generated folder: abb35e24094841a682b336ad0dd154ef for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[18/02/2024 23:12:35] (127.0.0.1:53920) [api.py.add_task_to_folder#313]  <True> Added task: b2bcaf6ec94c46c4bde34003a8e2d8d9 to folder: abb35e24094841a682b336ad0dd154ef
+[18/02/2024 23:14:00] (127.0.0.1:53960) [api.py.remove_task_from_folder#327]  <True> Removed task: b2bcaf6ec94c46c4bde34003a8e2d8d9 from folder: abb35e24094841a682b336ad0dd154ef
+[18/02/2024 23:15:36] (127.0.0.1:54038) [api.py.remove_folder#299]  <True> Removed folder: abb35e24094841a682b336ad0dd154ef for: ecb252044b5ea0f679ee78ec1a12904739e2904d
