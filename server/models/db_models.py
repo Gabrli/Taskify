@@ -43,6 +43,8 @@ class UserModel:
     username: str
     password: str
     email: str
+    tasks: list
+    folders: list
 
 
 @dataclass
@@ -55,3 +57,14 @@ class TaskModel:
     description: str
     date_start: int
     date_end: int
+
+
+@dataclass
+class FolderModel:
+  __tablename__ = "folders"
+  __filepath__ = "./db/folders.json"
+  __keyprovider__ = KEY_AS_UUID4
+  author: str
+  name: str
+  color: str
+  task_ids: list

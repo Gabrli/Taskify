@@ -23,7 +23,7 @@ from pydantic import BaseModel
 from typing import Optional
 
 
-class _Auth:
+class _Auth(BaseModel):
     uid: str
 
 
@@ -34,10 +34,10 @@ class M_CreateAccount(BaseModel):
     password: str
     email: str
 
-class M_ChangeAccountPassword(_Auth, BaseModel):
+class M_ChangeAccountPassword(_Auth):
     new: str
 
-class M_DeleteAccount(_Auth, BaseModel):
+class M_DeleteAccount(_Auth):
     pass
 
 class M_AccountLogin(BaseModel):
@@ -47,24 +47,51 @@ class M_AccountLogin(BaseModel):
 
 # -- TASKS --
 
-class M_CreateTask(_Auth, BaseModel):
+class M_CreateTask(_Auth):
     name: str
     description: str
     date_start: str
     date_end: str
+    folder_key: Optional[str]
 
-class M_EditTask(_Auth, BaseModel):
+class M_EditTask(_Auth):
     task_id: str
     name: str
     description: str
     date_start: str
     date_end: str
 
-class M_RemoveTask(_Auth, BaseModel):
+class M_RemoveTask(_Auth):
     task_id: str
 
-class M_GetAllTasks(_Auth, BaseModel):
+class M_GetAllTasks(_Auth):
     pass 
 
-class M_GetTask(_Auth, BaseModel):
+class M_GetTask(_Auth):
+    task_id: str
+
+
+# -- FOLDERS -- 
+
+class M_CreateFolder(_Auth):
+    name: str
+    color: str
+
+class M_GetFolder(_Auth):
+    folder_key: str
+
+class M_UpdateFolder(_Auth):
+    folder_key: str
+    new_name: str
+    new_color: str
+
+class M_RemoveFolder(_Auth):
+    folder_key: str
+
+class M_AddTaskToFolder(_Auth):
+    folder_key: str
+    task_id: str
+
+class M_RemoveTaskFromFolder(_Auth):
+    folder_key: str
     task_id: str

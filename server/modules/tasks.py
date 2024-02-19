@@ -1,7 +1,3 @@
-"""
-MODULE
-    tasks.py
-"""
 from modules import timestamp
 from modules import database
 from modules import logs
@@ -20,14 +16,10 @@ class Task:
     description: str
     date_start: int
     date_end: int
-
     db_key: str = None
 
     @staticmethod
     def create_task(author_db_key: str, name: str, description: str, date_start: str, date_end: str) -> "Task":
-        if not is_task_name_available(author_db_key, name):
-            return False
-
         date_start = timestamp.generate_timestamp(timestamp.read_input_date(date_start))
         date_end = timestamp.generate_timestamp(timestamp.read_input_date(date_end))
 
@@ -81,7 +73,6 @@ class Task:
         task_model = database.tasks_db.get(db_key)
         return Task.from_model(task_model)
         
-
     def edit_task(self, name: str, description: str, date_start: str, date_end: str) -> None:
         """ Update all task's fields. Save changed object to database. """
         self.name = name
@@ -116,13 +107,6 @@ class Task:
             "task_id": self.db_key
         }
 
-
-def is_task_name_available(author_db_key: str, name: str) -> bool:
-    """ Check if task's name is available for specified user. """
-    for task in Task.get_all_user_tasks(author_db_key):
-        if task.name == name:
-            return False
-    return True
 
 def validate_task_id(function):
     @wraps(function)

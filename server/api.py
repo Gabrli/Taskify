@@ -5,6 +5,7 @@ from fastapi import FastAPI, Request
 from models import request_models
 from modules import timestamp
 from modules import database
+from modules import folders
 from modules import users
 from modules import tasks
 from modules import logs
@@ -43,7 +44,6 @@ def generate_response_and_log(
 
 
 # -- ACCOUNTS -- #
-
 
 @api.get("/accounts/getAllNames")
 async def get_all_names(request: Request) -> JSONResponse:
@@ -134,7 +134,6 @@ async def change_password(data: request_models.M_ChangeAccountPassword, request:
 
 # -- TASKS --
 
-
 @api.post("/tasks/create")
 @users.validate_user_id
 async def create_task(data: request_models.M_CreateTask, request: Request) -> JSONResponse:
@@ -145,15 +144,28 @@ async def create_task(data: request_models.M_CreateTask, request: Request) -> JS
             f"Cannot create task for: {data.uid} (date_end < date_start)",
             "Invalid task's start and end dates."
         )
+        
+    user = users.User.get_user_by_key(data.uid)
+    for task in user.get_all_tasks():
+        if task.name == data.name:
+            return generate_response_and_log(
+                request,
+                False,
+                f"Cannot create task for: {data.uid} (task name taken)",
+                "Task's name already in use."
+            )
     
     task = tasks.Task.create_task(data.uid, data.name, data.description, data.date_start, data.date_end)
-    if not task:
-        return generate_response_and_log(
-            request,
-            False,
-            f"Cannot create task for: {data.uid} (task name taken)",
-            "Task's name already in use."
-        )
+    user = users.User.get_user_by_key(data.uid)
+    user.add_task(task.db_key)
+
+    if data.folder_key:
+        if data.folder_key not in user.folders:
+            return folders.FOLDER_VALIDATION_FAIL
+
+        folder = folders.Folder.from_key(data.folder_key)
+        folder.add_task(task.db_key)
+        logs.users_logger.log(user.db_key, f"Added task: {task.db_key} to folder: {data.folder_key}")
 
     return generate_response_and_log(
         request,
@@ -187,6 +199,9 @@ async def remove_task(data: request_models.M_RemoveTask, request: Request) -> JS
     task = tasks.Task.get_task_by_key(data.task_id)
     task.remove_task()
 
+    user = users.User.get_user_by_key(data.uid)
+    user.remove_task_task(data.task_id)
+
     return generate_response_and_log(
         request,
         True,
@@ -195,8 +210,9 @@ async def remove_task(data: request_models.M_RemoveTask, request: Request) -> JS
 
 @api.post("/tasks/getAll")
 @users.validate_user_id
-async def get_all_tasks(data: request_models.M_GetAllTasks, request: Request) -> JSONResponse:   
-    user_tasks = [t.as_dict() for t in tasks.Task.get_all_user_tasks(data.uid)]
+async def get_all_tasks(data: request_models.M_GetAllTasks, request: Request) -> JSONResponse:
+    user = users.User.get_user_by_key(data.uid)
+    user_tasks = [t.as_dict() for t in user.get_all_tasks()]
 
     return generate_response_and_log(
         request,
@@ -226,3 +242,103 @@ async def get_task(data: request_models.M_GetTask, request: Request) -> JSONResp
         f"Passed task: {data.task_id} data for: {data.uid}",
         additional_data={"task": task_data}
     )
+ 
+   
+# -- FOLDERS --
+    
+@api.post("/folders/create")
+@users.validate_user_id    
+async def create_folder(data: request_models.M_CreateFolder, request: Request) -> JSONResponse:
+    user = users.User.get_user_by_key(data.uid)
+    folder = folders.Folder.new_folder(user, data.name, data.color)
+    user.add_folder(folder.key)
+
+    return generate_response_and_log(
+        request,
+        True,
+        f"Generated folder: {folder.key} for: {user.db_key}",
+        additional_data={"folder_key": folder.key}
+    )
+    
+@api.post("/folders/get_folder")
+@users.validate_user_id
+@folders.validate_folder_id
+async def get_folder(data: request_models.M_GetFolder, request: Request) -> JSONResponse:
+    folder = folders.Folder.from_key(data.folder_key)
+    
+    return generate_response_and_log(
+        request,
+        True,
+        f"Passing folder data: {folder.key} to: {data.uid}",
+        additional_data={"folder": folder.to_sendable()}
+    )
+    
+@api.post("/folders/update")
+@users.validate_user_id
+@folders.validate_folder_id
+async def update_folder(data: request_models.M_UpdateFolder, request: Request) -> JSONResponse:
+    folder = folders.Folder.from_key(data.folder_key)
+    folder.update_metadata(data.new_name, data.new_color)
+    
+    return generate_response_and_log(
+        request,
+        True,
+        f"Updated folder: {folder.key} for: {data.uid}"
+    )
+    
+@api.post("/folders/remove")
+@users.validate_user_id
+@folders.validate_folder_id
+async def remove_folder(data: request_models.M_RemoveFolder, request: Request) -> JSONResponse:
+    user = users.User.get_user_by_key(data.uid)
+    folder = folders.Folder.from_key(data.folder_key)
+    folder.user_object = user
+    folder.remove_folder()
+    user.remove_folder(data.folder_key)
+    
+    return generate_response_and_log(
+        request,
+        True,
+        f"Removed folder: {data.folder_key} for: {data.uid}"
+    )
+    
+@api.post("/folders/add_task")
+@users.validate_user_id
+@tasks.validate_task_id
+@folders.validate_folder_id
+async def add_task_to_folder(data: request_models.M_AddTaskToFolder, request: Request) -> JSONResponse:
+    folder = folders.Folder.from_key(data.folder_key)
+    if not folder.add_task(data.task_id):
+        return generate_response_and_log(
+            request,
+            False,
+            f"Cannot add task: {data.task_id} to folder: {data.folder_key} (task already in folder)",
+            "Task already in folder."
+        )
+    
+    return generate_response_and_log(
+        request,
+        True,
+        f"Added task: {data.task_id} to folder: {data.folder_key}"
+    )
+    
+@api.post("/folders/remove_task")
+@users.validate_user_id
+@tasks.validate_task_id
+@folders.validate_folder_id
+async def remove_task_from_folder(data: request_models.M_RemoveTaskFromFolder, request: Request) -> JSONResponse:
+    folder = folders.Folder.from_key(data.folder_key)
+    if not folder.remove_task(data.task_id):
+        return generate_response_and_log(
+            request,
+            False,
+            f"Cannot remove task: {data.task_id} from folder: {data.folder_key} (task not found in folder)",
+            "Task not in folder."
+        )
+        
+    return generate_response_and_log(
+        request,
+        True,
+        f"Removed task: {data.task_id} from folder: {data.folder_key}"
+    )  
+    

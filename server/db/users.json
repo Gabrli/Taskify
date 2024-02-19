@@ -2,16 +2,31 @@
   "d033e22ae348aeb5660fc2140aec35850c4da997": {
     "username": "admin",
     "password": "$2a$10$Id5M3Q9zedtFfNJuzrTcJe3CRkkcAf0ZcYxNqpl0XaTEpUJh6x5ha",
-    "email": "admin@op.pl"
+    "email": "admin@op.pl",
+    "tasks": [],
+    "folders": []
   },
   "3c363836cf4e16666669a25da280a1865c2d2874": {
     "username": "d",
     "password": "$2a$10$OK6lsq/t4owG6LUUM4dCTO7q4xdQV1W.ryv3kbO48Ot.2ZzyrvOiu",
-    "email": "d"
+    "email": "d",
+    "tasks": [],
+    "folders": []
   },
   "a94a8fe5ccb19ba61c4c0873d391e987982fbbd3": {
     "username": "test",
     "password": "$2a$10$69y.d/90N1TdLz.L0unob.Qm4AzBL7liOlg/2kGMrySUIQIrqcht.",
-    "email": "test@op.pl"
+    "email": "test@op.pl",
+    "tasks": [],
+    "folders": []
+  },
+  "ecb252044b5ea0f679ee78ec1a12904739e2904d": {
+    "username": "string",
+    "password": "$2b$12$rUIrkXfKCGOriLC1u0SP9edr3TN8z3uWhlEJJR9e/in8COYzcwdQG",
+    "email": "string",
+    "tasks": [
+      "be0c0a7de8e9492db2aa3c4e977220aa"
+    ],
+    "folders": []
   }
 }
