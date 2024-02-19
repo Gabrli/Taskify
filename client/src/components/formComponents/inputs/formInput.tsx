@@ -15,9 +15,9 @@ export default function FormInput(props: {
   const { isWrong, setIsWrong, value, setValue, icon, placeholder, type, inputName, inputId } = props;
   return (
     <div
-      className={`p-1 flex border ${
-        isWrong ? "border-red-500" : "border-slate-600"
-      } rounded  items-center gap-4 justify-evanly mb-1`}
+      className={`p-2 w-full  bg-input1 flex  ${
+        isWrong ? "border border-red-500" : ""
+      } rounded-xl  items-center gap-2 justify-evanly mb-1`}
     >
       <span
         className={`${isWrong ? "text-red-500" : "text-gray-500"} text-xl p-1`}

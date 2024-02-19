@@ -27,10 +27,10 @@ export default function Form() {
   return (
       <>
       <LoaderPopup isLoading={isLoading}/>
-      <form className="w-form flex flex-col justify-center items-center bg-primary2 rounded-lg">
+      <form className="w-form flex flex-col justify-center items-center  rounded-lg">
       <header className="p-2 pb-6 flex flex-col justify-center items-center">
         <h2 className="text-white font-bold text-3xl p-2 ">
-          {correctContent === "login_form" ? "Login" : "Register"}
+          {correctContent === "login_form" ? "Welcome back" : "Join"}
         </h2>
         {isWrong ? (
           <p className="text-red-500 p-1 text-center">
@@ -40,7 +40,7 @@ export default function Form() {
           ""
         )}
       </header>
-      <div className="flex flex-col justify-center items-center gap-4 pb-4">
+      <div className="w-full flex flex-col justify-center items-center gap-4 pb-4">
         {correctContent === "login_form" ? (
           <>
             <FormInput
@@ -48,7 +48,7 @@ export default function Form() {
               setIsWrong={setIsWrong}
               value={username}
               setValue={setUserName}
-              placeholder="Your name"
+              placeholder="username"
               type="text"
               inputId="form_name_input"
               inputName="form_name_input"
@@ -59,7 +59,7 @@ export default function Form() {
               setIsWrong={setIsWrong}
               value={password}
               setValue={setPassword}
-              placeholder="Your password"
+              placeholder="password"
               type="password"
               inputId="form_password_input"
               inputName="form_password_input"
@@ -103,6 +103,7 @@ export default function Form() {
             />
           </>
         )}
+        
         <ButtonForm sendDataFun={sendDataToServer} />
       </div>
       <FormFooter />

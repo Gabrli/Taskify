@@ -74,16 +74,16 @@ export default function DashTaskList(props: {
                   isActive ? "hidden" : ""
                 } font-semibold text-2xl`}
               >
-                You don't have any task !
+                You don't have any tasks !
               </p>
               <button
                 onClick={(e) => {
                   e.preventDefault();
                   setIsActive(true);
                 }}
-                className={`btn_new font-semibold transition duration-700 ease-in-out  ${
+                className={`btn_new font-semibold text-xl transition duration-700 ease-in-out  ${
                   isActive ? "hidden" : ""
-                }  ${theme === "dark" ? "text-text_dark" :"text-text_light"} rounded pl-6 pr-6 pt-3 pb-3`}
+                }  ${theme === "dark" ? "text-text_dark" :"text-text_light"} rounded pl-8 pr-8 pt-3 pb-3`}
               >
                 Create new
               </button>

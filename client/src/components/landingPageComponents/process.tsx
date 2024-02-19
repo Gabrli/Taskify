@@ -13,7 +13,7 @@ export default function Process(){
             <ProcessTile title="Login or Sign up" order="1" description="Login to your account. If you don't have any account, create !"/>
             <ProcessTile title="Go to section where you can create new task " order="2" description="In a dashboard click in the button 'New ' "/>
             <ProcessTile title="Create your task" order="3" description="Complete all inputs and click 'Create'"/>
-            <ProcessTile title="Notyfications" order="4" description="After created task, you will get a notification with all need informations "/>
+            <ProcessTile title="Notifications" order="4" description="After creating task, you will get a notification with all needed informations "/>
             </section>
         </section>
     )

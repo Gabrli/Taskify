@@ -30,6 +30,9 @@ export default {
         dark_popup: "#111",
         dark_popup_header: "#393E46",
         dark_notifications: "#323643",
+        input1: "#31293A",
+        btnForm1: "#7F19E6",
+        dark1:"#222"
       },
 
       height: {

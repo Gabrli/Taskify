@@ -1,10 +1,11 @@
-import { createContext, useState } from "react";
+import { createContext, useContext, useState } from "react";
 
 import ModalFooter from "./modalFooter";
 
 import TaskNameInput from "../dashInputs/taskNameInput";
 import TaskDescriptionInput from "../dashInputs/taskDescriptionInput";
 import TaskDateInput from "../dashInputs/taskDateInput";
+import { themeContext } from "../../../App";
 
 const taskNameContext = createContext("")
 const taskDescriptionContext = createContext("")
@@ -23,7 +24,7 @@ export default function Modal(props: {
   setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
 }) {
   const { setIsActive, addNewTask, setIsWrong} = props;
-
+  const theme = useContext(themeContext)
   const [taskName, setTaskName] = useState("");
   const [taskDescryption, setTaskDescryption] = useState("");
   const [dateStart, setDateStart] = useState("");
@@ -36,9 +37,9 @@ export default function Modal(props: {
   
 
   return (
-    <form className="h-custom-height-modal bg-white  p-2  w-modal rounded">
+    <form className={` h-custom-height-modal   ${theme === "dark" ? "bg-dark1" : "bg-white"} p-1  w-modal rounded`}>
       <header className="pt-6 text-center">
-        <h3 className="text-black text-2xl font-semibold">Create new task !</h3>
+        <h3 className={` ${theme === "dark" ? "text-text_dark" : "text-text_light"} text-2xl font-semibold`}>Create new task !</h3>
       </header>
       <section className="flex flex-col items-center p-6 gap-3 ">
       

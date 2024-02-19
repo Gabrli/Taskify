@@ -8,6 +8,8 @@
 html {
   scroll-behavior: smooth;
 }
+/*bg color: #0c040c*/
+/*bg serach box: f5e5ee0d*/
 
 .dark {
   --bg-color: #0c040c;
@@ -58,6 +60,9 @@ html {
 body {
   height: 100vh;
   background: var(--bg-color);
+}
+.modalCreating{
+  background: var(--bg-search-box);
 }
 .chartsBox {
   background: var(--bg-footer);

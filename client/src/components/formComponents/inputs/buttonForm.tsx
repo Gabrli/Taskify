@@ -8,7 +8,7 @@ export default function ButtonForm(props: {
     return (
       <button
         onClick={(e) => sendDataFun(e)}
-        className="text-white bg-primary3 w-full pb-1 pt-1 font-semibold rounded flex justify-center items-center btn_form"
+        className="text-white bg-btnForm1 w-full pb-2 pt-2 font-semibold rounded-xl mt-1 flex justify-center items-center btn_form"
       >
         {currentLocation === '/login' ? 'Login' : 'Create'}
       </button>

@@ -7,8 +7,8 @@ export default function FormFooter() {
 
   return (
     <footer className="pt-3 pb-3">
-      <p className="text-white p-2">
-        You don't need new account ?{" "}
+      <p className="text-white p-2 font-medium">
+        {correctHref === '/login' ? "New user ?" : "You have account ?"}{" "}
         <a className="text-blue-500" href={correctHref}>
           {correctHref === "/login" ? "Login" : "Register"}
         </a>
