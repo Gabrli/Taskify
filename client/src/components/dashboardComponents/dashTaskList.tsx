@@ -16,8 +16,9 @@ export default function DashTaskList(props: {
   setCounter: React.Dispatch<React.SetStateAction<number>>;
   setTaskList: React.Dispatch<React.SetStateAction<ITask[]>>;
   setIsLoading: React.Dispatch<React.SetStateAction<boolean>>
+  setIsAlert: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, isActive, setCounter, setTaskList,setIsLoading } = props;
+  const { setIsActive, isActive, setCounter, setTaskList,setIsLoading, setIsAlert } = props;
   const isMobile = useContext(isMobileContext);
   const theme = useContext(themeContext)
   const [isWrong, setIsWrong] = useState(false);
@@ -48,6 +49,7 @@ export default function DashTaskList(props: {
                 setIsActive={setIsActive}
                 addNewTask={addNewTask}
                 setIsWrong={setIsWrong}
+                setIsAlert={setIsAlert}
               />
             ) : (
               ""

@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import bcrypt from "bcryptjs";
 import { useNavigate } from "react-router";
 import { LOGIN_FORM_QUERY, REGISTER_FORM_QUERY } from "../../helpers/formQueries";
 import { checkingIDFromDb } from "../../auth/checkingIDFromDB";
 import useCurrentLocation from "../useCurrentLocation";
 import useCorrectContent from "../useCorrectContent";
+import { themeContext } from "../../App";
 
 export const useFormLogic = () => {
   const [username, setUserName] = useState("");
@@ -13,6 +14,7 @@ export const useFormLogic = () => {
   const [isWrong, setIsWrong] = useState(false);
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate();
+  const theme = useContext(themeContext)
   const currentLocation = useCurrentLocation();
   const correctContent = useCorrectContent(currentLocation);
 
@@ -61,6 +63,7 @@ export const useFormLogic = () => {
     currentLocation,
     correctContent,
     sendDataToServer,
-    isLoading
+    isLoading,
+    theme
   };
 };

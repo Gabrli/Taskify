@@ -21,15 +21,18 @@ export default function Form() {
     setIsWrong,
     correctContent,
     sendDataToServer,
-    isLoading
+    isLoading,
+    theme
   } = useFormLogic();
+
+
 
   return (
       <>
       <LoaderPopup isLoading={isLoading}/>
       <form className="w-form flex flex-col justify-center items-center  rounded-lg">
       <header className="p-2 pb-6 flex flex-col justify-center items-center">
-        <h2 className="text-white font-bold text-3xl p-2 ">
+        <h2 className={`${theme === "dark" ? "text-text_dark" : "text-text_light"} font-bold text-3xl p-2 `}>
           {correctContent === "login_form" ? "Welcome back" : "Join"}
         </h2>
         {isWrong ? (

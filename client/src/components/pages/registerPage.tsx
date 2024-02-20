@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import Form from "../formComponents/form";
 import { Helmet } from "react-helmet-async";
+import { themeContext } from "../../App";
 export default function RegisterPage() {
+  const theme = useContext(themeContext)
   return (
     <>
     <Helmet>
@@ -8,9 +11,9 @@ export default function RegisterPage() {
      <meta name="description" content="Create new account on Taskify !"/>
      <link rel="canonical" href="/register"/>
     </Helmet>
-    <main className="register_page h-screen flex justify-center items-center">
+    <div className={`${theme === "dark" ? "bg-bgdarkcolor" : "bg-bglightcolor"} w-full h-screen flex justify-center items-center`}>
       <Form />
-    </main>
+    </div>
     </>
   );
 }

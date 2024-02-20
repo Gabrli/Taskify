@@ -61,9 +61,22 @@ body {
   height: 100vh;
   background: var(--bg-color);
 }
-.modalCreating{
+.isAlertShow{
+  transition: all .5s;
+  transform: translateX(0%);
+}
+.isAlertHidden{
+  transition: all .5s;
+  transform: translateX(110%);
+  
+}
+.modal{
+ background: var(--bg-color);
+}
+.modal_input{
   background: var(--bg-search-box);
 }
+
 .chartsBox {
   background: var(--bg-footer);
 }
@@ -149,12 +162,7 @@ body {
   background: var(--bg-search-box);
 }
 
-.login_page {
-  background: #0c040c;
-}
-.register_page {
-  background: #0c040c;
-}
+
 .dashboard_page {
   background: var(--bg-color);
 }

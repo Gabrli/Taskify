@@ -10,14 +10,15 @@ export default function DashboardModal(props: {
     dateEnd: string
   ) => void;
   setIsWrong: React.Dispatch<React.SetStateAction<boolean>>
+  setIsAlert: React.Dispatch<React.SetStateAction<boolean>>
 }) {
-  const { setIsActive, addNewTask, setIsWrong } = props;
+  const { setIsActive, addNewTask, setIsWrong, setIsAlert } = props;
 
   return (
     <div
       className={`h-screen fixed inset-0 bg-black   bg-opacity-40 flex justify-center items-center `}
     >
-      <Modal addNewTask={addNewTask} setIsActive={setIsActive} setIsWrong={setIsWrong} />
+      <Modal addNewTask={addNewTask} setIsActive={setIsActive} setIsWrong={setIsWrong} setIsAlert={setIsAlert}/>
     </div>
   );
 }

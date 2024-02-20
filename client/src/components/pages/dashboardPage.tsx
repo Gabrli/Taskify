@@ -8,6 +8,7 @@ import DashFooter from "../dashboardComponents/dashFooter";
 import { themeContext } from "../../App";
 import { Helmet } from "react-helmet-async";
 import LoaderPopup from "../loaderComponents/loaderPopup";
+import DashAlertContainer from "../dashboardComponents/dashAlertContainer";
 const taskListContext = createContext<ITask[]>([]);
 
 const counterNotyficationsContext = createContext(0);
@@ -25,6 +26,7 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
   const [isMobile, setIsMobile] = useState(false);
   const [isLoading, setIsLoading] = useState(false)
   const [charstBoxIsActive, setChartsBoxIsActive] = useState(false);
+  const [isAlert, setIsAlert] = useState(false)
   const theme = useContext(themeContext)
 
   useEffect(() => {
@@ -86,6 +88,7 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
                   setCounter={setCounterNotyfications}
                   setTaskList={setTaskList}
                   setIsLoading={setIsLoading}
+                  setIsAlert={setIsAlert}
                 />
                 
 
@@ -94,6 +97,8 @@ export default function DashboardPage(props: {setTheme: React.Dispatch<React.Set
                 ) : (
                   ""
                 )}
+
+                <DashAlertContainer setIsAlert={setIsAlert} isAlert={isAlert}/>
                 
                 </>
                 

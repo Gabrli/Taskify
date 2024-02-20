@@ -4,6 +4,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        bgdarkcolor: "#0c040c",
+        bglightcolor:"#fbf4fb",
         "custom-bg-color": "#d5f8ff",
         "custom-bg-nav-color": "#1b0322",
         "custom-border-nav": "#4c095f",
@@ -31,8 +33,9 @@ export default {
         dark_popup_header: "#393E46",
         dark_notifications: "#323643",
         input1: "#31293A",
+        input2: "#F2F0F4",
         btnForm1: "#7F19E6",
-        dark1:"#222"
+        dark1: "#222",
       },
 
       height: {
@@ -42,7 +45,7 @@ export default {
         "custom-height-mobile-footer": "400px",
         "custom-height-process-tile": "200px",
         "custom-height-order-process": "40px",
-        "custom-height-modal": "525px",
+        "custom-height-modal": "500px",
         "custom-height-modal-textarea": "130px",
         "custom-height-modal-inputs": "35px",
         "custom-height-notyfication-list": "400px",
