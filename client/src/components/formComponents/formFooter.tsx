@@ -10,7 +10,7 @@ export default function FormFooter() {
 
   return (
     <footer className="pt-3 pb-3">
-      <p className={`text-white${theme === "dark"?"text-text_dark" : "text-text_light"} p-2 font-medium`}>
+      <p className={`${theme === "dark"?"text-text_dark" : "text-text_light"} p-2 font-medium`}>
         {correctHref === '/login' ? "New user ?" : "You have account ?"}{" "}
         <a className="text-blue-500" href={correctHref}>
           {correctHref === "/login" ? "Login" : "Register"}
