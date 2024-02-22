@@ -2,7 +2,7 @@ import ButtonAddNewTask from "./centerSectionComponents/buttonAddNewTask";
 import ButtonNotyfication from "./centerSectionComponents/buttonNotification";
 
 import { useContext, useState } from "react";
-import NotyficationPopup from "../../notyfiactionComponents/notyficationPopup";
+import NotyficationPopup from "../../notificationsComponents/notificationPopup";;
 import CounterNotyfications from "./centerSectionComponents/counterNotyfications";
 import {
   counterNotyficationsContext,
