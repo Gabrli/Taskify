@@ -59,16 +59,26 @@ html {
 }
 body {
   height: 100vh;
+
+
   background: var(--bg-color);
 }
 .isAlertShow{
   transition: all .5s;
-  transform: translateX(0%);
+  transform: translateY(0%);
+  overflow-y: hidden;
 }
 .isAlertHidden{
   transition: all .5s;
-  transform: translateX(110%);
+  transform: translateY(100vh);
+  overflow-y: hidden;
   
+}
+.taskList{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .modal{
  background: var(--bg-color);
@@ -294,4 +304,18 @@ body {
 
 .btn_notyfication:hover {
   border-color: orange;
+}
+@keyframes hiddenAlert{
+  0%{
+    transform: translateY(0%);
+  } 100%{
+ transform: translateY(20%);
+  }
+}
+@keyframes showAlert{
+  0%{
+    transform: translateY(20%);
+  } 100%{
+    transform: translateY(0%);
+  }
 }

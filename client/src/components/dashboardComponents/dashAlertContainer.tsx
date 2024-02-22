@@ -7,7 +7,7 @@ export default function DashAlertContainer(props: {setIsAlert: React.Dispatch<Re
         setTimeout(() => {setIsAlert(false)}, 6000)
     }, [isAlert])
     return (
-        <div className={`absolute right-4 bottom-4 flex justify-center ${isAlert ? "isAlertShow" : "isAlertHidden"} items-center mobile1:bottom-20`}>
+        <div className={`fixed right-4 bottom-4 flex justify-center ${isAlert ? "isAlertShow" : "isAlertHidden"} items-center mobile1:bottom-20`}>
             <DashAlert  />
         </div>
     )

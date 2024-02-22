@@ -40,10 +40,8 @@ export default function DashTaskList(props: {
           <DashSearchBox />
 
           <ul
-            className={`flex gap-6 pt-24 ${
-              isMobile ? "flex-col" : ""
-            } justify-center items-center w-full`}
-          >
+            className={`taskList pt-24 justify-center pl-4 gap-2 w-full`}
+            >
             {isActive ? (
               <DashboardModal
                 setIsActive={setIsActive}

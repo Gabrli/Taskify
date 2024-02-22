@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         bgdarkcolor: "#0c040c",
-        bglightcolor:"#fbf4fb",
+        bglightcolor: "#fbf4fb",
         "custom-bg-color": "#d5f8ff",
         "custom-bg-nav-color": "#1b0322",
         "custom-border-nav": "#4c095f",
@@ -76,6 +76,7 @@ export default {
       },
       gridTemplateColumns: {
         "custom-grid": " repeat(3, 300px)",
+        "custom-grid2": "repeat(3, 1fr)",
       },
     },
   },

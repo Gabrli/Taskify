@@ -37,7 +37,7 @@ export default function DashTask(props: {
       key={task_id}
       className={`${
         task_id === "00" ? "hidden" : ""
-      }  rounded-2xl  bg-primary3 mt-3  w-taskW  `}
+      }  rounded-2xl  bg-primary3 mt-3 ml-auto mr-auto  w-taskW  `}
     >
       {isEditing ? (
         <TaskEditForm
