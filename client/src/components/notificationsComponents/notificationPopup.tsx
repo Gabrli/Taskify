@@ -1,6 +1,6 @@
 import { useContext } from "react";
-import NotyfiactionWrapper from "./notyfiactionWrapper";
-import NotyficationsHeader from "./notyficationHeader";
+import NotyfiactionWrapper from "./notifiactionWrapper";
+import NotyficationsHeader from "./notificationHeader";
 import { isMobileContext } from "../pages/dashboardPage";
 import { themeContext } from "../../App";
 

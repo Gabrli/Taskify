@@ -1,4 +1,4 @@
-import Notyfication from "./notyfication";
+import Notyfication from "./notification";
 import { useNotyficationLogic } from "../../hooks/LogicComponentsHooks/useNotyficationLogic";
 export default function NotyfiactionWrapper() {
   

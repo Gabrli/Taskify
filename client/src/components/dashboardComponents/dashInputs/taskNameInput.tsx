@@ -24,7 +24,7 @@ export default function TaskNameInput(props: {
       id={inputId}
       value={value}
       placeholder="Enter the task name"
-      className={`modal_input transition text-stone-300  duration-700 ease-in-out ml-auto mr-auto  p-3 w-modalInputs border ${isWrong ? "border-red-500" : "border-transparent"} h-custom-height-modal-inputs  outline-none  rounded  ${theme === "dark" ? "bg-stone-700" : "bg-gray-500"}  focus:border placeholder:text-sm placeholder:font-base placeholder:text-stone-300 placeholder:font-base`}
+      className={`modal_input transition   duration-700 ease-in-out ml-auto mr-auto  p-3 w-modalInputs border ${isWrong ? "border-red-500" : "border-transparent"} h-custom-height-modal-inputs  outline-none  rounded  ${theme === "dark" ? "bg-stone-700 text-stone-300 placeholder:text-stone-300" : "bg-gray-500 text-gray-500 placeholder:text-gray-500"}  focus:border placeholder:text-sm placeholder:font-base  placeholder:font-base `}
     />
   );
 }
