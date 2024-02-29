@@ -86,7 +86,13 @@ body {
 .modal_input{
   background: var(--bg-search-box);
 }
-
+.statisticBox{
+  background: var(--bg-search-box);
+}
+.alert{
+  
+  animation: alert 1s infinite;
+}
 .chartsBox {
   background: var(--bg-footer);
 }
@@ -317,5 +323,12 @@ body {
     transform: translateY(20%);
   } 100%{
     transform: translateY(0%);
+  }
+}
+@keyframes alert{
+  0%{
+    background-color: rgb(59 130 246);
+  } 100%{
+    background-color:red;
   }
 }

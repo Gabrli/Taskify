@@ -1,7 +1,5 @@
 import { useContext } from "react";
-import {
-  isMobileContext,
-} from "../../components/pages/dashboardPage";
+import { isMobileContext } from "../../contexts/isMobileContext";
 import { themeContext } from "../../App";
 
 export const useDashboardHeaderLogic = (props: {
