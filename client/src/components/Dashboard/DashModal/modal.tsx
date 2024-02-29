@@ -1,10 +1,8 @@
 import { createContext, useContext, useState } from "react";
-
 import ModalFooter from "./modalFooter";
-
-import TaskNameInput from "../dashInputs/taskNameInput";
-import TaskDescriptionInput from "../dashInputs/taskDescriptionInput";
-import TaskDateInput from "../dashInputs/taskDateInput";
+import TaskNameInput from "../DashInputs/taskNameInput";
+import TaskDescriptionInput from "../DashInputs/taskDescriptionInput";
+import TaskDateInput from "../DashInputs/taskDateInput";
 import { themeContext } from "../../../App";
 
 const taskNameContext = createContext("");

@@ -1,5 +1,5 @@
 import ButtonAdd from "./modalInputs/buttonAdd";
-import ButtonCancle from "../dashInputs/buttonCancle";
+import ButtonCancle from "../DashInputs/buttonCancle";
 
 export default function ModalFooter(props: { addNewTask: (taskName: string, taskDescryption: string, dateStart: string, dateEnd: string) => void, setIsActive: React.Dispatch<React.SetStateAction<boolean>>, setIsWrong: React.Dispatch<React.SetStateAction<boolean>>, setIsAlert: React.Dispatch<React.SetStateAction<boolean>>}){
     const { addNewTask, setIsActive, setIsWrong, setIsAlert } = props

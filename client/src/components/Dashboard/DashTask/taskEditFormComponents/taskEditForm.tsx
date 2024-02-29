@@ -1,8 +1,8 @@
 import { useState } from "react"
-import TaskNameInput from "../../dashInputs/taskNameInput"
-import TaskDescriptionInput from "../../dashInputs/taskDescriptionInput"
-import TaskDateInput from "../../dashInputs/taskDateInput"
-import ButtonCancle from "../../dashInputs/buttonCancle"
+import TaskNameInput from "../../DashInputs/taskNameInput"
+import TaskDescriptionInput from "../../DashInputs/taskDescriptionInput"
+import TaskDateInput from "../../DashInputs/taskDateInput"
+import ButtonCancle from "../../DashInputs/buttonCancle"
 export default function TaskEditForm(props: {name:string, description:string, date_start:string, date_end:string, setIsEditing: React.Dispatch<React.SetStateAction<boolean>>,  editTask: (taskName: string, taskDescryption: string, dateStart: string, dateEnd: string, taskId: string) => Promise<void>, task_id:string, setIsWrong: React.Dispatch<React.SetStateAction<boolean>>}){
     const { name, description, date_start, date_end, setIsEditing, editTask, task_id, setIsWrong} = props
     const [newTaskName, setNewTaskName] = useState(name)
