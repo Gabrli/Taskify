@@ -1,3 +1,11 @@
 {
-  
+  "ecb252044b5ea0f679ee78ec1a12904739e2904d": {
+    "username": "string",
+    "password": "$2b$12$vfxrU2G5Yg7lG6F.vmpOzu8/ZM8ZlIQEHgoMpRd/yen2dreXbRmCO",
+    "email": "string",
+    "tasks": [
+      "0d9ea8e243914ed692861bf5a5988155"
+    ],
+    "folders": []
+  }
 }

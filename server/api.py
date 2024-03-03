@@ -183,7 +183,8 @@ async def edit_task(data: request_models.M_EditTask, request: Request) -> JSONRe
         name=data.name,
         description=data.description,
         date_start=data.date_start,
-        date_end=data.date_end
+        date_end=data.date_end,
+        is_done=data.is_done
     )
 
     return generate_response_and_log(

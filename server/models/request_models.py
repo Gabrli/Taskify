@@ -60,6 +60,7 @@ class M_EditTask(_Auth):
     description: str
     date_start: str
     date_end: str
+    is_done: bool
 
 class M_RemoveTask(_Auth):
     task_id: str

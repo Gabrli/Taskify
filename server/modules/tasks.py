@@ -16,6 +16,7 @@ class Task:
     description: str
     date_start: int
     date_end: int
+    is_done: bool
     db_key: str = None
 
     @staticmethod
@@ -28,7 +29,8 @@ class Task:
             name=name,
             description=description,
             date_start=date_start,
-            date_end=date_end
+            date_end=date_end,
+            is_done=False
         )
 
         model = database.TaskModel(
@@ -36,7 +38,8 @@ class Task:
             name=name,
             description=description,
             date_start=date_start,
-            date_end=date_end
+            date_end=date_end,
+            is_done=False
         )
 
         db_key = database.tasks_db.insert(model)
@@ -54,7 +57,8 @@ class Task:
             description=task_model.description,
             date_start=task_model.date_start,
             date_end=task_model.date_end,
-            db_key=task_model._key
+            db_key=task_model._key,
+            is_done=task_model.is_done
         )
     
     @staticmethod
@@ -71,12 +75,14 @@ class Task:
     @staticmethod
     def get_task_by_key(db_key: str) -> "Task":
         task_model = database.tasks_db.get(db_key)
+        print(task_model)
         return Task.from_model(task_model)
         
-    def edit_task(self, name: str, description: str, date_start: str, date_end: str) -> None:
+    def edit_task(self, name: str, description: str, date_start: str, date_end: str, is_done: bool) -> None:
         """ Update all task's fields. Save changed object to database. """
         self.name = name
         self.description = description
+        self.is_done = is_done
         self.date_start = timestamp.generate_timestamp(timestamp.read_input_date(date_start))
         self.date_end = timestamp.generate_timestamp(timestamp.read_input_date(date_end))
         
@@ -84,7 +90,8 @@ class Task:
             "name": name,
             "description": description,
             "date_start": self.date_start,
-            "date_end": self.date_end
+            "date_end": self.date_end,
+            "is_done": is_done
         })
 
         logs.tasks_logger.log(self.db_key, "Updated task")
@@ -104,6 +111,7 @@ class Task:
             "description": self.description,
             "date_start": date_start,
             "date_end": date_end,
+            "is_done": self.is_done,
             "task_id": self.db_key
         }
 
@@ -122,4 +130,3 @@ def validate_task_id(function):
         
         return await function(*args, **kwargs)
     return wrapper
-

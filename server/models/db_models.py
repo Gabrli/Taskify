@@ -57,6 +57,7 @@ class TaskModel:
     description: str
     date_start: int
     date_end: int
+    is_done: bool
 
 
 @dataclass

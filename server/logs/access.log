@@ -12319,3 +12319,15 @@
 [18/02/2024 23:12:35] (127.0.0.1:53920) [api.py.add_task_to_folder#313]  <True> Added task: b2bcaf6ec94c46c4bde34003a8e2d8d9 to folder: abb35e24094841a682b336ad0dd154ef
 [18/02/2024 23:14:00] (127.0.0.1:53960) [api.py.remove_task_from_folder#327]  <True> Removed task: b2bcaf6ec94c46c4bde34003a8e2d8d9 from folder: abb35e24094841a682b336ad0dd154ef
 [18/02/2024 23:15:36] (127.0.0.1:54038) [api.py.remove_folder#299]  <True> Removed folder: abb35e24094841a682b336ad0dd154ef for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:31:59] (127.0.0.1:50643) [api.py.register#102]  <True> Created account.
+[03/03/2024 12:32:06] (127.0.0.1:50646) [api.py.login#83]  <True> Successful login for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:33:59] (127.0.0.1:50741) [api.py.create_task#170]  <True> Task created: 0d9ea8e243914ed692861bf5a5988155 for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:40:03] (127.0.0.1:50945) [api.py.get_all_tasks#217]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:40:53] (127.0.0.1:50970) [api.py.edit_task#190]  <True> Edited task: 0d9ea8e243914ed692861bf5a5988155 for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:40:56] (127.0.0.1:50970) [api.py.get_all_tasks#218]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:41:38] (127.0.0.1:51008) [api.py.get_all_tasks#218]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:41:44] (127.0.0.1:51013) [api.py.get_all_tasks#218]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:42:12] (127.0.0.1:51028) [api.py.get_all_tasks#219]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:42:41] (127.0.0.1:51045) [api.py.get_all_tasks#219]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:43:42] (127.0.0.1:51081) [api.py.get_all_tasks#219]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d
+[03/03/2024 12:44:24] (127.0.0.1:51125) [api.py.get_all_tasks#218]  <True> Passed all user's tasks for: ecb252044b5ea0f679ee78ec1a12904739e2904d

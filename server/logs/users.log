@@ -23,3 +23,5 @@
 [18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#153]  Removed folder: abb35e24094841a682b336ad0dd154ef from users's list.
 [18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [folders.py.remove_folder#60]  Removed folder: string (abb35e24094841a682b336ad0dd154ef)
 [18/02/2024 23:15:36] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.remove_folder#148]  Cannot remove folder: abb35e24094841a682b336ad0dd154ef (folder not found on list)
+[03/03/2024 12:31:59] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.create_user#60]  Created account: string
+[03/03/2024 12:33:59] (ecb252044b5ea0f679ee78ec1a12904739e2904d) [users.py.add_task#116]  Added new task: 0d9ea8e243914ed692861bf5a5988155
