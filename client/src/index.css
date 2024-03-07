@@ -10,7 +10,9 @@ html {
 }
 /*bg color: #0c040c*/
 /*bg serach box: f5e5ee0d*/
-
+* {
+  transition-duration: .4s;
+}
 .dark {
   --bg-color: #0c040c;
   --text-title-color1: #d129c8;

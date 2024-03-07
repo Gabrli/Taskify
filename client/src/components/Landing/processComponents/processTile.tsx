@@ -25,7 +25,7 @@ export default function ProcessTile(props: {
         </h4>
       </header>
       <section className="pl-3">
-        <p className="text-stone-500 w-full">{description}</p>
+        <p className="text-gray-500 w-full">{description}</p>
       </section>
     </div>
   );

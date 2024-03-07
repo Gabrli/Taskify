@@ -16,7 +16,7 @@ export default function LandingFooter() {
       <header className=" w-1/2   pb-5 pt-5 pl-32 mobile1:pl-5 mobile1:w-full">
         <h3 className={`fo_title text-4xl font-bold pb-3 `}>taskify</h3>
         <a
-          className={`text-stone-500 font-medium  transition duration-700 ease-in-out ${
+          className={`text-gray-500 font-medium  transition duration-700 ease-in-out ${
             theme === "dark" ? "hover:text-text_dark" : "hover:text-text_light"
           }`}
           href="https://github.com/Gabrli/Taskify"
