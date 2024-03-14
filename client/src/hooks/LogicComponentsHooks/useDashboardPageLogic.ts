@@ -20,6 +20,7 @@ export const useDashboardPageLogic = (setTheme: React.Dispatch<React.SetStateAct
         const localToken = localStorage.getItem("token");
         const localId = localStorage.getItem("uid");
         const localTheme = localStorage.getItem("theme") as string;
+        isMobileEvent(window.innerWidth)
         setTheme(localTheme)
     
         if (localToken && localId) {
@@ -28,13 +29,15 @@ export const useDashboardPageLogic = (setTheme: React.Dispatch<React.SetStateAct
         } else authToken.token = false;
     }, [])
 
-    window.addEventListener("resize", () => {
-        if (window.innerWidth <= 1050) {
-            setIsMobile(true);
-          } else {
-            setIsMobile(false);
-        }
-      });
+    const isMobileEvent = (width:number) => {
+      if (width <= 1050) {
+        setIsMobile(true);
+      } else {
+        setIsMobile(false);
+    }
+    }
+
+    window.addEventListener("resize",() =>  isMobileEvent(window.innerWidth));
 
     return {
         counterNotyfications,
